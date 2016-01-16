@@ -1,0 +1,26 @@
+.header-navbar {
+
+	&__content {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 60px;
+		font-family: @font__pt-sans;
+		.tablet({ width: 265px;});
+		.laptop({ width: 570px;});
+		.desktop({ width: 715px;});
+	}
+
+		&__link {
+			display: block;
+			text-transform: uppercase;
+			font-size: 14px;
+			font-weight: 700;
+			letter-spacing: -.2px;
+
+			&:hover {
+				color: @color__additional-brand;
+			}
+		}
+
+}

@@ -1,0 +1,41 @@
+.lego-test-page-content {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-content: flex-start;
+	overflow: hidden;
+
+	&__1 {
+		order: 1;
+	}
+
+	&__2 {
+		order: 2;
+		margin: 14px 0 13px;
+	}
+
+	&__3 {
+		order: 3;
+		margin-bottom: 31px;
+	}
+
+	&__4 {
+		order: 4;
+	}
+
+	&__5 {
+		order: 5;
+		.respond-max(@screen__laptop, {
+			margin-top: 37px;
+		});
+		.tablet({
+			display: flex;
+			justify-content: center;
+		});
+	}
+
+	&__6 {
+		order: 6;
+	}
+}

@@ -1,0 +1,41 @@
+.footer-menu {
+
+	background: @color__9;
+
+	.respond-min(@screen__laptop, {
+		height: 30px;
+	});
+
+	&__menu {
+
+		display: flex;
+		.phone({
+			width: 260px;
+			height: 92px;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			padding: 15px 0 5px;
+		});
+
+		.tablet({
+			width: 560px;
+			height: 55px;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			padding: 14px 0 6px;
+		});
+
+		.respond-min(@screen__laptop, {
+			height: 30px;
+			width: 940px;
+			justify-content: space-between;
+		});
+		margin: auto;
+		font: 700 11px/30px @font__pt-sans;
+		text-transform: uppercase;
+	}
+
+	&__menu-item {
+		.respond-max(@screen__laptop, { line-height: 8px;});
+	}
+}

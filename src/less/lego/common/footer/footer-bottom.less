@@ -1,0 +1,134 @@
+.footer-bottom {
+	background: @color__10;
+	color: @color__gray;
+	text-align: center;
+	padding-bottom: 25px;
+
+	&__womens-network {
+		display: block;
+
+		&::before {
+			display: block;
+			padding: 30px 0 19px;
+			font-size: 60px;
+		}
+	}
+
+	&__partners {
+		display: inline-flex;
+		justify-content: space-between;
+		overflow: hidden;
+		height: 37px;
+		.tablet({ width: 580px;});
+		.respond-min(@screen__laptop, {width: 815px;});
+	}
+
+	&__elle {
+		&::before {
+			font-size: 20px;
+			line-height: 39px;
+		}
+	}
+
+	&__wday {
+		&::before {
+			font-size: 21px;
+			line-height: 40px;
+		}
+	}
+
+	&__mc {
+		&::before {
+			font-size: 17px;
+			line-height: 40px;
+		}
+	}
+
+	&__elle-girl {
+		&::before {
+			font-size: 35px;
+			line-height: 38px;
+		}
+	}
+
+	&__psy-short {
+		&::before {
+			font-size: 17px;
+			line-height: 40px;
+		}
+	}
+
+	&__parents {
+		&::before {
+			font-size: 19px;
+			line-height: 37px;
+		}
+	}
+
+	&__starhit {
+		&::before {
+			font-size: 19px;
+			line-height: 40px;
+		}
+	}
+
+	&__site-description {
+		display: inline-flex;
+		font: 12px/14px @font__pt-sans;
+		.phone({
+			margin: 4px 0 27px;
+			height: 111px;
+			overflow: hidden;
+		});
+		.respond-min(@screen__tablet, {margin: 24px 0 27px;});
+		.laptop({ width: 900px;});
+		.desktop({ width: 1060px;});
+	}
+
+	&__socials {
+		display: inline-flex;
+		justify-content: space-between;
+		overflow: hidden;
+		width: 228px;
+		height: 19px;
+	}
+
+	&__feed,
+	&__fb,
+	&__twitter ,
+	&__vk {
+		line-height: 20px;
+	}
+
+	&__ok {
+		font-size: 18px;
+	}
+
+	&__youtube {
+		font-size: 19px;
+		line-height: 21px;
+	}
+
+	&__instagram {
+		line-height: 22px;
+	}
+
+	&__copyright {
+		font: 12px @font__pt-sans;
+		margin: 23px 0 17px;
+	}
+
+	&__counters {
+		display: inline-flex;
+		justify-content: space-between;
+		width: 185px;
+		height: 31px;
+	}
+
+		&__counter {
+			width: 87px;
+			height: 100%;
+			background: @color__gray;
+		}
+
+}

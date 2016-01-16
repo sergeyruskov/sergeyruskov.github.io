@@ -1,0 +1,113 @@
+.index-quote {
+	display: block;
+	text-align: center;
+	height: 430px;
+	padding: 27px 20px 0 20px;
+	position: relative;
+	background: @color__spot;
+	transition: .3s;
+
+	&__quote {
+		font-weight: 700;
+		font-size: 26px;
+		line-height: 24px;
+		height: 195px;
+		overflow: hidden;
+	}
+
+	&__name {
+		font-size: 15px;
+		line-height: 17px;
+		margin: 7px 4px 4px;
+	}
+
+	&__author-specialization {
+		font-size: 13px;
+		line-height: 16px;
+		padding: 0 5px;
+	}
+
+	&__wrapper-share {
+
+		position: absolute;
+		top: 0;
+		right: 0;
+		color: @color__additional-brand;
+		cursor: pointer;
+		width: 90px;
+		height: 30px;
+		overflow: hidden;
+
+		&-icons {
+			transform: translateX(70px);
+			transition: .3s;
+			width: 110px;
+			overflow: hidden;
+
+			&::before {
+				transition: .3s;
+				float: left;
+				padding: 10px 8px 0 0;
+				font-size: 12px;
+			}
+		}
+
+	}
+
+	&__share-icons {
+		float: left;
+		width: 30px;
+		height: 30px;
+		color: #fff;
+
+		&::before {
+			display: block;
+		}
+
+		&--twitter {
+
+			&::before {
+				font-size: 10px;
+				line-height: 30px;
+			}
+		}
+
+		&--fb {
+
+			&::before {
+				font-size: 9px;
+				line-height: 31px;
+			}
+		}
+
+		&--vk {
+
+			&::before {
+				font-size: 8px;
+				line-height: 30px;
+			}
+		}
+	}
+
+	&__wrapper-author {
+		position: absolute;
+		bottom: 26px;
+		left: 0;
+		right: 0;
+		margin: auto;
+		width: 260px;
+	}
+
+	.index-quote__wrapper-share-icons {
+		.phone({transform: translateX(-20px);});
+	}
+
+	&:hover {
+
+		.index-quote__wrapper-share-icons {
+			.respond-min(@screen__tablet, {transform: translateX(-20px);});
+		}
+
+	}
+
+}

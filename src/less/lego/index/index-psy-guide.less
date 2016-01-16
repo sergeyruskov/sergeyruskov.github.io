@@ -1,0 +1,62 @@
+.index-psy-guide {
+	display: block;
+	position: relative;
+	background: @color__5;
+	text-align: center;
+	padding-top: 15px;
+	border-left: 20px solid @color__5;
+	border-right: 20px solid @color__5;
+	border-bottom: 30px solid @color__5;
+
+	&__title {
+		color: @color__brand;
+		font: 700 12px @font__pt-sans;
+		text-transform: uppercase;
+		margin-bottom: 23px;
+		letter-spacing: 1px;
+	}
+
+	&__text {
+		height: 100px;
+		font-family: @font__pt-sans;
+		line-height: 20px;
+		overflow: hidden;
+	}
+
+	&__specialist-count {
+		font: 700 12px @font__pt-sans;
+		margin-top: 12px;
+		text-transform: uppercase;
+		color: @color__4;
+	}
+
+	&__wrapper-bottom {
+		position: absolute;
+		height: 205px;
+		bottom: 0;
+		left: 0;
+	}
+
+		&__photo {
+			font-size: 15px;
+			font-weight: 700;
+			margin-bottom: 13px;
+		}
+
+		&__psy-name {
+			line-height: 17px;
+			font-weight: 700;
+			letter-spacing: -.5px;
+		}
+
+		&__psy-specialization {
+			font-size: 13px;
+			line-height: 16px;
+			margin: 2px 0 17px;
+		}
+
+	&:hover .btn {
+		background: @color__brand;
+	}
+
+}
