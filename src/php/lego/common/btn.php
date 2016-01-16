@@ -1,0 +1,1 @@
+<div class="btn <?= $params["class"] ?>"><?= $params["text"]; ?></div>

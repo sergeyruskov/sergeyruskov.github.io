@@ -1,0 +1,35 @@
+.header {
+	@header-top-height: 80px;
+	height: @header-top-height;
+
+	&__wrapper {
+		height: @header-top-height;
+		width: 100%;
+		padding: 10px 0;
+		background: @color__brand;
+		position: fixed;
+		z-index: 2;
+	}
+
+	&__wrapper-header-burger {
+		margin-top: 20px;
+		float: left;
+	}
+
+	&__wrapper-header-navbar {
+		.phone({margin-right: 19px;});
+
+		.tablet({margin-right: 12px;});
+
+		.laptop({margin-right: 12px;});
+
+		.desktop({margin-right: 13px;});
+
+		float: right;
+	}
+
+	&__wrapper-header-psy-logo {
+		margin-top: 12px;
+		float: left;
+	}
+}

@@ -1,0 +1,26 @@
+.btn {
+	display: inline-block;
+	cursor: pointer;
+	color: #fff;
+	text-transform: uppercase;
+	transition: .3s;
+	text-align: center;
+
+	&--brand {
+		letter-spacing: 1.5px;
+		padding: 8px 20px;
+		background: @color__brand;
+	}
+
+	&--additional-brand {
+		width: 180px;
+		padding: 7px 0;
+		background: @color__additional-brand;
+		border-radius: 5px;
+		font: 700 12px @font__pt-sans;
+
+		&:hover {
+			background: @color__brand;
+		}
+	}
+}

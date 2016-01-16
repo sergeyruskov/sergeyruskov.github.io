@@ -1,0 +1,126 @@
+.index-article-block {
+	position: relative;
+	overflow: hidden;
+
+	&:hover .index-article-block__video-icon {
+		&::before {
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background: rgba(115, 115, 115, 0.1);
+		}
+	}
+
+	&__title {
+		padding: 16px 20px 11px 0;
+		font-size: 22px;
+		line-height: 24px;
+	}
+
+	&__text {
+		color: @color__additional;
+		line-height: 20px;
+		letter-spacing: -.5px;
+		padding-right: 20px;
+		font-family: @font__pt-sans;
+	}
+
+	&__author-wrapper {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		height: 65px;
+		width: 100%;
+		background: linear-gradient(to top, #fff 0%, rgba(255, 255, 255, 1) 70%, rgba(255, 255, 255, 0) 100%);
+	}
+
+	&__author-content {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		padding-left: 40px;
+		font-size: 12px;
+		color: @color__additional;
+	}
+
+	&__wrapper-photo-and-header {
+		&:hover {
+			.index-article-block__video-icon-wrapper-outline {
+				height: 0;
+				width: 0;
+			}
+
+			.index-article-block__video-icon-wrapper-icon {
+				background: @color__brand;
+				color: #fff;
+			}
+
+			.index-article-block__title {
+				color: @color__additional;
+			}
+
+			.index-article-block__video-icon-wrapper {
+				background: rgba(115, 115, 115, .1);
+			}
+		}
+	}
+
+	&__video-icon {
+		position: relative;
+
+		&-wrapper {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			text-align: center;
+
+			&::before {
+				content: '';
+				vertical-align: middle;
+				height: 100%;
+				display: inline-block;
+			}
+		}
+
+		&-wrapper-outline {
+			transition: .6s;
+			vertical-align: middle;
+			display: inline-block;
+			background: rgba(255, 255, 255, .5);
+			border-radius: 50%;
+			height: 180px;
+			width: 180px;
+		}
+
+		&-wrapper-icon {
+			transition: .6s;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			margin: auto;
+			width: 70px;
+			height: 70px;
+			background: #fff;
+			border-radius: 50%;
+			font-size: 34px;
+			line-height: 70px;
+			text-indent: 9px;
+			color: @color__brand
+		}
+	}
+
+	&__wrapper-article-author {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+	}
+}
