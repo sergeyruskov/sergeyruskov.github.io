@@ -1,1 +1,0 @@
-<h1 class="section-name content-wrapper"><?= $params["name"] ?></h1>
