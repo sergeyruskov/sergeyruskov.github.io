@@ -1,0 +1,69 @@
+.red-line-title {
+	overflow: hidden;
+	text-align: center;
+
+	&--index-low-announcements,
+	&--index-best-covers,
+	&--index-forum {
+		padding-top: 6px;
+	}
+
+	&--psy-short {
+		padding-top: 20px;
+	}
+
+	&__wrapper {
+		display: flex;
+		justify-content: center;
+
+		&--index-low-announcements,
+		&--index-forum,
+		&--index-best-covers {
+			border-top: 1px solid @color__brand;
+		}
+
+		&--psy-short {
+			.respond-min(@screen__tablet, {border-top: 1px solid @color__brand});
+		}
+	}
+
+	&__content {
+		position: relative;
+		font: 700 18px @font__pt-sans;
+		background: #fff;
+		color: @color__brand;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+
+		&--index-low-announcements,
+		&--index-best-covers,
+		&--index-forum {
+			.phone({ padding: 0 8px;});
+			.respond-min(@screen__tablet, {
+				padding: 0 20px;
+			});
+			top: -12px;
+		}
+
+		&--psy-short {
+			.respond-min(@screen__tablet, {
+				padding: 0 20px;
+			});
+			top: -20px;
+		}
+	}
+
+	&__psy-short-top-text {
+
+		&::before {
+			font-size: 40px;
+		}
+	}
+
+	&__psy-short-content {
+		font: 700 14px @font__pt-sans;
+		letter-spacing: 3.5px;
+		.respond-min(@screen__laptop, {line-height: 30px;});
+	}
+
+}

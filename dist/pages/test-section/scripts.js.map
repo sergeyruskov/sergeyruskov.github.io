@@ -1,0 +1,1 @@
+{"version":3,"sources":["test-section.js"],"names":[],"mappings":";;AAAA,MAAM,CAAG,UAAC,CAAC,EAAK;;;CAGf,CAAC,CAAC","file":"scripts.js","sourcesContent":["jQuery ( ($) => {\n\t//Поиск в меню\n\t//=require ../lego/common/test-menu-search.js\n});\n"],"sourceRoot":"/source/"}

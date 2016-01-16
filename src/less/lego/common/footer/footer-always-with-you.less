@@ -1,0 +1,173 @@
+.footer-always-with-you {
+	position: relative;
+	.respond-min(@screen__laptop, {width: 940px});
+	margin: auto;
+	overflow: hidden;
+	@height-ipad: 251px;
+
+	&__top {
+		overflow: hidden;
+		position: relative;
+		display: flex;
+		align-items: flex-end;
+		.phone({
+			height: 271px;
+		});
+		.tablet({
+			justify-content: space-between;
+			height: 279px;
+		});
+		.respond-min(@screen__laptop, {
+			align-items: flex-end;
+			height: 359px;
+		});
+
+		&::before {
+			content: "";
+			position: absolute;
+			z-index: 2;
+			bottom: 0;
+			left: 0;
+			height: 17px;
+			width: 100%;
+			background: linear-gradient(to top, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0) 100%);
+		}
+	}
+
+	&__black-ipad {
+		position: relative;
+		overflow: hidden;
+		background: url("@{path__img}/common/footer/footer-always-with-you/footer-ipad-black.png") no-repeat;
+		.respond-max(@screen__laptop, {background-size: cover;});
+		height: @height-ipad;
+		.tablet({ width: 305px;});
+		.respond-min(@screen__laptop, {width: 253px});
+		.phone({padding: 39px 15px 0 20px});
+		.respond-min(@screen__tablet, {padding: 39px 0 0 20px;});
+
+		&-img {
+			width: 265px;
+		}
+
+		&:hover {
+			height: @height-ipad + 20;
+		}
+	}
+
+	&__center-magazine {
+		height: 567px;
+		width: 445px;
+
+		&-img {
+			height: 567px;
+			width: 445px;
+			margin-top: 236px;
+		}
+
+		&:hover {
+			transform: translateY(-20px);
+		}
+	}
+
+	&__gold-ipad {
+		padding: 39px 72px 0 0;
+		position: relative;
+		overflow: hidden;
+		background: url("@{path__img}/common/footer/footer-always-with-you/footer-ipad-gold.png") no-repeat 100% 0;
+		.respond-max(@screen__laptop, {background-size: cover;});
+		.tablet({ width: 300px;});
+		.respond-min(@screen__laptop, {width: 247px;});
+		height: @height-ipad;
+
+		&-img {
+			position: absolute;
+			top: 39px;
+			right: 20px;
+			width: 265px;
+		}
+
+		&:hover {
+			height: @height-ipad + 20;
+		}
+	}
+
+	&__psy-short {
+		&::before {
+			display: block;
+			position: relative;
+			.tablet({margin: 90px 0 2px 80px});
+			.respond-min(@screen__laptop, {margin: 94px 0 2px 18px;});
+			font-size: 31px;
+		}
+	}
+
+	&__tests {
+		position: relative;
+		color: #fff;
+		float: right;
+		text-transform: uppercase;
+		font-family: @font__pt-sans;
+		font-weight: 700;
+	}
+
+	&__iphone {
+		@height-iphone: 346px;
+		background: url("@{path__img}/common/footer/footer-always-with-you/footer-iphone-black.png") no-repeat;
+		background-size: contain;
+		position: absolute;
+		z-index: 1;
+		.phone({right: 8px});
+		.tablet({ right: 150px;});
+		.respond-min(@screen__laptop, { right: 172px;});
+		bottom: -186px;
+		width: 144px;
+		height: @height-iphone;
+		padding: 28px 10px 0 8px;
+
+		&:hover {
+			height: @height-iphone + 20;
+		}
+	}
+
+	&__bottom {
+		display: flex;
+		position: relative;
+		padding-top: 28px;
+	}
+
+		&__digital,
+		&__magazine,
+		&__phone {
+			width: 313px;
+			text-align: center;
+		}
+
+	&__title {
+		font-family: 'PT Sans', sans-serif;
+		font-size: 18px;
+		text-transform: uppercase;
+	}
+
+	&__text {
+		font-size: 14px;
+		line-height: 16px;
+		margin: 9px 0 17px;
+	}
+
+	&__wrapper-btn-digital {
+		display: flex;
+		justify-content: space-between;
+		height: 31px;
+		width: 228px;
+		margin: auto;
+	}
+
+	 &__appstore-btn {
+		 display: flex;
+		span::before {
+			font-size: 31px;
+			line-height: 31px;
+		}
+	 }
+
+}

@@ -1,0 +1,1 @@
+<a href="#" class="header-rubric-logo pull-right img-circle text-uppercase link link--white">Тесты</a>

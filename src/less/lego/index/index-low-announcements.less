@@ -1,0 +1,19 @@
+.index-low-announcements {
+	overflow: hidden;
+	border-bottom: 1px solid @color__brand;
+
+	&__wrapper-short-announcements {
+		display: flex;
+		justify-content: space-between;
+		padding: 14px 0 19px;
+		.phone({
+			height: 333px;
+			flex-direction: column;
+		});
+		.tablet({
+			height: 173px;
+			flex-direction: column;
+			flex-wrap: wrap;
+		});
+	}
+}
