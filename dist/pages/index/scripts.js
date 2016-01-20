@@ -2591,14 +2591,14 @@ jQuery(function ($) {
   * @license The MIT License (MIT)
   */
 	;(function ($, window, document, undefined) {
-		'use strict'
+		'use strict';
 
 		/**
    * Creates the navigation plugin.
    * @class The Navigation Plugin
    * @param {Owl} carousel - The Owl Carousel.
    */
-		;
+
 		var Navigation = function Navigation(carousel) {
 			/**
     * Reference to the core.
@@ -2974,14 +2974,14 @@ jQuery(function ($) {
   * @license The MIT License (MIT)
   */
 	;(function ($, window, document, undefined) {
-		'use strict'
+		'use strict';
 
 		/**
    * Creates the hash plugin.
    * @class The Hash Plugin
    * @param {Owl} carousel - The Owl Carousel
    */
-		;
+
 		var Hash = function Hash(carousel) {
 			/**
     * Reference to the core.

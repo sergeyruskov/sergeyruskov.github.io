@@ -38,7 +38,7 @@ const gulp = require(`gulp`),
 			img: `dist/img`
 		},
 		browserSync: {
-			URI: `http://localhost:8888/psy_adaptive/dist/pages/`,
+			URI: `http://localhost:8888/sergeyruskov.github.io/dist/pages/`,
 			port: 3020
 		}
 	};

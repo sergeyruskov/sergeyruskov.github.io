@@ -6,7 +6,7 @@ require_once(
 );
 
 //Константы для этой страницы
-define("PATH__PHP_TEST_PAGE", PATH__PHP_LEGO . "/lego-test-page");
+define("PATH__PHP_TEST_PAGE", PATH__PHP_LEGO . "/test-page");
 define("PATH__PHP_TEST_SECTION", PATH__PHP_LEGO . "/test-section/");
 
 //header
@@ -16,7 +16,7 @@ req_with_param(PATH__PHP_LEGO_COMMON . "/head.php");
 <main class="branding--main">
 <?
 
- req_with_param(PATH__PHP_TEST_PAGE . "/lego-test-page-content.php", ["branding" => "branding--content"]);
+ req_with_param(PATH__PHP_TEST_PAGE . "/test-page-content.php", ["branding" => "branding--content"]);
 
  req_with_param(PATH__PHP_LEGO_COMMON . "/footer/footer-top.php", ["branding" => "branding--footer-top"]);
 ?>

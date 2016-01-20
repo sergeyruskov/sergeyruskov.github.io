@@ -1,0 +1,59 @@
+.test-page-content {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-content: flex-start;
+	overflow: hidden;
+
+	&__1 {
+		order: 1;
+	}
+
+	&__2 {
+		order: 2;
+		.phone({margin: 15px 0 13px;});
+		.tablet({margin: 14px 0 16px;});
+		.laptop({margin: 13px 0;});
+		.desktop({margin: 14px 0 13px;});
+	}
+
+	&__3 {
+		order: 3;
+		.laptop({ margin-bottom: 32px;});
+		.desktop({ margin-bottom: 31px;});
+	}
+
+	&__4 {
+		order: 4;
+		.phone({ margin: 31px 0 37px;});
+		.tablet({margin: 24px 0 37px;});
+	}
+
+	&__5 {
+		order: 5;
+		.phone({ margin-bottom: 36px;});
+		.tablet({
+			display: flex;
+			justify-content: center;
+		});
+	}
+
+	&__6 {
+		order: 6;
+		.tablet({margin-top: 35px;});
+		.laptop({ margin-top: 22px;});
+		.desktop({ margin-top: 22px;});
+	}
+
+	&__7 {
+		order: 7;
+		display: flex;
+		justify-content: space-between;
+		.respond-max(@screen__desktop, {
+			margin-top: 38px;
+			flex-direction: column;
+		});
+		.desktop({ margin-top: 38px;});
+	}
+}
