@@ -35,6 +35,12 @@
 	}
 }
 
+.bottom-indent() {
+	.phone({ padding-bottom: @indent-from-footer--desktop-laptop-mobile; });
+	.tablet({ padding-bottom: @indent-from-footer--tablet; });
+	.respond-min(@screen__laptop, { padding-bottom: @indent-from-footer--desktop-laptop-mobile; });
+}
+
 .icomoon-font-family {
 	/* use !important to prevent issues with browser extensions that change fonts */
 	font-family: 'icomoon' !important;

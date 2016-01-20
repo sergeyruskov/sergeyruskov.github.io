@@ -7,7 +7,8 @@ require_once(
 
 //Константы для этой страницы
 define("PATH__PHP_TEST_PAGE", PATH__PHP_LEGO . "/test-page");
-define("PATH__PHP_TEST_SECTION", PATH__PHP_LEGO . "/test-section/");
+define("PATH__PHP_INDEX", PATH__PHP_LEGO . "/index/");
+
 
 //header
 req_with_param(PATH__PHP_LEGO_COMMON . "/head.php");

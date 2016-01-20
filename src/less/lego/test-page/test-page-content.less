@@ -1,37 +1,24 @@
 .test-page-content {
-	position: relative;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	align-content: flex-start;
 	overflow: hidden;
+	padding-top: 20px;
+	.bottom-indent;
 
 	&__1 {
-		order: 1;
+		margin: 34px 0 13px;
 	}
 
 	&__2 {
-		order: 2;
-		.phone({margin: 15px 0 13px;});
-		.tablet({margin: 14px 0 16px;});
-		.laptop({margin: 13px 0;});
-		.desktop({margin: 14px 0 13px;});
+		.respond-min(@screen__laptop, { margin-bottom: 32px;});
 	}
 
 	&__3 {
-		order: 3;
-		.laptop({ margin-bottom: 32px;});
-		.desktop({ margin-bottom: 31px;});
-	}
-
-	&__4 {
-		order: 4;
+		&:extend(.pull-left);
 		.phone({ margin: 31px 0 37px;});
 		.tablet({margin: 24px 0 37px;});
 	}
 
-	&__5 {
-		order: 5;
+	&__4 {
+		&:extend(.pull-right);
 		.phone({ margin-bottom: 36px;});
 		.tablet({
 			display: flex;
@@ -39,21 +26,101 @@
 		});
 	}
 
-	&__6 {
-		order: 6;
+	&__5 {
+		&:extend(.pull-left);
 		.tablet({margin-top: 35px;});
-		.laptop({ margin-top: 22px;});
-		.desktop({ margin-top: 22px;});
+		.respond-min(@screen__laptop, { margin-top: 22px;});
+	}
+
+	&__6 {
+		&:extend(.pull-left);
+		display: flex;
+		justify-content: space-between;
+		margin-top: 37px;
+		.respond-max(@screen__desktop, {
+			flex-direction: column;
+		});
 	}
 
 	&__7 {
-		order: 7;
-		display: flex;
-		justify-content: space-between;
-		.respond-max(@screen__desktop, {
-			margin-top: 38px;
-			flex-direction: column;
+		&:extend(.pull-left);
+		margin: 34px 0 15px;
+	}
+
+	&__8 {
+		&:extend(.pull-left);
+		.respond-min(@screen__tablet, {
+			margin-right: 20px;
 		});
-		.desktop({ margin-top: 38px;});
+	}
+
+	&__9 {
+		&:extend(.pull-left);
+		.respond-min(@screen__laptop, {
+			margin-right: 20px;
+		});
+	}
+
+	&__10 {
+		&:extend(.pull-left);
+		.desktop({
+			margin-right: 20px;
+		});
+	}
+
+	&__11 {
+		&:extend(.pull-left);
+	}
+
+	&__12 {
+		&:extend(.pull-left);
+		margin: 34px 0 13px;
+	}
+
+	&__13 {
+		&:extend(.pull-left);
+		.respond-min(@screen__tablet, {
+			margin-right: 20px;
+		});
+	}
+
+	&__14 {
+		&:extend(.pull-left);
+		.phone({ margin-top: 20px;});
+		.respond-min(@screen__laptop, {
+			margin-right: 20px;
+		});
+	}
+
+	&__15 {
+		&:extend(.pull-left);
+		.phone({ margin-top: 20px;});
+		.tablet({ margin: 20px 20px 0 0; });
+		.desktop({ margin-right: 20px;});
+	}
+
+	&__16 {
+		&:extend(.pull-left);
+		.laptop({ margin-right: 20px;});
+		.respond-max(@screen__desktop, {
+			margin-top: 20px;
+		});
+	}
+
+	&__17 {
+		&:extend(.pull-left, .mr20, .mt20);
+	}
+
+	&__18 {
+		&:extend(.pull-left, .mt20);
+		.desktop({ margin-right: 20px;});
+	}
+
+	&__19 {
+		&:extend(.pull-left, .mr20, .mt20);
+	}
+
+	&__20 {
+		&:extend(.pull-left, .mt20);
 	}
 }

@@ -1,1 +1,1 @@
-<a href="#" class="header-psy-logo icon-psy"></a>
+<a href="sergeyruskov.github.io/dist/pages/index/" class="header-psy-logo icon-psy"></a>
