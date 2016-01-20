@@ -1,9 +1,10 @@
-.lego-test-page-content-test-description {
+.test-page-content-test-description {
 	text-align: center;
 	.laptop({ padding-top: 28px;});
 	.desktop({padding: 31px 20px 0;});
 
 	&__number-and-counter {
+		.phone({ margin-bottom: 4px;});
 		text-transform: uppercase;
 		color: @color__gray;
 		font: 10px @font__pt-sans;
@@ -17,7 +18,10 @@
 		width: 181px;
 		height: 181px;
 		border-radius: 50%;
-		margin: 14px 0 23px;
+		.phone({margin: 14px 0px;});
+		.respond-min(@screen__tablet, {
+			margin: 14px 0 23px;
+		});
 	}
 
 	&__author {

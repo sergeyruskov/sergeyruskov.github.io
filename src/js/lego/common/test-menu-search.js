@@ -6,7 +6,10 @@ $('#test-menu-search__search-button').click(function() {
 	$("#test-menu-search__text")
 			.focus()
 			.focusout(() => {
-				$parent.removeClass('test-menu-search--open');
+				//Таймер для того чтобы браузер успел переместить фокус с тектового инпута на submit
+				setTimeout(()  => {
+					$parent.removeClass('test-menu-search--open');
+				}, 200);
 			});
 
 });

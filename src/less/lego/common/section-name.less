@@ -1,5 +1,13 @@
 .section-name {
-	font: 40px/40px @font__pt-sans;
+	.phone({
+		font-size: 35px;
+		line-height: 35px;
+	});
+	.respond-min(@screen__tablet, {
+		font-size: 40px;
+		line-height: 40px;
+	});
+	font-family: @font__pt-sans;
 	text-align: center;
 	text-transform: uppercase;
 	font-weight: 700;
