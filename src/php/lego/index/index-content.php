@@ -1,4 +1,4 @@
-<div class="index-content branding--content content-wrapper">
+<div class="index-content content-wrapper show-more--container branding--content">
 
 
 	<? req_with_param(PATH__PHP_LEGO_COMMON . "/announcements.php",
@@ -65,7 +65,7 @@
 	</div>
 
 	<div class="index-content__9">
-		<? req_with_param(PATH__PHP_INDEX . "/index-test-block.php", ["title" => "Какое жизненное начaло в&nbsp;вас преобладает?", "img" => "/index/test.jpg", "btn-text" => "Пройти тест"]); ?>
+		<? req_with_param(PATH__PHP_INDEX . "/index-test-block.php", ["title" => "Какое жизненное начaло в&nbsp;вас преобладает?", "img" => "/index/test.jpg", "btn-text" => "Пройти тест", "wrapper-img-modification" => "index-test-block__wrapper-img--index"]); ?>
 	</div>
 
 	<div class="index-content__10">
@@ -134,7 +134,7 @@
 	</div>
 
 	<div class="index-content__22 hide--phone">
-		<? req_with_param(PATH__PHP_INDEX . "/index-test-block.php", ["title" => "В чем источник вашей радости?", "img" => "/index/test.jpg", "btn-text" => "Пройти тест"]); ?>
+		<? req_with_param(PATH__PHP_INDEX . "/index-test-block.php", ["title" => "В чем источник вашей радости?", "img" => "/index/test.jpg", "btn-text" => "Пройти тест", "wrapper-img-modification" => "index-test-block__wrapper-img--index"]); ?>
 	</div>
 
 	<div class="index-content__23">
@@ -216,7 +216,7 @@
 	</div>
 
 	<div class="index-content__36 hide--phone">
-		<? req_with_param(PATH__PHP_INDEX . "/index-test-block.php", ["title" => "Как вы строите отношения с другими?", "img" => "/index/test.jpg", "btn-text" => "Пройти тест"]); ?>
+		<? req_with_param(PATH__PHP_INDEX . "/index-test-block.php", ["title" => "Как вы строите отношения с другими?", "img" => "/index/test.jpg", "btn-text" => "Пройти тест", "wrapper-img-modification" => "index-test-block__wrapper-img--index"]); ?>
 	</div>
 
 	<div class="index-content__37 hide--phone">
@@ -286,10 +286,6 @@
 
 	</div>
 
-	<div class="index-content__show-more">
-
-		<? req_with_param(PATH__PHP_INDEX . "/index-show-more.php"); ?>
-
-	</div>
+	<? req_with_param(PATH__PHP_LEGO_COMMON . "/show-more.php"); ?>
 
 </div>

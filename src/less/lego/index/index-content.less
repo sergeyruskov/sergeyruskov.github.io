@@ -1,14 +1,9 @@
 .index-content {
-	position: relative;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-content: flex-start;
-	overflow: hidden;
-
-	.phone({ padding-bottom: 41px; });
-	.tablet({ padding-bottom: 51px; });
-	.respond-min(@screen__laptop, { padding-bottom: 39px; });
+	.bottom-indent;
 
 	&__1 {
 		.phone({ order: 1; });
@@ -351,18 +346,6 @@
 		.phone({order: 44;});
 		.tablet({ order: 45; });
 		.desktop({ order: 40; });
-	}
-
-	&__show-more {
-		position: absolute;
-		z-index: 1;
-		.phone({ bottom: 41px; });
-		.tablet({ bottom: 51px; });
-		.respond-min(@screen__laptop, { bottom: 39px; });
-		left: 0;
-		width: 100%;
-		height: 90px;
-		background: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1), rgba(255, 255, 255, .9), rgba(255, 255, 255, 0));
 	}
 
 }
