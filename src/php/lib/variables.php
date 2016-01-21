@@ -10,8 +10,10 @@ define("PATH__PHP_LEGO", PATH__PHP . "/lego");
 //Каталог common
 define("PATH__PHP_COMMON", PATH__PHP_LEGO . "/common");
 //Адреса папок с блоками страниц
-define("PATH__PHP_TEST", PATH__PHP_LEGO . "/test");
+//todo Добавлять новые страницы
 define("PATH__PHP_INDEX", PATH__PHP_LEGO . "/index/");
+define("PATH__PHP_TEST", PATH__PHP_LEGO . "/test");
+define("PATH__PHP_TEST_SECTION", PATH__PHP_LEGO . "/test-section/");
 define("PATH__PHP_RESULT", PATH__PHP_LEGO . "/test-result/");
 //Каталог img
 define("PATH__IMG", "../../img");

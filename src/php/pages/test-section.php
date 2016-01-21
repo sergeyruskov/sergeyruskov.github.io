@@ -5,14 +5,24 @@ require_once(
 		explode('/', substr($_SERVER["PHP_SELF"], 1))[0] . "/php/lib/lib.php"
 );
 
-//Константы для этой страницы
-define("PATH__PHP_TEST_SECTION", PATH__PHP_LEGO . "/test-section/");
-
 //header
 req_with_param(PATH__PHP_COMMON . "/head.php");
 
-//main
-req_with_param(PATH__PHP_TEST_SECTION . "/test-section-main.php");
+?>
+	<main class="branding--main">
+		<?
+
+		req_with_param(PATH__PHP_LEGO . "/common/branding.php");
+
+
+		//main
+		req_with_param(PATH__PHP_TEST_SECTION . "/test-section-main.php", ["branding" => "branding--content"]);
+
+		req_with_param(PATH__PHP_COMMON . "/footer/footer-top.php", ["branding" => "branding--footer-top"]);
+		?>
+	</main>
+
+<?
 
 //footer
 req_with_param(PATH__PHP_COMMON . "/footer/footer.php");
