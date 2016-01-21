@@ -1,23 +1,27 @@
 .test-content {
-	overflow: hidden;
-	padding-top: 20px;
+	//Для кнопки показать еще и брендирования
+	position: relative;
+	//Стандартный отступ от футера
 	.bottom-indent;
 
-	&__1 {
-		margin: 34px 0 13px;
+	overflow: hidden;
+
+	&__announcements {
+		margin: 20px 0 34px;
 	}
 
-	&__2 {
+	&__1 {
+		margin-top: 13px;
 		.respond-min(@screen__laptop, { margin-bottom: 32px;});
 	}
 
-	&__3 {
+	&__2 {
 		&:extend(.pull-left);
 		.phone({ margin: 31px 0 37px;});
 		.tablet({margin: 24px 0 37px;});
 	}
 
-	&__4 {
+	&__3 {
 		&:extend(.pull-right);
 		.phone({ margin-bottom: 36px;});
 		.tablet({
@@ -26,13 +30,13 @@
 		});
 	}
 
-	&__5 {
+	&__4 {
 		&:extend(.pull-left);
 		.tablet({margin-top: 35px;});
 		.respond-min(@screen__laptop, { margin-top: 22px;});
 	}
 
-	&__6 {
+	&__5 {
 		&:extend(.pull-left);
 		display: flex;
 		justify-content: space-between;
@@ -42,44 +46,52 @@
 		});
 	}
 
-	&__7 {
+	&__6 {
 		&:extend(.pull-left);
 		margin: 34px 0 15px;
 	}
 
-	&__8 {
+	&__7 {
 		&:extend(.pull-left);
 		.respond-min(@screen__tablet, {
 			margin-right: 20px;
 		});
 	}
 
-	&__9 {
+	&__8 {
 		&:extend(.pull-left);
 		.respond-min(@screen__laptop, {
 			margin-right: 20px;
 		});
 	}
 
-	&__10 {
+	&__9 {
 		&:extend(.pull-left);
 		.desktop({
 			margin-right: 20px;
 		});
 	}
 
-	&__11 {
+	&__10 {
 		&:extend(.pull-left);
 	}
 
-	&__12 {
+	&__11 {
 		&:extend(.pull-left);
 		margin: 34px 0 13px;
 	}
 
-	&__13 {
+	&__12 {
 		&:extend(.pull-left);
 		.respond-min(@screen__tablet, {
+			margin-right: 20px;
+		});
+	}
+
+	&__13 {
+		&:extend(.pull-left);
+		.phone({ margin-top: 20px;});
+		.respond-min(@screen__laptop, {
 			margin-right: 20px;
 		});
 	}
@@ -87,19 +99,11 @@
 	&__14 {
 		&:extend(.pull-left);
 		.phone({ margin-top: 20px;});
-		.respond-min(@screen__laptop, {
-			margin-right: 20px;
-		});
-	}
-
-	&__15 {
-		&:extend(.pull-left);
-		.phone({ margin-top: 20px;});
 		.tablet({ margin: 20px 20px 0 0; });
 		.desktop({ margin-right: 20px;});
 	}
 
-	&__16 {
+	&__15 {
 		&:extend(.pull-left);
 		.laptop({ margin-right: 20px;});
 		.respond-max(@screen__desktop, {
@@ -107,20 +111,20 @@
 		});
 	}
 
-	&__17 {
+	&__16 {
 		&:extend(.pull-left, .mr20, .mt20);
 	}
 
-	&__18 {
+	&__17 {
 		&:extend(.pull-left, .mt20);
 		.desktop({ margin-right: 20px;});
 	}
 
-	&__19 {
+	&__18 {
 		&:extend(.pull-left, .mr20, .mt20);
 	}
 
-	&__20 {
+	&__19 {
 		&:extend(.pull-left, .mt20);
 	}
 }
