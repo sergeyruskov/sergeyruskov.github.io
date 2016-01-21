@@ -1,11 +1,18 @@
 .test-section-content {
+	//Для кнопки показать еще и брендирования
+	position: relative;
+
+	&__announcements {
+		padding-top: 20px;
+		margin-bottom: 20px;
+	}
 
 	&__1 {
-		order: 1;
+		margin: 34px 0 13px;
 	}
 
 	&__2 {
-		order: 2;
+		.respond-min(@screen__laptop, { margin-bottom: 32px;});
 	}
 
 	&__3 {

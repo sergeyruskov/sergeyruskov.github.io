@@ -28,32 +28,10 @@
 
 	</a>
 
-	<?
-	if ($params["author"]) {
-		$string = <<<EOT
+	<? if ($params["author"]): ?>
 		<div class="index-article-block__wrapper-article-author">
-
-			<a href="#1" class="article-author">
-
-				<div class="article-author__author-content">
-
-					<img src="%s/index/photo-author.jpg" alt="" class="article-author__author-img
-					img-circle">
-
-					<div class="article-author__author-name">Наталья Кириллина</div>
-					<div class="article-author__author-specialization">Cоциальный психолог</div>
-
-				</div>
-
-			</a>
-
+			<? req_with_param(PATH__PHP_INDEX . "index-article-author.php"); ?>
 		</div>
-EOT;
-	}
-	$string = sprintf($string, PATH__IMG);
-	echo $string;
-	?>
-
-
+	<?endif?>
 
 </div>

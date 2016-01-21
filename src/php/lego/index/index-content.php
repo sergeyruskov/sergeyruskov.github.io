@@ -1,16 +1,18 @@
-<div class="index-content content-wrapper show-more--container branding--content">
+<div class="index-content content-wrapper branding--content">
 
+	<div class="index-content__announcements">
 
-	<? req_with_param(PATH__PHP_COMMON . "/announcements.php",
-			[
-					"modification" => "announcements--index",
-					"first-element-classes" => "",
-					"second-element-classes" => "",
-					"third-element-classes" => "hide--tablet",
-					"fourth-element-classes" => "hide--tablet hide--laptop hide--phone",
-			]
-	); ?>
+		<? req_with_param(PATH__PHP_COMMON . "/announcements.php",
+				[
+						"modification" => "announcements--index",
+						"first-element-classes" => "",
+						"second-element-classes" => "",
+						"third-element-classes" => "hide--tablet",
+						"fourth-element-classes" => "hide--tablet hide--laptop hide--phone",
+				]
+		); ?>
 
+	</div>
 
 	<div class="hide--phone h430">
 		<? req_with_param(PATH__PHP_INDEX . "/index-slider.php"); ?>
