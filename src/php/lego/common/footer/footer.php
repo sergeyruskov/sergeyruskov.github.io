@@ -1,8 +1,8 @@
 <footer>
 
-	<? req_with_param(PATH__PHP_LEGO_COMMON . "/footer/footer-menu.php"); ?>
+	<? req_with_param(PATH__PHP_COMMON . "/footer/footer-menu.php"); ?>
 
-	<? req_with_param(PATH__PHP_LEGO_COMMON . "/footer/footer-bottom.php"); ?>
+	<? req_with_param(PATH__PHP_COMMON . "/footer/footer-bottom.php"); ?>
 
 </footer>
 

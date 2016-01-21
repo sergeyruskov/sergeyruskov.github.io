@@ -1,0 +1,1 @@
+<h3 class="test-rubric-title content-wrapper"><?= $params["text"]; ?></h3>

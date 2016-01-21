@@ -1,7 +1,7 @@
 <div class="index-content content-wrapper show-more--container branding--content">
 
 
-	<? req_with_param(PATH__PHP_LEGO_COMMON . "/announcements.php",
+	<? req_with_param(PATH__PHP_COMMON . "/announcements.php",
 			[
 					"modification" => "announcements--index",
 					"first-element-classes" => "",
@@ -286,6 +286,6 @@
 
 	</div>
 
-	<? req_with_param(PATH__PHP_LEGO_COMMON . "/show-more.php"); ?>
+	<? req_with_param(PATH__PHP_COMMON . "/show-more.php"); ?>
 
 </div>

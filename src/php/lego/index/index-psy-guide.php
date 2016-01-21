@@ -12,7 +12,7 @@
 
 		<div class="index-psy-guide__psy-name">Решетникова Юлия Владимировна</div>
 		<div class="index-psy-guide__psy-specialization">Клинический психолог, онкопсихолог</div>
-		<? req_with_param(PATH__PHP_LEGO_COMMON . "/btn.php", ["text" => "Найти психолога", "class" => "btn--additional-brand"]); ?>
+		<? req_with_param(PATH__PHP_COMMON . "/btn.php", ["text" => "Найти психолога", "class" => "btn--additional-brand"]); ?>
 
 	</div>
 

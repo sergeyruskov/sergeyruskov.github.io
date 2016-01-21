@@ -12,7 +12,7 @@
 
 		<div class="index-skype-consultation__psy-name">Орлов Александр Борисович</div>
 		<div class="index-skype-consultation__psy-specialization">Онто- и клиент-центрированный терапевт</div>
-		<? req_with_param(PATH__PHP_LEGO_COMMON . "/btn.php", ["text" => "Записаться на прием", "class" => "btn--additional-brand"]); ?>
+		<? req_with_param(PATH__PHP_COMMON . "/btn.php", ["text" => "Записаться на прием", "class" => "btn--additional-brand"]); ?>
 
 	</div>
 

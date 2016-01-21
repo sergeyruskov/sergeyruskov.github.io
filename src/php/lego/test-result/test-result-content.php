@@ -33,7 +33,7 @@
 
 			<div class="test-section-test__wrapper-img">
 				<div class="test-section-test__img-circle"></div>
-				<img src="<?= PATH__IMG . "/test-section/test__1.jpg" ?>" alt="" class="test-section-test__img">
+				<img src="<?= PATH__IMG . "/test-main/test__1.jpg" ?>" alt="" class="test-section-test__img">
 				<div class="test-section-test__wrapper-img-socials">
 					<span class="icon-heart test-section-test__icon-heart"></span> 345 <span class="icon-comment test-section-test__icon-comment"></span> 12
 				</div>

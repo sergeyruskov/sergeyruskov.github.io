@@ -1,0 +1,55 @@
+.test-social-network {
+
+	display: flex;
+	justify-content: space-between;
+	.respond-min(@screen__tablet, { width: 510px; });
+
+	&__icon {
+		display: flex;
+		align-items: center;
+		height: 40px;
+		.phone({
+			justify-content: center;
+			width: 49px;
+		});
+		.respond-min(@screen__tablet, {
+			justify-content: space-between;
+			width: 90px;
+		});
+		padding: 0 15px;
+		font-size: 12px;
+
+		&--mail {
+			&::before {
+				color: @color__mail-font;
+			}
+		}
+
+		&--ok {
+			&::before {
+				font-size: 15px;
+			}
+		}
+
+	}
+
+	&__btn-text {
+		font-family: @font__pt-sans;
+		font-weight: 700;
+	}
+
+	&__btn-text-separate {
+		height: 19px;
+		width: 1px;
+
+		&--white {
+			background: rgba(255, 255, 255, .3);
+		}
+
+		&--brand {
+			.color__brand-rgba(.3);
+			background: @color__brand-rgba;
+		}
+	}
+
+}

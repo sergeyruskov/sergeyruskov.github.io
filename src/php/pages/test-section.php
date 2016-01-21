@@ -9,10 +9,10 @@ require_once(
 define("PATH__PHP_TEST_SECTION", PATH__PHP_LEGO . "/test-section/");
 
 //header
-req_with_param(PATH__PHP_LEGO_COMMON . "/head.php");
+req_with_param(PATH__PHP_COMMON . "/head.php");
 
 //main
 req_with_param(PATH__PHP_TEST_SECTION . "/test-section-main.php");
 
 //footer
-req_with_param(PATH__PHP_LEGO_COMMON . "/footer/footer.php");
+req_with_param(PATH__PHP_COMMON . "/footer/footer.php");

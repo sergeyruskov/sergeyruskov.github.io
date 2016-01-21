@@ -2,7 +2,7 @@
 
 	<div class="footer-top__red-line-title">
 
-		<? req_with_param(PATH__PHP_LEGO_COMMON . "/red-line-title.php", [
+		<? req_with_param(PATH__PHP_COMMON . "/red-line-title.php", [
 			"text" => "<div class='icon-psy-short red-line-title__psy-short-top-text'></div><span class='red-line-title__psy-short-content'>Везде с вами</span>",
 			"modification" => "red-line-title--psy-short",
 			"modification1" => "red-line-title__wrapper--psy-short",
@@ -10,6 +10,6 @@
 
 	</div>
 
-	<? req_with_param(PATH__PHP_LEGO_COMMON . "/footer/footer-always-with-you.php"); ?>
+	<? req_with_param(PATH__PHP_COMMON . "/footer/footer-always-with-you.php"); ?>
 
 </footer>

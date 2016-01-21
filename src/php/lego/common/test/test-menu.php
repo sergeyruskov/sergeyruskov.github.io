@@ -9,7 +9,7 @@
 		<li class="test-menu__item"><a href="#" class="test-menu__link link link--brand">IQ</a></li>
 		<li class="test-menu__item">
 
-			<? req_with_param(PATH__PHP_LEGO_COMMON . "/test-menu-search.php"); ?>
+			<? req_with_param(PATH__PHP_COMMON . "/test/test-menu-search.php"); ?>
 
 		</li>
 	</ul>

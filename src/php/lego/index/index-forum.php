@@ -1,6 +1,6 @@
 <div class="index-forum col__1">
 
-	<? req_with_param(PATH__PHP_LEGO_COMMON . "/red-line-title.php", [
+	<? req_with_param(PATH__PHP_COMMON . "/red-line-title.php", [
 		"text" => "Форум",
 		"modification" => "red-line-title--index-forum",
 		"modification1" => "red-line-title__wrapper--index-forum",
