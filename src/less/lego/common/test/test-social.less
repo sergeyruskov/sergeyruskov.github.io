@@ -1,0 +1,19 @@
+.test-social {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	height: 72px;
+
+	&--discuss {
+		.respond-max(@screen__desktop, {
+			margin-top: 16px;
+		});
+	}
+
+	&__title {
+		font: 700 12px @font__pt-sans;
+		text-transform: uppercase;
+		letter-spacing: 1.15px;
+	}
+
+}

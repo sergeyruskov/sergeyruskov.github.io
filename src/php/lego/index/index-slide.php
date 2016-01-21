@@ -8,7 +8,7 @@ col__1--phone">
 			<div class="index-slide__bottom-text">
 
 				<div class="index-slide__wrapper-btn">
-					<? req_with_param(PATH__PHP_LEGO_COMMON . "/btn.php", ["text" => $params["btn-text"], "class" =>
+					<? req_with_param(PATH__PHP_COMMON . "/btn.php", ["text" => $params["btn-text"], "class" =>
 							"btn--brand"]); ?>
 				</div>
 

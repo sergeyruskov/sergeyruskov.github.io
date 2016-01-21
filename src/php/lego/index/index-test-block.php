@@ -19,7 +19,7 @@
 
 	<div class="index-test-block__wrapper-btn">
 
-		<? req_with_param(PATH__PHP_LEGO_COMMON . "/btn.php",
+		<? req_with_param(PATH__PHP_COMMON . "/btn.php",
 				["text" => $params["btn-text"], "class" => "btn--additional-brand"]); ?>
 
 	</div>

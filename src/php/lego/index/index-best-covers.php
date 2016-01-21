@@ -1,6 +1,6 @@
 <div class="index-best-covers content-wrapper">
 
-	<? req_with_param(PATH__PHP_LEGO_COMMON . "/red-line-title.php", [
+	<? req_with_param(PATH__PHP_COMMON . "/red-line-title.php", [
 		"text" => "Лучшая обложка <span class=\"hide--phone\">psychologies</span>",
 		"modification" => "red-line-title--index-best-covers",
 		"modification1" => "red-line-title__wrapper--index-best-covers",
@@ -20,7 +20,7 @@
 	</div>
 
 	<div class="index-best-covers__wrapper-btn">
-		<? req_with_param(PATH__PHP_LEGO_COMMON . "/btn.php", ["text" => "Перейти к голосованию", "class" => "btn--additional-brand"]); ?>
+		<? req_with_param(PATH__PHP_COMMON . "/btn.php", ["text" => "Перейти к голосованию", "class" => "btn--additional-brand"]); ?>
 	</div>
 
 </div>

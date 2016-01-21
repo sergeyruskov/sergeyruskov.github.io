@@ -6,7 +6,7 @@
 		<img src="<?= PATH__IMG . "/index/magazine-cover.jpg" ?>" alt="" class="index-magazine-cover__img">
 	</div>
 
-	<? req_with_param(PATH__PHP_LEGO_COMMON . "/btn.php", ["text" => "Что внутри?", "class" => "btn--additional-brand"]); ?>
+	<? req_with_param(PATH__PHP_COMMON . "/btn.php", ["text" => "Что внутри?", "class" => "btn--additional-brand"]); ?>
 
 
 </a>

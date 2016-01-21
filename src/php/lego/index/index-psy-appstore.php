@@ -11,6 +11,6 @@
 		</div>
 	</div>
 
-	<? req_with_param(PATH__PHP_LEGO_COMMON . "/appstore-badge.php", ["modification" => "index-psy-appstore__appstore" ]); ?>
+	<? req_with_param(PATH__PHP_COMMON . "/appstore-badge.php", ["modification" => "index-psy-appstore__appstore" ]); ?>
 
 </a>

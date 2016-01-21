@@ -8,7 +8,11 @@ define("PATH__PHP_LIB", PATH__PHP . "/lib");
 //Каталог lego
 define("PATH__PHP_LEGO", PATH__PHP . "/lego");
 //Каталог common
-define("PATH__PHP_LEGO_COMMON", PATH__PHP_LEGO . "/common");
+define("PATH__PHP_COMMON", PATH__PHP_LEGO . "/common");
+//Адреса папок с блоками страниц
+define("PATH__PHP_TEST", PATH__PHP_LEGO . "/test");
+define("PATH__PHP_INDEX", PATH__PHP_LEGO . "/index/");
+define("PATH__PHP_RESULT", PATH__PHP_LEGO . "/test-result/");
 //Каталог img
 define("PATH__IMG", "../../img");
 //Каталог bower

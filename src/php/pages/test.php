@@ -7,16 +7,20 @@ require_once(
 
 //header
 req_with_param(PATH__PHP_COMMON . "/head.php");
+
 ?>
-	<main class="branding--main">
-		<?
-		req_with_param(PATH__PHP_LEGO . "/common/branding.php");
-
-		req_with_param(PATH__PHP_LEGO . "/index/index-content.php");
-
-		req_with_param(PATH__PHP_COMMON . "/footer/footer-top.php", ["branding" => "branding--footer-top"]);
-		?>
-	</main>
+<main class="branding--main">
 <?
+
+req_with_param(PATH__PHP_LEGO . "/common/branding.php");
+
+ req_with_param(PATH__PHP_TEST . "/test-content.php", ["branding" => "branding--content"]);
+
+ req_with_param(PATH__PHP_COMMON . "/footer/footer-top.php", ["branding" => "branding--footer-top"]);
+?>
+</main>
+
+<?
+
 //footer
 req_with_param(PATH__PHP_COMMON . "/footer/footer.php");
