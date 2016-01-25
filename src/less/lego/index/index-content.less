@@ -9,312 +9,361 @@
 	justify-content: space-between;
 	align-content: flex-start;
 
-	&__announcements {
-		margin: 20px 0;
-	}
-
 	&__1 {
-		.phone({ order: 1; });
-		.tablet({ order: 2; margin-top: 20px; });
+		&:extend(.mt20);
+		.phone({ order: 4; });
+		.tablet({ order: 7;});
+		.laptop({ margin-top: -150px; order: 4;});
+		.desktop({ margin-top: -150px; order: 4;})
 	}
 
 	&__2 {
-		&:extend(.mt20);
-		.phone({ order: 3; });
-		.tablet({ order: 5 });
-		.laptop({ margin-top: -150px; });
-		.desktop({ margin-top: -150px; })
+		.phone({ order: 3; margin-top: 20px; });
+		.tablet({ order: 3; margin-top: 20px; });
+		.laptop({ margin-top: -150px; order: 5;});
+		.desktop({ margin-top: -150px; order: 5;})
 	}
 
 	&__3 {
-		.phone({ order: 2; margin-top: 20px; });
-		.tablet({ order: 1; margin-top: 20px; });
-		.laptop({ margin-top: -150px; });
-		.desktop({ margin-top: -150px; })
+		.phone({ order: 5; margin-top: 20px;});
+		.tablet({ order: 8; margin-top: 20px;});
+		.desktop({ order: 6; margin-top: -150px;})
 	}
 
 	&__4 {
-		.phone({ order: 4; margin-top: 20px;});
-		.tablet({ order: 6; margin-top: 20px;});
-		.desktop({ margin-top: -150px; })
+		&:extend(.mt20);
+		.desktop({order: 8;});
 	}
 
 	&__5 {
-		.phone({ order: 4; margin-top: 16px; });
-		.tablet({ order: 3; margin-top: -150px; });
-		.respond-min(@screen__laptop, { margin-top: 20px; });
-
-		&--support-tablet {
-			.tablet({ order: 4; });
-		}
+		&:extend(.mt20);
+		.phone({ order: 9; });
+		.tablet({ order: 11; });
+		.laptop({ order: 10; });
+		.desktop({order: 12;});
 	}
 
 	&__6 {
 		&:extend(.mt20);
+		.phone({ order: 7;});
+		.tablet({ order: 9;});
+		.laptop({ order: 11; });
+		.desktop({order: 13;});
 	}
 
 	&__7 {
 		&:extend(.mt20);
-		.phone({ order: 5; });
-		.tablet({ order: 7; });
-		.laptop({ order: 1; });
+		.phone({ order: 13; });
+		.tablet({ order: 13 });
+		.laptop({ order: 14; });
+		.desktop({order: 15;});
 	}
 
 	&__8 {
 		&:extend(.mt20);
-		.phone({ order: 7; });
-		.tablet({ order: 9; });
-		.laptop({ order: 2; });
+		.phone({ order: 12; });
+		.tablet({ order: 14;});
+		.laptop({ order: 15; });
+		.desktop({order: 17;});
 	}
 
 	&__9 {
 		&:extend(.mt20);
-		.phone({ order: 9; });
-		.tablet({ order: 11; });
-		.laptop({ order: 3; });
+		.phone({ order: 14; });
+		.tablet({ order: 16; });
+		.laptop({ order: 18; });
+		.desktop({order: 20;});
 	}
 
 	&__10 {
 		&:extend(.mt20);
-		.phone({ order: 8; });
-		.tablet({ order: 10; });
-		.laptop({ order: 4; });
+		.phone({ order: 20; });
+		.tablet({ order: 21; });
+		.desktop({order: 23;});
 	}
 
 	&__11 {
 		&:extend(.mt20);
-		.phone({ order: 6;});
-		.tablet({ order: 8 });
-		.laptop({ order: 5; });
+		.phone({ order: 25; });
+		.tablet({ order: 24; });
+		.laptop({ order: 25; });
+		.desktop({order: 28;});
 	}
 
 	&__12 {
 		&:extend(.mt20);
-		.phone({ order: 11; });
-		.tablet({ order: 12 });
-		.laptop({ order: 6; });
+		.phone({ order: 27; });
+		.tablet({ order: 28; });
+		.desktop({order: 30;});
 	}
 
 	&__13 {
 		&:extend(.mt20);
-		.phone({ order: 12; });
-		.tablet({ order: 13 });
-		.laptop({ order: 8; });
+		.phone({ order: 29; });
+		.tablet({ order: 30; });
+		.desktop({order: 32;});
 	}
 
 	&__14 {
 		&:extend(.mt20);
-		.phone({ order: 11; });
-		.tablet({ order: 12 });
-		.laptop({ order: 7; });
+		.phone({ order: 33; });
+		.tablet({ order: 29; });
+		.laptop({ order: 31; });
+		.desktop({order: 36;});
 	}
 
 	&__15 {
 		&:extend(.mt20);
-		.phone({ order: 12; });
-		.tablet({ order: 13 });
-		.laptop({ order: 9; });
+		.phone({ order: 34; });
+		.tablet({ order: 30; });
+		.laptop({ order: 32; });
+		.desktop({order: 37;});
 	}
 
 	&__16 {
 		&:extend(.mt20);
-		.phone({ order: 13; });
-		.tablet({ order: 14; });
-		.laptop({ order: 10; });
+		.phone({ order: 39; });
+		.tablet({ order: 40; });
+		.desktop({order: 42;});
 	}
 
 	&__17 {
 		&:extend(.mt20);
-		.phone({ order: 10; });
-		.tablet({ order: 17; });
-		.laptop({ order: 11; });
+		.phone({ order: 42; });
+		.tablet({ order: 43; });
+		.desktop({order: 45;});
 	}
 
 	&__18 {
 		&:extend(.mt20);
-		.phone({ order: 14; });
-		.tablet({ order: 15; });
-		.laptop({ order: 12; });
+		.phone({ order: 43; });
+		.tablet({ order: 44; });
+		.desktop({order: 46;});
 	}
 
 	&__19 {
 		&:extend(.mt20);
-		.phone({ order: 18; });
-		.tablet({ order: 16; });
-		.laptop({ order: 13; });
+		.phone({ order: 37; });
+		.tablet({ order: 33; });
+		.laptop({ order: 35; });
+		.desktop({order: 40;});
 	}
 
 	&__20 {
 		&:extend(.mt20);
-		.phone({ order: 15; });
-		.tablet({ order: 19; });
-		.laptop({ order: 14; });
+		.phone({ order: 40; });
+		.tablet({ order: 41; });
+		.desktop({order: 43;});
 	}
 
 	&__21 {
 		&:extend(.mt20);
-		.phone({ order: 20; });
-		.tablet({ order: 21; });
+		.phone({ order: 11; });
+		.tablet({ order: 12 });
+		.laptop({ order: 12; });
+		.desktop({order: 14;});
 	}
 
 	&__22 {
 		&:extend(.mt20);
-		.phone({ order: 21; });
-		.tablet({ order: 18; });
-		.laptop({ order: 15; });
+		.phone({order: 44;});
+		.tablet({ order: 45; });
+		.desktop({order: 47;});
 	}
 
 	&__23 {
 		&:extend(.mt20);
-		.phone({ order: 16; });
-		.tablet({ order: 20; });
-		.laptop({ order: 16; });
+		.phone({ order: 10; });
+		.tablet({ order: 18; });
+		.laptop({ order: 17; });
+		.desktop({order: 19;});
 	}
 
 	&__24 {
 		&:extend(.mt20);
-		.phone({ order: 17; });
-		.tablet({ order: 21; });
-		.laptop({ order: 17; });
+		.phone({ order: 9; });
+		.tablet({ order: 12; });
+		.laptop({ order: 9; });
+		.desktop({order: 11;});
 	}
 
 	&__25 {
 		&:extend(.mt20);
-		.phone({ order: 24; });
-		.tablet({ order: 22; });
-		.laptop({ order: 18; });
+		.phone({ order: 35; });
+		.tablet({ order: 32; });
+		.laptop({ order: 34; });
+		.desktop({order: 38;});
 	}
 
 	&__26 {
 		&:extend(.mt20);
-		.phone({ order: 25; });
-		.tablet({ order: 23; });
-		.laptop({ order: 19; });
+		.phone({ order: 21; });
+		.tablet({ order: 19; });
+		.laptop({ order: 21; });
+		.desktop({order: 24;});
 	}
 
 	&__27 {
 		&:extend(.mt20);
-		.phone({ order: 21; });
-		.tablet({ order: 25; });
-		.laptop({ order: 20; });
+		.phone({ order: 5; });
+		.tablet({ order: 8; });
+		.laptop({ order: 7; });
+		.desktop({order: 9;});
 	}
 
 	&__28 {
 		&:extend(.mt20);
-		.phone({ order: 27; });
-		.tablet({ order: 28; });
+		.phone({ order: 15; });
+		.tablet({ order: 20; });
+		.laptop({ order: 20; });
+		.desktop({order: 22;});
 	}
 
 	&__29 {
 		&:extend(.mt20);
-		.phone({ order: 18; });
-		.tablet({ order: 24; });
-		.laptop({ order: 21; });
+		.phone({ order: 7; });
+		.tablet({ order: 10;});
+		.laptop({ order: 8; });
+		.desktop({order: 10;});
 	}
 
 	&__30 {
 		&:extend(.mt20);
-		.phone({ order: 29; });
-		.tablet({ order: 30; });
+		.phone({ order: 18; });
+		.tablet({ order: 25; });
+		.laptop({ order: 27; });
+		.desktop({order: 31;});
 	}
 
 	&__31 {
-		&:extend(.mt20);
-		.phone({ order: 19; });
-		.tablet({ order: 26; });
-		.laptop({ order: 22; });
+		order: 2
 	}
 
 	&__32 {
-		&:extend(.mt20);
-		.phone({ order: 20; });
-		.tablet({ order: 27; });
-		.laptop({ order: 23; });
+		.phone({ order: 2;});
+		.tablet({ order: 4; margin-top: 20px; });
+		.laptop({order: 3;});
+		.desktop({order: 3});
 	}
 
 	&__33 {
 		&:extend(.mt20);
-		.phone({ order: 32; });
-		.tablet({ order: 33; });
-		.laptop({ order: 24; });
+		.phone({ order: 19; });
+		.tablet({ order: 27; });
+		.laptop({ order: 28;});
+		.desktop({order: 33;});
 	}
 
 	&__34 {
 		&:extend(.mt20);
-		.phone({ order: 33; });
+		.phone({ order: 20; });
 		.tablet({ order: 28; });
-		.laptop({ order: 25; });
+		.laptop({ order: 29;});
+		.desktop({order: 34;});
 	}
 
 	&__35 {
 		&:extend(.mt20);
-		.phone({ order: 34; });
-		.tablet({ order: 29; });
-		.laptop({ order: 26; });
+		.phone({ order: 32; });
+		.tablet({ order: 33; });
+		.laptop({ order: 30; });
+		.desktop({order: 35;});
 	}
 
 	&__36 {
 		&:extend(.mt20);
-		.phone({ order: 35; });
-		.tablet({ order: 31; });
-		.laptop({ order: 28; });
+		.phone({ order: 18; });
+		.tablet({ order: 17; });
+		.laptop({ order: 19; });
+		.desktop({order: 21;});
 	}
 
 	&__37 {
-		&:extend(.mt20);
-		.phone({ order: 36; });
-		.tablet({ order: 30; });
-		.laptop({ order: 27; });
+		.phone({ order: 4; margin-top: 16px; });
+		.tablet({ order: 5; margin-top: -150px; });
+		.laptop({order: 6;});
+		.respond-min(@screen__laptop, { margin-top: 20px; });
+		.desktop({order: 7;});
 	}
 
 	&__38 {
 		&:extend(.mt20);
-		.phone({ order: 37; });
-		.tablet({ order: 32; });
-		.laptop({ order: 29; });
+		.phone({ order: 16; });
+		.tablet({ order: 21; });
+		.laptop({ order: 22; });
+		.desktop({order: 25;});
 	}
 
 	&__39 {
 		&:extend(.mt20);
-		.phone({ order: 38; });
-		.tablet({ order: 39; });
-		.laptop({ order: 30; });
+		.phone({ order: 36; });
+		.tablet({ order: 31; });
+		.laptop({ order: 33; });
+		.desktop({order: 39;});
 	}
 
 	&__40 {
 		&:extend(.mt20);
-		.phone({ order: 39; });
-		.tablet({ order: 40; });
+		.phone({ order: 21; });
+		.tablet({ order: 26; });
+		.laptop({ order: 26; });
+		.desktop({order: 29;});
 	}
 
 	&__41 {
 		&:extend(.mt20);
-		.phone({ order: 40; });
-		.tablet({ order: 41; });
+		.phone({ order: 38; });
+		.tablet({ order: 39; });
+		.laptop({ order: 36; });
+		.desktop({order: 41;});
 	}
 
 	&__42 {
 		&:extend(.mt20);
-		.phone({ order: 41; });
-		.tablet({ order: 42; });
+		.phone({ order: 11; });
+		.tablet({ order: 13;});
+		.laptop({ order: 13; });
+		.desktop({order: 16;});
 	}
 
 	&__43 {
 		&:extend(.mt20);
-		.phone({ order: 42; });
-		.tablet({ order: 43; });
+		.phone({ order: 24; });
+		.tablet({ order: 23; });
+		.laptop({ order: 24; });
+		.desktop({order: 27;});
 	}
 
 	&__44 {
 		&:extend(.mt20);
-		.phone({ order: 43; });
-		.tablet({ order: 44; });
+		.phone({ order: 41; });
+		.tablet({ order: 48; });
+		.desktop({order: 44;});
 	}
 
 	&__45 {
+		margin: 20px 0;
+		order: 1
+	}
+
+	&__46 {
 		&:extend(.mt20);
-		.phone({order: 44;});
-		.tablet({ order: 45; });
+		.phone({ order: 13; });
+		.tablet({ order: 15; });
+		.laptop({ order: 15; });
+		.desktop({order: 18;});
+	}
+
+	&__47 {
+		&:extend(.mt20);
+		.phone({ order: 17; });
+		.tablet({ order: 22; });
+		.laptop({ order: 23; });
+		.desktop({order: 26;});
+	}
+
+	&__support {
+		.tablet({order: 6;});
 	}
 
 }
