@@ -1,12 +1,12 @@
 <footer class="footer-top <?=$params["branding"];?> content-wrapper">
 
-	<div class="footer-top__red-line-title">
+	<div class="footer-top__title-with-line">
 
-		<? req_with_param(PATH__PHP_COMMON . "/red-line-title.php", [
-			"text" => "<div class='icon-psy-short red-line-title__psy-short-top-text'></div><span class='red-line-title__psy-short-content'>Везде с вами</span>",
-			"modification" => "red-line-title--psy-short",
-			"modification1" => "red-line-title__wrapper--psy-short",
-			"modification2" => "red-line-title__content--psy-short"]); ?>
+		<? req_with_param(PATH__PHP_COMMON . "/title-with-line.php", [
+			"text" => "<div class='icon-psy-short title-with-line__psy-short-top-text'></div><span class='title-with-line__psy-short-content'>Везде с вами</span>",
+			"modification" => "title-with-line--psy-short",
+			"modification1" => "title-with-line__wrapper--psy-short",
+			"modification2" => "title-with-line__content--psy-short"]); ?>
 
 	</div>
 

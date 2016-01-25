@@ -1,10 +1,10 @@
 <div class="index-best-covers content-wrapper">
 
-	<? req_with_param(PATH__PHP_COMMON . "/red-line-title.php", [
+	<? req_with_param(PATH__PHP_COMMON . "/title-with-line.php", [
 		"text" => "Лучшая обложка <span class=\"hide--phone\">psychologies</span>",
-		"modification" => "red-line-title--index-best-covers",
-		"modification1" => "red-line-title__wrapper--index-best-covers",
-		"modification2" => "red-line-title__content--index-best-covers"]); ?>
+		"modification" => "title-with-line--index-best-covers",
+		"modification1" => "title-with-line__wrapper--index-best-covers",
+		"modification2" => "title-with-line__content--index-best-covers"]); ?>
 
 	<div class="index-best-covers__wrapper-covers">
 

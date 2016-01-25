@@ -1,10 +1,10 @@
 <div class="index-forum col__1">
 
-	<? req_with_param(PATH__PHP_COMMON . "/red-line-title.php", [
+	<? req_with_param(PATH__PHP_COMMON . "/title-with-line.php", [
 		"text" => "Форум",
-		"modification" => "red-line-title--index-forum",
-		"modification1" => "red-line-title__wrapper--index-forum",
-		"modification2" => "red-line-title__content--index-forum"
+		"modification" => "title-with-line--index-forum",
+		"modification1" => "title-with-line__wrapper--index-forum",
+		"modification2" => "title-with-line__content--index-forum"
 	]); ?>
 
 	<div class="index-forum__wrapper-themes">
