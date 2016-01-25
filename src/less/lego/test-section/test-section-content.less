@@ -162,8 +162,10 @@
 
 	&__28 {
 		order: 29;
-		.laptop({ margin-top: 20px;});
-		.desktop({ margin-top: 20px;});
+		.respond-min(@screen__laptop, {
+			.laptop({ margin-top: 20px;});
+			.desktop({ margin-top: 20px;});
+		});
 	}
 
 
