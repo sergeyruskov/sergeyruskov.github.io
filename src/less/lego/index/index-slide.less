@@ -2,64 +2,12 @@
 	position: relative;
 	display: block;
 
-	&__content-wrapper {
-		.respond-min(@screen__tablet, {
-			position: absolute;
-			top: 0;
-			bottom: 0;
-			left: 0;
-			right: 0;
-			padding: 20px;
-		});
-		.phone({});
-
-		&::before {
-			.respond-min(@screen__tablet, {
-				content: '';
-				position: absolute;
-				bottom: 0;
-				left: 0;
-				height: 265px;
-				width: 100%;
-				background: linear-gradient(to top, rgba(0, 0, 0, .4), rgba(0, 0, 0, 0));
-			});
-		}
-	}
-
 	&__content {
 		height: 100%;
 		border: 1px solid rgba(255, 255, 255, .2);
 	}
 
-		&__bottom-text {
-
-			.respond-min(@screen__tablet, {
-				position: absolute;
-				left: 40px;
-				bottom: 40px;
-				right: 40px;
-			});
-
-
-		}
-
-			&__title {
-				.respond-min(@screen__tablet, {
-					color: #fff;
-					font-size: 32px;
-					padding-top: 16px;
-					line-height: 30px;
-				});
-				.phone({
-					font-size: 23px;
-					padding: 15px 0 3px;
-					letter-spacing: -.8px;
-				});
-			}
-
 			&__text {
-				.respond-min(@screen__tablet, {color: #fff;});
-				.phone({color: @color__additional});
 				margin-top: 9px;
 				line-height: 20px;
 				font-family: @font__pt-sans;
@@ -68,5 +16,146 @@
 
 			&__wrapper-btn {
 				padding-top: 19px;
+			}
+
+			&.index-slide--index {
+
+				.index-slide__content-wrapper {
+					.respond-min(@screen__tablet, {
+						position: absolute;
+						top: 0;
+						bottom: 0;
+						left: 0;
+						right: 0;
+						padding: 20px;
+					});
+
+					&::before {
+						.respond-min(@screen__tablet, {
+							content: '';
+							position: absolute;
+							bottom: 0;
+							left: 0;
+							height: 265px;
+							width: 100%;
+							background: linear-gradient(to top, rgba(0, 0, 0, .4), rgba(0, 0, 0, 0));
+						});
+					}
+				}
+
+				.index-slide__text {
+					.phone({color: @color__additional});
+					.respond-min(@screen__tablet, {color: #fff;});
+				}
+
+				.index-slide__title {
+					.respond-min(@screen__tablet, {
+						color: #fff;
+						font-size: 32px;
+						padding-top: 16px;
+						line-height: 30px;
+					});
+					.phone({
+						font-size: 23px;
+						padding: 15px 0 3px;
+						letter-spacing: -.8px;
+					});
+				}
+
+				.index-slide__bottom-text {
+					.respond-min(@screen__tablet, {
+						position: absolute;
+						left: 40px;
+						bottom: 40px;
+						right: 40px;
+					});
+				}
+			}
+
+			&.index-slide--test-section {
+				.laptop({ background: #fff;});
+
+				.index-slide__content-wrapper {
+					.respond-max(@screen__laptop, {
+						position: absolute;
+						top: 0;
+						bottom: 0;
+						left: 0;
+						right: 0;
+						padding: 20px;
+					});
+
+					.desktop({
+						position: absolute;
+						top: 0;
+						bottom: 0;
+						left: 0;
+						right: 0;
+						padding: 20px;
+					});
+
+					&::before {
+						.respond-max(@screen__laptop, {
+							content: '';
+							position: absolute;
+							bottom: 0;
+							left: 0;
+							height: 265px;
+							width: 100%;
+							background: linear-gradient(to top, rgba(0, 0, 0, .4), rgba(0, 0, 0, 0));
+						});
+
+						.desktop({
+							content: '';
+							position: absolute;
+							bottom: 0;
+							left: 0;
+							height: 265px;
+							width: 100%;
+							background: linear-gradient(to top, rgba(0, 0, 0, .4), rgba(0, 0, 0, 0));
+						});
+					}
+				}
+
+				.index-slide__text {
+					.respond-max(@screen__laptop, {color: #fff;});
+					.laptop({color: @color__additional});
+					.desktop({color: #fff;});
+				}
+
+				.index-slide__title {
+					.respond-max(@screen__laptop, {
+						color: #fff;
+						font-size: 32px;
+						padding-top: 16px;
+						line-height: 30px;
+					});
+					.laptop({
+						font-size: 23px;
+						padding: 15px 0 3px;
+						letter-spacing: -.8px;
+					});
+					.desktop({
+						color: #fff;
+						font-size: 32px;
+						padding-top: 16px;
+						line-height: 30px;
+					});
+				}
+
+				.index-slide__bottom-text {
+					.respond-max(@screen__laptop, {
+						position: absolute;
+						left: 40px;
+						bottom: 40px;
+						right: 40px;
+					});
+					.desktop({
+						position: absolute;
+						left: 40px;
+						bottom: 40px;
+						right: 40px;
+					});
+				}
 			}
 }

@@ -1,4 +1,4 @@
-.red-line-title {
+.title-with-line {
 	overflow: hidden;
 	text-align: center;
 
@@ -10,6 +10,12 @@
 
 	&--psy-short {
 		padding-top: 20px;
+	}
+
+	&--yandex-direct {
+		padding-top: 4px;
+		background: #fff;
+		margin: 0 -1px;
 	}
 
 	&__wrapper {
@@ -25,15 +31,27 @@
 		&--psy-short {
 			.respond-min(@screen__tablet, {border-top: 1px solid @color__brand});
 		}
+
+		&--yandex-direct {
+			border-top: 1px solid @color__10;
+			border-right: 1px solid @color__10;
+			border-left: 1px solid @color__10;
+		}
 	}
 
 	&__content {
 		position: relative;
-		font: 700 18px @font__pt-sans;
 		background: #fff;
-		color: @color__brand;
 		text-transform: uppercase;
 		letter-spacing: 1px;
+
+		&--index-low-announcements,
+		&--index-best-covers,
+		&--index-forum,
+		&--psy-short {
+			font: 700 18px @font__pt-sans;
+			color: @color__brand;
+		}
 
 		&--index-low-announcements,
 		&--index-best-covers,
@@ -50,6 +68,14 @@
 				padding: 0 20px;
 			});
 			top: -20px;
+		}
+
+		&--yandex-direct {
+			font: 11px @font__pt-sans;
+			color: @color__gray;
+			top: -6px;
+			padding: 0 20px;
+			letter-spacing: 4.5px;
 		}
 	}
 

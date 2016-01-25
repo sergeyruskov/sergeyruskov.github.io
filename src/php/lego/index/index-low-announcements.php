@@ -1,10 +1,10 @@
 <div class="index-low-announcements content-wrapper">
 
-	<? req_with_param(PATH__PHP_COMMON . "/red-line-title.php", [
+	<? req_with_param(PATH__PHP_COMMON . "/title-with-line.php", [
 		"text" => "Сегодня читают",
-		"modification" => "red-line-title--index-low-announcements",
-		"modification1" => "red-line-title__wrapper--index-low-announcements",
-		"modification2" => "red-line-title__content--index-low-announcements"
+		"modification" => "title-with-line--index-low-announcements",
+		"modification1" => "title-with-line__wrapper--index-low-announcements",
+		"modification2" => "title-with-line__content--index-low-announcements"
 	]); ?>
 
 

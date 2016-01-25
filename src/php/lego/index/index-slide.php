@@ -1,5 +1,5 @@
-<a href="#" class="link link--black index-slide h430--exclude-phone col__2--desktop col__2--laptop col__2--tablet
-col__1--phone">
+<a href="#" class="link link--black index-slide h430--exclude-phone col__2--desktop col__1--laptop col__2--tablet
+col__1--phone <?= $params["modification"]; ?>">
 
 	<img src="<?= PATH__IMG; echo $params["img"];?>" alt="" class="img-responsive">
 

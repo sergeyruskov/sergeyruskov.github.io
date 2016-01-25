@@ -1,22 +1,169 @@
 .test-section-content {
 	//Для кнопки показать еще и брендирования
 	position: relative;
+	//Стандартный отступ от футера
+	.bottom-indent;
 
-	&__announcements {
-		padding-top: 20px;
-		margin-bottom: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-content: flex-start;
+
+	&__support {
+		.laptop({order: 8;});
+		.desktop({order: 9;});
 	}
 
 	&__1 {
-		margin: 34px 0 13px;
+		order: 1;
+		margin-top: 20px;
 	}
 
 	&__2 {
-		.respond-min(@screen__laptop, { margin-bottom: 32px;});
+		order: 2;
+		margin: 34px 0 13px;
 	}
 
 	&__3 {
 		order: 3;
+		.respond-min(@screen__tablet, {
+			margin-bottom: 30px;
+		});
+	}
+
+	&__4 {
+		order: 4;
+		.phone({ margin-top: 20px;})
+	}
+
+	&__5 {
+		.respond-min(@screen__laptop, {order: 5;});
+	}
+
+	&__6 {
+		.phone({order: 7; margin-top: 20px;});
+		.tablet({order: 7; margin-top: 20px;});
+		.laptop({order: 9; margin-top: 20px;});
+		.desktop({ order: 6;});
+	}
+
+	&__7 {
+		.phone({order: 5; margin-top: 20px;});
+		.tablet({order: 5;});
+		.laptop({order: 6;});
+		.desktop({ order: 7;});
+	}
+
+	&__8 {
+		.respond-max(@screen__laptop, {
+			order: 6; margin-top: 20px;
+		});
+		.laptop({order: 7;  margin-top: -150px;});
+		.desktop({ order: 8; margin-top: -150px; });
+	}
+
+	&__9 {
+		order: 10;
+		&:extend(.mt20);
+	}
+
+	&__10 {
+		order: 11;
+		&:extend(.mt20);
+	}
+
+	&__11 {
+		order: 12;
+		&:extend(.mt20);
+	}
+
+	&__12 {
+		order: 13;
+		&:extend(.mt20);
+	}
+
+	&__13 {
+		order: 14;
+		&:extend(.mt20);
+	}
+
+	&__14 {
+		order: 15;
+		margin: 34px 0 15px;
+		.phone({ text-align: center;});
+	}
+
+	&__15 {
+		order: 16;
+	}
+
+	&__16 {
+		order: 17;
+
+	}
+
+	&__17 {
+		order: 18;
+	}
+
+	&__18 {
+		order: 19;
+	}
+
+	&__19 {
+		order: 20;
+		margin: 34px 0 13px;
+		.phone({ text-align: center;});
+	}
+
+	&__20 {
+		order: 21;
+	}
+
+	&__21 {
+		order: 22;
+		.phone({ margin-top: 20px;});
+	}
+
+	&__22 {
+		order: 23;
+		.phone({ margin-top: 20px;});
+		.tablet({
+			margin-top: 20px;
+		})
+	}
+
+	&__23 {
+		.respond-max(@screen__desktop, {
+			margin-top: 20px;
+		});
+		order: 24;
+	}
+
+	&__24 {
+		order: 25;
+		&:extend(.mt20);
+	}
+
+	&__25 {
+		order: 26;
+		&:extend(.mt20);
+	}
+
+	&__26 {
+		order: 27;
+		&:extend(.mt20);
+	}
+
+	&__27 {
+		order: 28;
+		&:extend(.mt20);
+	}
+
+	&__28 {
+		order: 29;
+		.laptop({ margin-top: 20px;});
+		.desktop({ margin-top: 20px;});
 	}
 
 
