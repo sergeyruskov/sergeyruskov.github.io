@@ -3,19 +3,19 @@
 
 		<div class="item">
 
-			<? req_with_param(PATH__PHP_LEGO . "/index/index-slide.php", ["btn-text" => "Диван", "img" => "/index/slider.jpg", "title" => "Кейт Бланшетт", "text_uppercase" => true, "text" => "«Невозможно сделать фильм, который понравится всем, поэтому не стоит пытаться»", "modification" => "index-slide--index"]); ?>
+			<? req_with_param(PATH__PHP_LEGO . "/index/index-slide.php", ["btn-text" => "Диван", "img" => "/index/slider.jpg", "title" => "Кейт Бланшетт", "text_uppercase" => true, "text" => "«Невозможно сделать фильм, который понравится всем, поэтому не стоит пытаться»", "modification" => "index-slide--index col__2--desktop col__2--laptop col__2--tablet col__1--phone"]); ?>
 
 		</div>
 
 		<div class="item">
 
-			<? req_with_param(PATH__PHP_LEGO . "/index/index-slide.php", ["btn-text" => "Антистесс", "img" => "/index/slider.jpg", "title" => "Пять предметов в доме, <br> от которых лучше избавиться", "modification" => "index-slide--index"]); ?>
+			<? req_with_param(PATH__PHP_LEGO . "/index/index-slide.php", ["btn-text" => "Антистесс", "img" => "/index/slider.jpg", "title" => "Пять предметов в доме, <br> от которых лучше избавиться", "modification" => "index-slide--index col__2--desktop col__2--laptop col__2--tablet col__1--phone"]); ?>
 
 		</div>
 
 		<div class="item">
 
-			<? req_with_param(PATH__PHP_LEGO . "/index/index-slide.php", ["btn-text" => "Антистесс", "img" => "/index/slider-1.jpg", "title" => "Пять предметов в доме, <br> от которых лучше избавиться", "modification" => "index-slide--index"]); ?>
+			<? req_with_param(PATH__PHP_LEGO . "/index/index-slide.php", ["btn-text" => "Антистесс", "img" => "/index/slider-1.jpg", "title" => "Пять предметов в доме, <br> от которых лучше избавиться", "modification" => "index-slide--index col__2--desktop col__2--laptop col__2--tablet col__1--phone"]); ?>
 
 		</div>
 

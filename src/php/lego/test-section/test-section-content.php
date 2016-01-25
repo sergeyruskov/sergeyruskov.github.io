@@ -296,7 +296,7 @@
 	<div class="test-section-content__28 hide--phone">
 
 		<div class="test-section-quiz">
-			<? req_with_param(PATH__PHP_INDEX . "/index-slide.php", ["btn-text" => "Конкурс-викторина", "img" => "/index/slider-1.jpg", "title" => "Знак о Фрейде", "text" => "Вам скучно и хочется весело провести свободное время? <br> Ответьте на все вопросы и получите ценный приз.", "modification" => "index-slide--test-section"]); ?>
+			<? req_with_param(PATH__PHP_INDEX . "/index-slide.php", ["btn-text" => "Конкурс-викторина", "img" => "/index/slider-1.jpg", "title" => "Знак о Фрейде", "text" => "Вам скучно и хочется весело провести свободное время? <br> Ответьте на все вопросы и получите ценный приз.", "modification" => "index-slide--test-section col__2--desktop col__1--laptop col__2--tablet col__1--phone"]); ?>
 
 			<form action="#" class="test-section-quiz__question col__2">
 				<fieldset>
