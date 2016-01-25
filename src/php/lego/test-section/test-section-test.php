@@ -1,4 +1,4 @@
-<a href="#" class="test-section-test col__1 h430 link link--grey">
+<a href="#34" class="test-section-test col__1 h430 link link--black">
 
 	<div class="test-section-test__wrapper-img">
 		<div class="test-section-test__img-circle"></div>
