@@ -6,22 +6,22 @@
 
 	overflow: hidden;
 
-	&__announcements {
+	&__1 {
 		margin: 20px 0 34px;
 	}
 
-	&__1 {
+	&__3 {
 		margin-top: 13px;
 		.respond-min(@screen__laptop, { margin-bottom: 32px;});
 	}
 
-	&__2 {
+	&__4 {
 		&:extend(.pull-left);
 		.phone({ margin: 31px 0 37px;});
 		.tablet({margin: 24px 0 37px;});
 	}
 
-	&__3 {
+	&__5 {
 		&:extend(.pull-right);
 		.phone({ margin-bottom: 36px;});
 		.tablet({
@@ -30,65 +30,60 @@
 		});
 	}
 
-	&__4 {
+	&__6 {
 		&:extend(.pull-left);
 		.tablet({margin-top: 35px;});
 		.respond-min(@screen__laptop, { margin-top: 22px;});
 	}
 
-	&__5 {
+	&__7 {
 		&:extend(.pull-left);
-		display: flex;
-		justify-content: space-between;
 		margin-top: 37px;
-		.respond-max(@screen__desktop, {
-			flex-direction: column;
-		});
 	}
 
-	&__6 {
+	&__8 {
 		&:extend(.pull-left);
 		margin: 34px 0 15px;
 	}
 
-	&__7 {
+	&__9 {
 		&:extend(.pull-left);
 		.respond-min(@screen__tablet, {
 			margin-right: 20px;
 		});
 	}
 
-	&__8 {
+	&__10{
 		&:extend(.pull-left);
 		.respond-min(@screen__laptop, {
 			margin-right: 20px;
 		});
 	}
 
-	&__9 {
+	&__11{
 		&:extend(.pull-left);
 		.desktop({
 			margin-right: 20px;
 		});
 	}
 
-	&__10 {
+	&__12 {
 		&:extend(.pull-left);
 	}
 
-	&__11 {
+	&__13 {
 		&:extend(.pull-left);
 		margin: 34px 0 13px;
 	}
 
-	&__12 {
+	&__14 {
 		&:extend(.pull-left);
 		.respond-min(@screen__tablet, {
 			margin-right: 20px;
 		});
 	}
 
-	&__13 {
+	&__15 {
 		&:extend(.pull-left);
 		.phone({ margin-top: 20px;});
 		.respond-min(@screen__laptop, {
@@ -96,14 +91,14 @@
 		});
 	}
 
-	&__14 {
+	&__16 {
 		&:extend(.pull-left);
 		.phone({ margin-top: 20px;});
 		.tablet({ margin: 20px 20px 0 0; });
 		.desktop({ margin-right: 20px;});
 	}
 
-	&__15 {
+	&__17 {
 		&:extend(.pull-left);
 		.laptop({ margin-right: 20px;});
 		.respond-max(@screen__desktop, {
@@ -111,20 +106,20 @@
 		});
 	}
 
-	&__16 {
-		&:extend(.pull-left, .mr20, .mt20);
-	}
-
-	&__17 {
-		&:extend(.pull-left, .mt20);
-		.desktop({ margin-right: 20px;});
-	}
-
 	&__18 {
 		&:extend(.pull-left, .mr20, .mt20);
 	}
 
 	&__19 {
+		&:extend(.pull-left, .mt20);
+		.desktop({ margin-right: 20px;});
+	}
+
+	&__20 {
+		&:extend(.pull-left, .mr20, .mt20);
+	}
+
+	&__21 {
 		&:extend(.pull-left, .mt20);
 	}
 }

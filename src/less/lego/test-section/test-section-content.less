@@ -16,7 +16,7 @@
 
 	&__1 {
 		order: 1;
-		margin-top: 20px;
+		&:extend(.mt20);
 	}
 
 	&__2 {
@@ -162,10 +162,7 @@
 
 	&__28 {
 		order: 29;
-		.respond-min(@screen__laptop, {
-			.laptop({ margin-top: 20px;});
-			.desktop({ margin-top: 20px;});
-		});
+		.respond-min(@screen__laptop, {margin-top: 20px;});
 	}
 
 

@@ -7,20 +7,21 @@
 
 	<h1 class="h__1">Умеете ли вы делать свою жизнь прекраснее?</h1>
 
-	<img src="<?= PATH__IMG . "/test/test-description.jpg" ?>" alt=""
-	     class="test-description__img">
+	<img src="<?= PATH__IMG . "/test/test-description.jpg" ?>" alt="" class="test-description__img">
+	<? if(isset($params["test-result"])): ?>
+		<div class="test-description__you-result">Ваш результат</div>
+		<h4 class="test-description__response-test" id="test-result__result">У вас харизма лидера</h4>
+	<? endif;?>
+	<div class="<?= isset($params["test-result"]) ? "test-description__text--result text-main" : "test-description__text--test text-lead"; ?>"><?= $params["text"]; ?></div>
 
-	<div class="text-lead">
-		Слово «харизма» происходит от греческого charisma («божья благодать»). Харизматичными принято называть
-		людей, которые обладают способностью привлекать взгляды и воздействовать на других, не прилагая к этому
-		особых усилий и зачастую не отдавая себе в этом отчета. Еще несколько лет назад харизматиками считали
-		людей незаурядных или знаменитых, однако сейчас это слово перешло в разряд обыденных. Мы регулярно
-		говорим «он/она обладает харизмой» о людях, которым удалось выделиться и которыми мы восхищаемся. «С
-		психоаналитической точки зрения, харизма – это качества, которые мы разработали внутри себя и которые
-		улавливаются другими людьми, – считает психоаналитик Жерар Боннэ (Gérard Bonnet). – В каждом из нас есть
-		то, что привлекает и очаровывает других. харизмой обладаете вы?
+	<? if(!isset($params["test-result"])): ?>
+		<div class="test-description__author">Автор: светлана кирьенина</div>
+	<? endif;?>
+
+	<div class="pull-left hide--tablet hide--phone">
+		<? req_with_param(PATH__PHP_COMMON . "/btn.php", ["text" => "Пройти еще раз", "class" => "btn--additional-brand"]); ?>
 	</div>
 
-	<div class="test-description__author">Автор: светлана кирьенина</div>
+	<a href="#" class="test-description__next-test pull-right hide--tablet hide--phone">Следующий тест</a>
 
 </div>
