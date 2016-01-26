@@ -12,12 +12,12 @@ req_with_param(PATH__PHP_COMMON . "/head.php");
 	<main class="branding--main">
 		<?
 
-		req_with_param(PATH__PHP_TEST . "/test-page-content.php", ["branding" => "branding--content"]);
+		req_with_param(PATH__PHP_TEST_RESULT . "/test-result-content.php", ["branding" => "branding--content"]);
 
 		req_with_param(PATH__PHP_COMMON . "/footer/footer-top.php", ["branding" => "branding--footer-top"]);
+
 		?>
 	</main>
-
 <?
 
 //footer

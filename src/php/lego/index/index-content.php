@@ -287,6 +287,6 @@
 
 	<? req_with_param(PATH__PHP_COMMON . "/show-more.php"); ?>
 
-	<div class="index-content__support hide--desktop hide--laptop hide--phone col__1"></div>
+	<div class="index-content__support hide--desktop hide--laptop hide--phone col__1--tablet"></div>
 
 </div>

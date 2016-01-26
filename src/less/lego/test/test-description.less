@@ -1,7 +1,7 @@
 .test-description {
 	text-align: center;
-	.laptop({ padding-top: 28px;});
-	.desktop({padding: 31px 20px 0;});
+	overflow: hidden;
+	.respond-min(@screen__laptop, { padding-top: 31px;});
 
 	&__number-and-counter {
 		.phone({ margin-bottom: 4px;});
@@ -18,10 +18,7 @@
 		width: 181px;
 		height: 181px;
 		border-radius: 50%;
-		.phone({margin: 14px 0;});
-		.respond-min(@screen__tablet, {
-			margin: 14px 0 23px;
-		});
+		margin-top: 14px;
 	}
 
 	&__author {
@@ -30,5 +27,50 @@
 		font: 700 12px @font__pt-sans;
 		margin-top: 21px;
 	}
+
+	&__you-result {
+		font: 700 12px @font__pt-sans;
+		color: @color__gray;
+		text-transform: uppercase;
+		margin: 13px 0 4px;
+		letter-spacing: 1px;
+	}
+
+	&__response-test {
+		font-size: 24px;
+	}
+
+	&__text {
+
+		&--test {
+			padding: 20px 20px 0;
+		}
+
+		&--result {
+			letter-spacing: 1px;
+			text-align: left;
+			.phone({ padding-top: 34px;});
+			.respond-min(@screen__tablet, {
+				padding-top: 20px;
+			})
+		}
+
+	}
+
+	&__text-result-paragraph {
+		letter-spacing: -.1px;
+		&:not(:first-child) {
+			margin: 24px 0;
+		}
+	}
+
+	&__next-test {
+		color: @color__brand;
+		text-transform: uppercase;
+		font: 700 12px @font__pt-sans;
+		margin-top: 7px;
+	}
+
+
 
 }
