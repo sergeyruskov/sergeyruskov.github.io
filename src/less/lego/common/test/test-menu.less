@@ -1,38 +1,36 @@
 .test-menu {
+	text-align: center;
 	&__content {
-		display: flex;
+		display: inline-flex;
 		align-items: center;
-		margin: auto;
 
 		.phone({
-			width: 282px;
-			height: 108px;
 			flex-wrap: wrap;
 			justify-content: center;
 		});
 		.tablet({
 			width: 380px;
-			height: 61px;
 			flex-wrap: wrap;
 			justify-content: center;
 		});
 		.respond-min(@screen__laptop, {
-			width: 662px;
 			justify-content: space-between;
 		});
 	}
 
 		&__item {
 			.phone({
-				&:not(:last-child) {
-					padding-right: 33px;
-				}
+				padding: 0 19px 15px 19px;
 			});
+
 			.tablet({
-				&:not(:first-child) {
-					padding-left: 36px;
-				}
+				padding: 0 18px 5px;
 			});
+
+			.respond-min(@screen__laptop, {
+				padding: 0 22px 5px 22px;
+			});
+
 		}
 
 			&__link {

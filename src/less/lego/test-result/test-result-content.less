@@ -9,20 +9,21 @@
 	justify-content: space-between;
 	align-content: flex-start;
 
+
 	&__1 {
 		&:extend(.mt20);
-	}
-
-	&__2 {
-		margin: 34px 0 13px;
+		margin: 20px 0 34px;
 	}
 
 	&__3 {
-		margin-bottom: 30px;
+		.respond-max(@screen__laptop, { margin: 20px 0 24px;});
+		.respond-min(@screen__laptop, { margin: 13px 0 26px;});
 	}
 
 	&__4 {
 		&:extend(.pull-left);
+		.phone({ margin-bottom: 37px;});
+		.tablet({margin-bottom: 37px;});
 	}
 
 	&__5 {

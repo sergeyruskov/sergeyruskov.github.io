@@ -21,7 +21,8 @@
 
 	<div class="test-content__3">
 
-		<? req_with_param(PATH__PHP_COMMON . "/test/test-menu.php"); ?>
+		<? req_with_param(PATH__PHP_COMMON . "/test/test-menu.php",
+				["menu" => ["Общение", "Двое", "Секс", "Семья", "Красота", "Работа и карьера", "IQ"],                            "search" => true]); ?>
 
 	</div>
 

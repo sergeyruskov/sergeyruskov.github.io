@@ -15,6 +15,7 @@ define("PATH__PHP_INDEX", PATH__PHP_LEGO . "/index/");
 define("PATH__PHP_TEST", PATH__PHP_LEGO . "/test");
 define("PATH__PHP_TEST_SECTION", PATH__PHP_LEGO . "/test-section/");
 define("PATH__PHP_TEST_RESULT", PATH__PHP_LEGO . "/test-result/");
+define("PATH__PHP_SECTION", PATH__PHP_LEGO . "/section/");
 //Каталог img
 define("PATH__IMG", "../../img");
 //Каталог bower
