@@ -1,7 +1,7 @@
 <div class="test-section-quiz">
 	<? req_with_param(PATH__PHP_INDEX . "/index-slide.php", ["btn-text" => "Конкурс-викторина", "img" => "/index/slider-1.jpg", "title" => "Знак о Фрейде", "text" => "Вам скучно и хочется весело провести свободное время? <br> Ответьте на все вопросы и получите ценный приз.", "modification" => "index-slide--test-section col__2--desktop col__1--laptop col__2--tablet col__1--phone"]); ?>
 
-	<form action="#" class="test-section-quiz__question col__2">
+	<form action="#" class="test-section-quiz__question col__2 h430">
 		<fieldset>
 			<legend class="test-section-quiz__legend">Какова роль работы Фрейда и каково влияние его взглядов на развитие вашей аналитической психологии?
 			</legend>
