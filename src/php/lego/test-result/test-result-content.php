@@ -27,7 +27,6 @@
 				["menu" => ["Общение", "Двое", "Секс", "Семья", "Красота", "Работа и карьера", "IQ"],                            "search" => true]);?>
 
 	</div>
-
 	<div class="test-result-content__4" id="test-result__test-description">
 
 		<?req_with_param(PATH__PHP_TEST . "/test-description.php", ["test-result" => true,
