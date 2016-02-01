@@ -11,11 +11,12 @@ req_with_param(PATH__PHP_COMMON . "/head.php");
 ?>
 	<main class="branding--main">
 		<?
-
+		//branding
+		req_with_param(PATH__PHP_LEGO . "/common/branding.php");
+		//content
 		req_with_param(PATH__PHP_TEST_RESULT . "/test-result-content.php", ["branding" => "branding--content"]);
-
+		//footer-top
 		req_with_param(PATH__PHP_COMMON . "/footer/footer-top.php", ["branding" => "branding--footer-top"]);
-
 		?>
 	</main>
 <?

@@ -43,15 +43,13 @@
 		<? req_with_param(PATH__PHP_INDEX . "/index-banner.php") ?>
 	</div>
 
-	<div class="test-content__6 col__2--tablet">
+	<div class="test-content__6 col__3--desktop col__2--laptop col__2--tablet col__1--phone">
 		<? req_with_param(PATH__PHP_TEST . "/test-questions.php"); ?>
 	</div>
 
 	<div class="test-content__7 col__3--desktop">
 
-		<? req_with_param(PATH__PHP_COMMON . "/test/test-social.php", ["buttons-inside" => "/test/test-social-networks.php" , "wrapper-modification" => "col__2--desktop col__2--laptop col__2--tablet"]); ?>
-
-		<? req_with_param(PATH__PHP_COMMON . "/test/test-social.php", ["buttons-inside" => "/test/test-social-discuss.php" , "wrapper-modification" => "test-social--discuss col__1"]); ?>
+		<? req_with_param(PATH__PHP_COMMON . "/social-blocks.php"); ?>
 
 	</div>
 

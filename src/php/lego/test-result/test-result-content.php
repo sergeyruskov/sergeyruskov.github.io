@@ -1,4 +1,4 @@
-<main class="content-wrapper test-result-content">
+<main class="content-wrapper test-result-content <?= $params["branding"]; ?>">
 
 
 	<div class="test-result-content__1">
@@ -52,31 +52,6 @@
 	<div class="test-result-content__5" id="test-result-banner">
 
 		<? req_with_param(PATH__PHP_INDEX . "/index-banner.php") ?>
-
-		<!--		<a href="#" class="test-section-test col__1 h430 link link--grey">-->
-<!---->
-<!--			<div class="test-section-test__wrapper-img">-->
-<!--				<div class="test-section-test__img-circle"></div>-->
-<!--				<img src="--><?//= PATH__IMG . "/test-main/test__1.jpg" ?><!--" alt="" class="test-section-test__img">-->
-<!--				<div class="test-section-test__wrapper-img-socials">-->
-<!--					<span class="icon-heart test-section-test__icon-heart"></span> 345 <span class="icon-comment test-section-test__icon-comment"></span> 12-->
-<!--				</div>-->
-<!--			</div>-->
-<!---->
-<!--			<div class="test-section-test__rubric">Личность</div>-->
-<!---->
-<!--			<h3 class="test-section-test__title">Умеете ли вы делать свою жизнь прекраснее?</h3>-->
-<!---->
-<!--			<p class="test-section-test__text">Что для вас важнее: заботиться о себе, быть в контакте с окружающими или-->
-<!--				пытаться изменить мир? Тест психолога Кристофа Андре (Christophe André) поможем вам разобраться.</p>-->
-<!---->
-<!--			<div class="test-section-test__hide-text"></div>-->
-<!---->
-<!--			<div class="test-section-test__take-test">-->
-<!--				--><?// req_with_param(PATH__PHP_COMMON . "/btn.php", ["text" => "Пройти тест", "class" => "btn--additional-brand"]); ?>
-<!--			</div>-->
-<!---->
-<!--		</a>-->
 
 	</div>
 

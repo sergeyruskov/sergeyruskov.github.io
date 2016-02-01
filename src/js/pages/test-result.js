@@ -1,5 +1,5 @@
 jQuery ( ($) => {
 	//Поиск в меню
-	//=require ../lego/common/test-menu-search.js
-	//=require ../lego/test-result/test-result-banner.js
+	//=include ../lego/common/test-menu-search.js
+	//=include ../lego/test-result/test-result-banner.js
 });
