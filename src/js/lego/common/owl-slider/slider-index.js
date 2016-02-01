@@ -1,4 +1,4 @@
-//=require owl.carousel.js
+//=include owl.carousel.js
 //В ИСХОДНИКЕ СЛАЙДЕРА ИЗМЕНЕНО СВОЙСТВО ПРОИЗВОДЯЩЕЕ ДВИЖЕНИЕ СЛАЙДОВ, С transform: translate3d() на transform:
 // translateX(), так как 1ое тормозило в Chrome.
 $('#loop-index').owlCarousel({
