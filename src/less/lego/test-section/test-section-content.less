@@ -15,25 +15,23 @@
 	}
 
 	&__1 {
-		order: 1;
 		&:extend(.mt20);
+		margin-bottom: 34px;
+		order: 1;
 	}
 
 	&__2 {
 		order: 2;
-		margin: 34px 0 13px;
 	}
 
 	&__3 {
 		order: 3;
-		.respond-min(@screen__tablet, {
-			margin-bottom: 30px;
-		});
+		.respond-max(@screen__laptop, { margin: 20px 0 24px;});
+		.respond-min(@screen__laptop, { margin: 13px 0 26px;});
 	}
 
 	&__4 {
 		order: 4;
-		.phone({ margin-top: 20px;})
 	}
 
 	&__5 {
@@ -48,122 +46,160 @@
 	}
 
 	&__7 {
-		.phone({order: 5; margin-top: 20px;});
-		.tablet({order: 5;});
-		.laptop({order: 6;});
-		.desktop({ order: 7;});
+		.phone({order: 8; margin-top: 20px;});
+		.tablet({order: 8; margin-top: 20px;});
+		.laptop({order: 10; margin-top: 20px;});
+		.desktop({ order: 10; margin-top: 20px;});
 	}
 
 	&__8 {
 		.respond-max(@screen__laptop, {
-			order: 6; margin-top: 20px;
+			order: 9; margin-top: 20px;
 		});
-		.laptop({order: 7;  margin-top: -150px;});
-		.desktop({ order: 8; margin-top: -150px; });
+		.laptop({order: 11;  margin-top: 20px;});
+		.desktop({ order: 11; margin-top: 20px;});
 	}
 
 	&__9 {
-		order: 10;
+		.phone({order: 9;});
+		.tablet({order: 9;});
+		.laptop({order: 12;});
+		.desktop({order: 12;});
 		&:extend(.mt20);
 	}
 
 	&__10 {
-		order: 11;
+		.phone({order: 10;});
+		.tablet({order: 10;});
+		.laptop({order: 14;});
+		.desktop({order: 11;});
 		&:extend(.mt20);
 	}
 
 	&__11 {
-		order: 12;
+		.laptop({order: 13;});
+		.desktop({order: 13;});
 		&:extend(.mt20);
 	}
 
 	&__12 {
-		order: 13;
-		&:extend(.mt20);
+		.phone({order: 6; margin-top: 20px;});
+		.tablet({order: 6; margin-top: 20px;});
+		.laptop({order: 7; margin-top: -150px;});
+		.desktop({order: 8; margin-top: -150px;});
 	}
 
 	&__13 {
-		order: 14;
-		&:extend(.mt20);
+		.phone({order: 5; margin-top: 20px;});
+		.tablet({order: 5;});
+		.laptop({order: 6;});
+		.desktop({order: 7;});
 	}
 
 	&__14 {
-		order: 15;
+		.phone({ order: 11; text-align: center;});
+		.tablet({order: 11;});
+		.laptop({order: 15;});
+		.desktop({order: 14;});
 		margin: 34px 0 15px;
-		.phone({ text-align: center;});
 	}
 
 	&__15 {
-		order: 16;
+		.phone({order: 12;});
+		.tablet({order: 12;});
+		.laptop({order: 16;});
+		.desktop({order: 15;});
 	}
 
 	&__16 {
-		order: 17;
+		.tablet({order: 13;});
+		.laptop({order: 17;});
+		.desktop({order: 16;});
 
 	}
 
 	&__17 {
-		order: 18;
+		.tablet({order: 14;});
+		.laptop({order: 18;});
+		.desktop({order: 17;});
 	}
 
 	&__18 {
-		order: 19;
+		.tablet({order: 15;});
+		.desktop({order: 18;});
 	}
 
 	&__19 {
-		order: 20;
 		margin: 34px 0 13px;
-		.phone({ text-align: center;});
+		.phone({ order: 13; text-align: center;});
+		.tablet({order: 14;});
+		.laptop({order: 19;});
+		.desktop({order: 19;});
 	}
 
 	&__20 {
-		order: 21;
+		.phone({order: 14;});
+		.tablet({order: 15;});
+		.laptop({order: 20;});
+		.desktop({order: 20;});
 	}
 
 	&__21 {
-		order: 22;
-		.phone({ margin-top: 20px;});
+		.phone({ order: 15;margin-top: 20px;});
+		.tablet({order: 16;});
+		.laptop({order: 21;});
+		.desktop({order: 21;});
 	}
 
 	&__22 {
-		order: 23;
-		.phone({ margin-top: 20px;});
-		.tablet({
-			margin-top: 20px;
-		})
+		.phone({ margin-top: 20px; order: 16;});
+		.tablet({order: 17; margin-top: 20px;});
+		.laptop({order: 22;});
+		.desktop({order: 22;});
 	}
 
 	&__23 {
 		.respond-max(@screen__desktop, {
 			margin-top: 20px;
 		});
-		order: 24;
+		.phone({order: 17;});
+		.tablet({order: 18;});
+		.laptop({order: 23;});
+		.desktop({order: 23;});
 	}
 
 	&__24 {
-		order: 25;
+		.phone({order: 18;});
+		.tablet({order: 21;});
+		.laptop({order: 24;});
+		.desktop({order: 24;});
 		&:extend(.mt20);
 	}
 
 	&__25 {
-		order: 26;
+		.tablet({order: 22;});
+		.laptop({order: 25;});
+		.desktop({order: 25;});
 		&:extend(.mt20);
 	}
 
 	&__26 {
-		order: 27;
+		.tablet({order: 23;});
+		.desktop({order: 26;});
 		&:extend(.mt20);
 	}
 
 	&__27 {
-		order: 28;
+		.tablet({order: 24;});
+		.desktop({order: 27;});
 		&:extend(.mt20);
 	}
 
 	&__28 {
-		order: 29;
 		.respond-min(@screen__laptop, {margin-top: 20px;});
+		.tablet({order: 19;});
+		.laptop({order: 26;});
+		.desktop({order: 28;});
 	}
-
 
 }
