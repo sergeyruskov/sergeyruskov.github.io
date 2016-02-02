@@ -48,7 +48,6 @@
 				"text" => "IQ (коэффициент интеллекта) играет важную роль в нашей жизни. Однако не меньшее значение имеет и EQ (интеллект эмоциональный)."
 		]) ?>
 
-
 	</div>
 
 	<div class="test-section-content__6">
@@ -60,14 +59,65 @@
 				"text" => "Когда вы пытаетесь что-то вспомнить, что скорее всплывает на поверхность сознания? То, что вы видели, чувствовали или то, к чему прикасались? Чтобы узнать, как устроена ваша память, мы предлагаем вам ответить на вопросы теста. "
 		]) ?>
 
-
 	</div>
 
 	<div class="test-section-content__7">
-		<? req_with_param(PATH__PHP_INDEX . "/index-banner.php") ?>
+
+		<? req_with_param(PATH__PHP_TEST_SECTION . "/test-section-test.php", [
+				"img" => "test-section__4.jpg",
+				"rubric" => "Личность",
+				"title" => "Есть ли у вас фобии?",
+				"text" => "Пауки, замкнутое пространство, боязнь толпы… Знакомы ли вам эти страхи? Узнайте об уровне своего дискомфорта с помощью нашего теста."
+		]) ?>
+
 	</div>
 
-	<div class="test-section-content__8">
+	<div class="test-section-content__8 hide--tablet hide--phone">
+
+		<? req_with_param(PATH__PHP_TEST_SECTION . "/test-section-test.php", [
+				"img" => "test-section__5.jpg",
+				"rubric" => "Двое",
+				"title" => "Любите ли вы играть с огнем?",
+				"text" => "Некоторым из нас нравится вносить в свою жизнь элемент риска. Стремясь избежать монотонности в отношениях, они часто попадают в потенциально опасные ситуации. Ощущение опасности бодрит их, а игра только увеличивает желание. Другие же, наоборот, предпочитают держаться подальше от пламени и тушить любые искры, пока они не разгорелись. А что предпочитаете вы? Раздувать огонь или гасить его?"
+		]) ?>
+
+	</div>
+
+
+	<div class="test-section-content__9">
+
+		<? req_with_param(PATH__PHP_TEST_SECTION . "/test-section-test.php", [
+				"img" => "test-section__6.jpg",
+				"rubric" => "Личность",
+				"title" => "Что для вас значит нежность?",
+				"text" => "Вы не склонны к излиянию чувств или, наоборот, охотно делитесь своими чувствами с другими? Вас считают черствым и мужественным? Или вы умеете дарить нежность безвозмездно? Наш тест поможет вам разобраться."
+		]) ?>
+
+	</div>
+
+	<div class="test-section-content__10 hide--desktop">
+
+		<? req_with_param(PATH__PHP_TEST_SECTION . "/test-section-test.php", [
+				"img" => "test-section__7.jpg",
+				"rubric" => "Общение",
+				"title" => "Умеете ли вы подчеркивать свои достоинства?",
+				"text" => "Вы умеете быть собой в любой ситуации или, наоборот, избегаете слишком тесного общения? А может быть, вы уверены, что все и так знают, насколько вы хороши? Проверьте себя с помощью нашего теста."
+		]) ?>
+
+	</div>
+
+	<div class="test-section-content__11 hide--tablet hide--phone">
+
+		<? req_with_param(PATH__PHP_TEST_SECTION . "/test-section-test.php", [
+				"img" => "test-section__12.jpg",
+				"rubric" => "Семья",
+				"title" => "Как выглядит ваш «внутренний ребенок»?",
+				"text" => "Образцовый малыш, бунтарь или сама непосредственность? Узнав, кто «командует» вами изнутри, вам будет проще изменить (если понадобится) свое привычное поведение."
+		]) ?>
+
+	</div>
+
+	<div class="test-section-content__12">
 
 		<div class="yandex-direct col__3--desktop col__2--laptop col__1--phone">
 			<div class="yandex-direct__wrapper-title">
@@ -116,65 +166,13 @@
 
 			</div>
 
-
 		</div>
 
-
 	</div>
 
+	<div class="test-section-content__13">
 
-	<div class="test-section-content__9">
-
-		<? req_with_param(PATH__PHP_TEST_SECTION . "/test-section-test.php", [
-				"img" => "test-section__4.jpg",
-				"rubric" => "Личность",
-				"title" => "Есть ли у вас фобии?",
-				"text" => "Пауки, замкнутое пространство, боязнь толпы… Знакомы ли вам эти страхи? Узнайте об уровне своего дискомфорта с помощью нашего теста."
-		]) ?>
-
-	</div>
-
-	<div class="test-section-content__10 hide--tablet hide--phone">
-
-		<? req_with_param(PATH__PHP_TEST_SECTION . "/test-section-test.php", [
-				"img" => "test-section__5.jpg",
-				"rubric" => "Двое",
-				"title" => "Любите ли вы играть с огнем?",
-				"text" => "Некоторым из нас нравится вносить в свою жизнь элемент риска. Стремясь избежать монотонности в отношениях, они часто попадают в потенциально опасные ситуации. Ощущение опасности бодрит их, а игра только увеличивает желание. Другие же, наоборот, предпочитают держаться подальше от пламени и тушить любые искры, пока они не разгорелись. А что предпочитаете вы? Раздувать огонь или гасить его?"
-		]) ?>
-
-	</div>
-
-	<div class="test-section-content__11">
-
-		<? req_with_param(PATH__PHP_TEST_SECTION . "/test-section-test.php", [
-				"img" => "test-section__6.jpg",
-				"rubric" => "Личность",
-				"title" => "Что для вас значит нежность?",
-				"text" => "Вы не склонны к излиянию чувств или, наоборот, охотно делитесь своими чувствами с другими? Вас считают черствым и мужественным? Или вы умеете дарить нежность безвозмездно? Наш тест поможет вам разобраться."
-		]) ?>
-
-	</div>
-
-	<div class="test-section-content__12">
-
-		<? req_with_param(PATH__PHP_TEST_SECTION . "/test-section-test.php", [
-				"img" => "test-section__7.jpg",
-				"rubric" => "Общение",
-				"title" => "Умеете ли вы подчеркивать свои достоинства?",
-				"text" => "Вы умеете быть собой в любой ситуации или, наоборот, избегаете слишком тесного общения? А может быть, вы уверены, что все и так знают, насколько вы хороши? Проверьте себя с помощью нашего теста."
-		]) ?>
-
-	</div>
-
-	<div class="test-section-content__13 hide--desktop hide--tablet hide--phone">
-
-		<? req_with_param(PATH__PHP_TEST_SECTION . "/test-section-test.php", [
-				"img" => "test-section__12.jpg",
-				"rubric" => "Семья",
-				"title" => "Как выглядит ваш «внутренний ребенок»?",
-				"text" => "Образцовый малыш, бунтарь или сама непосредственность? Узнав, кто «командует» вами изнутри, вам будет проще изменить (если понадобится) свое привычное поведение."
-		]) ?>
+		<? req_with_param(PATH__PHP_INDEX . "/index-banner.php") ?>
 
 	</div>
 
@@ -300,7 +298,7 @@
 
 	</div>
 
-	<div class="test-section-content__support col__1"></div>
+	<div class="test-section-content__support col__1 hide--tablet hide--phone"></div>
 
 	<div class="hide--desktop hide--laptop hide--tablet">
 		<? req_with_param(PATH__PHP_COMMON . "/show-more.php"); ?>
