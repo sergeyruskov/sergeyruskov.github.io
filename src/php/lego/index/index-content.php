@@ -208,7 +208,11 @@
 
 	<div class="index-content__42">
 
-		<? req_with_param(PATH__PHP_INDEX . "/index-dossier.php"); ?>
+		<? req_with_param(PATH__PHP_INDEX . "/index-dossier.php", ["modification" => "col__2--exclude-phone col__1--phone h430--exclude-phone",
+				"title" => "Толстые люди: полюбить себя <br> и жить с удовольствием",
+				"short-announcements-modification" => "index-dossier__wrapper-short-announcements--index",
+				"all-articles-modification" => "index-dossier__all-articles--index"]
+		); ?>
 
 	</div>
 

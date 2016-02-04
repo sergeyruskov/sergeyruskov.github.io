@@ -23,9 +23,9 @@
 				margin-bottom: 14px;
 			}
 		});
-		.tablet({width: 280px;});
-		.laptop({width: 280px;});
-		.desktop({width: 280px;});
+		.respond-min(@screen__tablet, {
+			width: 280px;
+		});
 	}
 
 		&__item-title {

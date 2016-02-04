@@ -50,7 +50,7 @@
 
 	<div class="test-content__7 col__3--desktop">
 
-		<? req_with_param(PATH__PHP_COMMON . "/social-blocks.php"); ?>
+		<? req_with_param(PATH__PHP_COMMON . "/test/test-social-blocks.php"); ?>
 
 	</div>
 

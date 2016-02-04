@@ -239,6 +239,23 @@
 
 	height: 430px;
 
+
+	&--phone {
+		.phone({height: 430px !important;})
+	}
+
+	&--tablet {
+		.tablet({height: 430px !important;})
+	}
+
+	&--laptop {
+		.laptop({height: 430px !important;})
+	}
+
+	&--desktop {
+		.desktop({height: 430px !important;})
+	}
+
 	&--exclude-phone {
 		.respond-min(@screen__tablet, {height: 430px;});
 	}
