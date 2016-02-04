@@ -1,0 +1,10 @@
+@import "test-social";
+@import "test-social-discuss";
+@import "test-social-network";
+.test-social-blocks {
+	display: flex;
+	justify-content: space-between;
+	.respond-max(@screen__desktop, {
+		flex-direction: column;
+	});
+}

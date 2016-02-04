@@ -1,4 +1,4 @@
-<div class="social-blocks">
+<div class="test-social-blocks">
 
 	<? req_with_param(PATH__PHP_COMMON . "/test/test-social.php", ["buttons-inside" => "/test/test-social-networks.php" , "wrapper-modification" => "col__2--desktop col__2--laptop col__2--tablet"]); ?>
 
