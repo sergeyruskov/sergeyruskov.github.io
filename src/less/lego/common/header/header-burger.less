@@ -1,17 +1,19 @@
 .header-burger {
 	width: 20px;
 	height: 20px;
+	position: relative;
+	cursor: pointer;
 
-	&__line {
+	&::before {
+		content: "";
+		position: absolute;
+		left: 0;
+		top: 0;
 		height: 4px;
+		width: 100%;
 		background-color: #fff;
-		display: block;
-		-webkit-border-radius: 2px;
-		-moz-border-radius: 2px;
 		border-radius: 2px;
-
-		&:not(:first-child) {
-			margin-top: 4px;
-		}
+		box-shadow: 0 8px 0 0 #fff, 0 16px 0 0 #fff;
 	}
+
 }

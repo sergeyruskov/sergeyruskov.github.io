@@ -22,21 +22,25 @@
 	<div class="test-content__3">
 
 		<? req_with_param(PATH__PHP_COMMON . "/test/test-menu.php",
-				["menu" => ["Общение", "Двое", "Секс", "Семья", "Красота", "Работа и карьера", "IQ"],                            "search" => true]); ?>
+				["menu" => ["Общение", "Двое", "Секс", "Семья", "Красота", "Работа и карьера", "IQ"], "search" => true]); ?>
 
 	</div>
 
 	<div class="test-content__4">
 
-		<? req_with_param(PATH__PHP_TEST . "/test-description.php", ["text" => "
-		Слово «харизма» происходит от греческого charisma («божья благодать»). Харизматичными принято называть
-		людей, которые обладают способностью привлекать взгляды и воздействовать на других, не прилагая к этому
+		<? req_with_param(PATH__PHP_TEST . "/test-description.php", [
+				"title" => "Умеете ли вы делать свою жизнь прекраснее?",
+				"text" => "Слово «харизма» происходит от греческого charisma («божья благодать»). Харизматичными принято называть людей, которые обладают способностью привлекать взгляды и воздействовать на других, не прилагая к этому
 		особых усилий и зачастую не отдавая себе в этом отчета. Еще несколько лет назад харизматиками считали
 		людей незаурядных или знаменитых, однако сейчас это слово перешло в разряд обыденных. Мы регулярно
 		говорим «он/она обладает харизмой» о людях, которым удалось выделиться и которыми мы восхищаемся. «С
 		психоаналитической точки зрения, харизма – это качества, которые мы разработали внутри себя и которые
 		улавливаются другими людьми, – считает психоаналитик Жерар Боннэ (Gérard Bonnet). – В каждом из нас есть
-		то, что привлекает и очаровывает других. харизмой обладаете вы?"]); ?>
+		то, что привлекает и очаровывает других. харизмой обладаете вы?",
+				"show-img" => true,
+				"author-without-photo" => true,
+				"show-bottom-btn" => true
+		]); ?>
 
 	</div>
 
@@ -72,37 +76,37 @@
 
 	<div class="test-content__10 hide--phone">
 		<? req_with_param(PATH__PHP_INDEX . "/index-test-block.php", [
-			"img" => "/index/test.jpg",
-			"rubric" => "Личность",
-			"title" => "Какой у вас тип харизмы?",
-			"test-counter" => "Тест пройден 77645 раз",
-			"btn-text" => "Пройти тест",
-			"hide-block-title" => true,
-			"wrapper-img-modification" => "index-test-block__wrapper-img--test-page"
+				"img" => "/index/test.jpg",
+				"rubric" => "Личность",
+				"title" => "Какой у вас тип харизмы?",
+				"test-counter" => "Тест пройден 77645 раз",
+				"btn-text" => "Пройти тест",
+				"hide-block-title" => true,
+				"wrapper-img-modification" => "index-test-block__wrapper-img--test-page"
 		]); ?>
 	</div>
 
 	<div class="test-content__11 hide--tablet hide--phone">
 		<? req_with_param(PATH__PHP_INDEX . "/index-test-block.php", [
-			"img" => "/index/test.jpg",
-			"rubric" => "Личность",
-			"title" => "Вы интроверт или экстраверт?",
-			"test-counter" => "Тест пройден 153451 раз",
-			"btn-text" => "Пройти тест",
-			"hide-block-title" => true,
-			"wrapper-img-modification" => "index-test-block__wrapper-img--test-page"
+				"img" => "/index/test.jpg",
+				"rubric" => "Личность",
+				"title" => "Вы интроверт или экстраверт?",
+				"test-counter" => "Тест пройден 153451 раз",
+				"btn-text" => "Пройти тест",
+				"hide-block-title" => true,
+				"wrapper-img-modification" => "index-test-block__wrapper-img--test-page"
 		]); ?>
 	</div>
 
 	<div class="test-content__12 hide--laptop hide--tablet hide--phone">
 		<? req_with_param(PATH__PHP_INDEX . "/index-test-block.php", [
-			"img" => "/index/test.jpg",
-			"rubric" => "Двое",
-			"title" => "Готовы ли вы к (новой) любви?",
-			"test-counter" => "Тест пройден 52834 раз",
-			"btn-text" => "Пройти тест",
-			"hide-block-title" => true,
-			"wrapper-img-modification" => "index-test-block__wrapper-img--test-page"
+				"img" => "/index/test.jpg",
+				"rubric" => "Двое",
+				"title" => "Готовы ли вы к (новой) любви?",
+				"test-counter" => "Тест пройден 52834 раз",
+				"btn-text" => "Пройти тест",
+				"hide-block-title" => true,
+				"wrapper-img-modification" => "index-test-block__wrapper-img--test-page"
 		]); ?>
 	</div>
 

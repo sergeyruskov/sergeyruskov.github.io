@@ -21,6 +21,9 @@
 
 		&::before {
 			content: "";
+			padding-left: 2.5px;
+			line-height: 19px;
+			font-size: 0;
 			position: absolute;
 			top: 0;
 			left: 0;
@@ -28,6 +31,7 @@
 			height: 30px;
 			border: 6px solid @color__spot;
 			border-radius: 50%;
+			transition: .3s;
 		}
 	}
 
@@ -40,18 +44,9 @@
 				color: @color__brand;
 
 				&::before {
+					content: "\26AB";
+					font-size: 16px;
 					border-color: @color__brand;
-				}
-
-				&::after {
-					content: '';
-					position: absolute;
-					background: @color__brand;
-					left: 11px;
-					top: 11px;
-					width: 8px;
-					height: 8px;
-					border-radius: 50%;
 				}
 			}
 

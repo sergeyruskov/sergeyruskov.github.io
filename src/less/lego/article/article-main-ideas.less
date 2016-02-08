@@ -1,0 +1,30 @@
+.article-main-ideas {
+	border-top: 1px solid @color__6;
+	border-bottom: 1px solid @color__6;
+	padding: 16px 0 16px 16px;
+
+	&__item {
+		position: relative;
+		counter-increment: i;
+		padding-left: 20px;
+		font: 15px/20px @font__pt-sans;
+
+		&:first-child {
+			margin-top: 21px;
+		}
+
+		&:not(:last-child) {
+			margin-bottom: 11.3px;
+		}
+
+		&::before {
+			content: counter(i) ".";
+			position: absolute;
+			left: 0;
+			top: 0;
+			font-weight: 700;
+			color: @color__gray;
+		}
+	}
+
+}
