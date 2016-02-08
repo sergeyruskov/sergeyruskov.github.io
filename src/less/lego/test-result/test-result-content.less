@@ -3,16 +3,12 @@
 	position: relative;
 	//Стандартный отступ от футера
 	.bottom-indent;
-
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	align-content: flex-start;
+	overflow: hidden;
 
 
 	&__1 {
 		&:extend(.mt20);
-		margin: 20px 0 34px;
+		margin-bottom: 34px;
 	}
 
 	&__3 {
@@ -33,7 +29,7 @@
 			margin: 20px 0 0 20px;
 		});
 		.respond-min(@screen__laptop, {
-			float: left;
+			float: right;
 		});
 	}
 
@@ -104,19 +100,23 @@
 
 	&__18{
 		&:extend(.pull-left);
+		.tablet({margin-right: 20px;});
+		.laptop({ margin-right: 20px;});
+		.desktop({margin-right: 20px;});
 	}
 
 	&__19{
 		&:extend(.pull-left);
 		.phone({ margin-top: 20px;});
+		.laptop({ margin-right: 20px;});
+		.desktop({margin-right: 20px;});
 	}
 
 	&__20{
 		&:extend(.pull-left);
 		.phone({ margin-top: 20px;});
-		.tablet({
-			margin-top: 20px;
-		})
+		.tablet({margin: 20px 20px 0 0;});
+		.desktop({margin-right: 20px;});
 	}
 
 	&__21{
@@ -124,18 +124,20 @@
 		.respond-max(@screen__desktop, {
 			margin-top: 20px;
 		});
+		.laptop({ margin-right: 20px;});
 	}
 
 	&__22{
-		&:extend(.pull-left, .mt20);
+		&:extend(.pull-left, .mt20, .mr20);
 	}
 
 	&__23{
 		&:extend(.pull-left, .mt20);
+		.desktop({ margin-right: 20px;})
 	}
 
 	&__24{
-		&:extend(.pull-left, .mt20);
+		&:extend(.pull-left, .mt20, .mr20);
 	}
 
 	&__25{

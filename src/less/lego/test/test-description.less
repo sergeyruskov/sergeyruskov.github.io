@@ -1,3 +1,4 @@
+@import "../index/index-article-author";
 .test-description {
 	text-align: center;
 	overflow: hidden;
@@ -14,11 +15,13 @@
 			padding-right: 15px;
 		}
 
+	&__title {
+		padding: 0 10px;
+	}
+
 	&__img {
-		width: 181px;
-		height: 181px;
-		border-radius: 50%;
 		margin-top: 14px;
+		border-radius: 50%;
 	}
 
 	&__author {
@@ -71,6 +74,15 @@
 		margin-top: 7px;
 	}
 
+	&__author-with-photo {
+		margin-top: 25px;
+		display: flex;
+		justify-content: center;
+		text-align: left;
+	}
 
+	&__article-img {
+		margin-top: 28px;
+	}
 
 }

@@ -46,40 +46,42 @@
 	}
 
 	&__7 {
-		.phone({order: 8; margin-top: 20px;});
-		.tablet({order: 8; margin-top: 20px;});
-		.laptop({order: 10; margin-top: 20px;});
-		.desktop({ order: 10; margin-top: 20px;});
+		&:extend(.mt20);
+		.phone({order: 8;});
+		.tablet({order: 8;});
+		.laptop({order: 10;});
+		.desktop({ order: 10;});
 	}
 
 	&__8 {
+		&:extend(.mt20);
 		.respond-max(@screen__laptop, {
-			order: 9; margin-top: 20px;
+			order: 9;
 		});
-		.laptop({order: 11;  margin-top: 20px;});
-		.desktop({ order: 11; margin-top: 20px;});
+		.laptop({order: 11; });
+		.desktop({ order: 11;});
 	}
 
 	&__9 {
+		&:extend(.mt20);
 		.phone({order: 9;});
 		.tablet({order: 9;});
 		.laptop({order: 12;});
 		.desktop({order: 12;});
-		&:extend(.mt20);
 	}
 
 	&__10 {
+		&:extend(.mt20);
 		.phone({order: 10;});
 		.tablet({order: 10;});
 		.laptop({order: 14;});
 		.desktop({order: 11;});
-		&:extend(.mt20);
 	}
 
 	&__11 {
+		&:extend(.mt20);
 		.laptop({order: 13;});
 		.desktop({order: 13;});
-		&:extend(.mt20);
 	}
 
 	&__12 {
@@ -97,11 +99,11 @@
 	}
 
 	&__14 {
+		margin: 34px 0 15px;
 		.phone({ order: 11; text-align: center;});
 		.tablet({order: 11;});
 		.laptop({order: 15;});
 		.desktop({order: 14;});
-		margin: 34px 0 15px;
 	}
 
 	&__15 {
