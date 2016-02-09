@@ -1,0 +1,28 @@
+.article-paragraph {
+	margin-bottom: 20px;
+
+	&--first-letter {
+		&:first-letter {
+			float: left;
+			color: @color__gray;
+			font-size: 81px;
+			text-transform: uppercase;
+			padding: 24px 22px 2px 0;
+		}
+	}
+
+	&__link {
+		color: @color__brand;
+		border-bottom: 1px solid @color__brand;
+
+		&:hover {
+			color: @color__additional-brand;
+			border-color: @color__additional-brand;
+		}
+
+		&:visited {
+			color: @color__gray;
+			border-color: @color__gray;
+		}
+	}
+}

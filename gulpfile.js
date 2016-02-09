@@ -11,6 +11,7 @@ const gulp = require(`gulp`),
 	rename = require(`gulp-rename`),
 	gp_sourcemaps = require(`gulp-sourcemaps`),
 	browserSync = require(`browser-sync`).create(),
+	reload      = browserSync.reload,
 	runSequence = require(`run-sequence`),
 	ncp = require(`ncp`).ncp,
 	php2html = require(`gulp-php2html`),
@@ -64,6 +65,10 @@ class Pages {
 		const self = this;
 		gulp.task(self.taskName, () => {
 			fs.readdirSync(self.pagesSrc).forEach(logic.bind(self));
+			//todo Если страница обновляется раньше обновления файлов следует увеличить время timeout
+			setTimeout(() => {
+				reload();
+			}, 300);
 		});
 	}
 }
@@ -80,14 +85,20 @@ new Pages(`less`, path.src.pages__less, `styles.css`).taskLogic(function (value)
 			})
 		];
 	gulp.src(self.src(value))
-		.pipe(plumber())
+		.pipe(plumber({
+			errorHandler: function (err) {
+				console.log(err);
+				// And this makes it so "watch" can continue after an error.
+				this.emit(`end`);
+			}
+		}))
 		.pipe(gp_sourcemaps.init())
 		.pipe(less())
 		.pipe(postcss(processors))
 		.pipe(rename(self.renameFile))
 		.pipe(gp_sourcemaps.write())
-		.pipe(gulp.dest(self.dist(value)))
-		.pipe(browserSync.stream());
+		.pipe(gulp.dest(self.dist(value)));
+		//.pipe(browserSync.stream());
 });
 
 //php
