@@ -1,6 +1,0 @@
-AddType text/html .html
-AddHandler server-parsed  .html
-AddDefaultCharset Off
-<IfModule dir_module>
-    DirectoryIndex index.html
-</IfModule>

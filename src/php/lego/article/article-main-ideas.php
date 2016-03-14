@@ -1,5 +1,5 @@
-<div class="article-main-ideas col__3">
-	<div class="outside-info-title">Основные идеи:</div>
+<div class="article-main-ideas">
+	<div class="external-info-block-title">Основные идеи:</div>
 
 	<ol>
 		<li class="article-main-ideas__item">Интеллект, несмотря на внешние воздействия, выбирает методологический
