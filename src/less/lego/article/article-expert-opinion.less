@@ -1,0 +1,42 @@
+.article-expert-opinion {
+	overflow: hidden;
+	padding: 16px 20px 15px;
+	margin: 34px 0 35px;
+	&:extend(.external-info-borders);
+
+	&__block-title {
+		margin-bottom: 21px;
+	}
+
+	&__photo {
+		&:extend(.pull-left);
+		margin-top: 5px;
+	}
+
+	&__about-author {
+		&:extend(.pull-left);
+		margin: 0 20px;
+		width: 169px;
+	}
+
+		&__author-name {
+			text-transform: uppercase;
+			font: 14px/16px @font__pt-sans;
+			color: @color__gray;
+		}
+
+		&__author-specialization {
+			font: 12px/16px @font__pt-sans;
+			color: @color__gray;
+			margin-top: 12px;
+		}
+
+	&__opinion {
+		&:extend(.pull-left);
+		width: 600px;
+	}
+
+		&__opinion-text {
+			margin-top: 12px;
+		}
+}

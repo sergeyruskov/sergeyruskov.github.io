@@ -20,8 +20,10 @@
 
 		<div class="index-psy-question__answer-author">На вопрос отвечает</div>
 
-		<? req_with_param(PATH__PHP_LEGO . "/index/index-red-photo.php",
-				["path-img" => PATH__IMG . "/index/photo-psychologist.png"]); ?>
+		<div class="index-psy-question__wrapper-index-red-photo">
+			<? req_with_param(PATH__PHP_LEGO . "/index/index-red-photo.php",
+					["path-img" => PATH__IMG . "/index/photo-psychologist.png", "size" => "60px"]); ?>
+		</div>
 
 		<h3 class="index-psy-question__question-answer">
 			<?= $params["question-answer"]; ?>

@@ -1,15 +1,35 @@
-.article-paragraph {
-	margin-bottom: 20px;
+.article-main-content {
 
-	&--first-letter {
-		&:first-letter {
-			float: left;
-			color: @color__gray;
-			font-size: 81px;
-			text-transform: uppercase;
-			padding: 24px 22px 2px 0;
-		}
+	&__title {
+		margin-bottom: 15px;
 	}
+
+	&__sub-title {
+		margin-bottom: 8px;
+	}
+
+	&__text {
+		&:not(:last-child):nth-child(even) {
+			&:extend(.vertical-rhythm20);
+		}
+
+		&:last-child {
+			&:extend(.mt20);
+		}
+
+		&--first-letter {
+			&:first-letter {
+				float: left;
+				color: @color__gray;
+				font-size: 81px;
+				text-transform: uppercase;
+				padding: 24px 22px 2px 0;
+			}
+		}
+
+	}
+
+
 
 	&__link {
 		color: @color__brand;

@@ -14,8 +14,10 @@
 	<h2 class="index-quote__quote"><?= $params["quote"];?></h2>
 
 	<div class="index-quote__wrapper-author">
-		<? req_with_param(PATH__PHP_LEGO . "/index/index-red-photo.php",
-			["path-img" => PATH__IMG . "/index/photo-psychologist.png"]); ?>
+		<div class="index-quote__wrapper-index-red-photo">
+			<? req_with_param(PATH__PHP_LEGO . "/index/index-red-photo.php",
+					["path-img" => PATH__IMG . "/index/photo-psychologist.png", "size" => "60px"]); ?>
+		</div>
 		<h3 class="index-quote__name"><?= $params["name"];?></h3>
 		<div class="index-quote__author-specialization"><?= $params["specialization"]; ?></div>
 	</div>

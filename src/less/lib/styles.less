@@ -321,6 +321,7 @@
 .h {
 
 	&__1 {
+		font-weight: 700;
 		.phone({
 			font-size: 30px;
 			line-height: 30px;
@@ -329,15 +330,38 @@
 			font-size: 45px;
 			line-height: 45px;
 		});
-		font-weight: 700;
 	}
 
 	&__2 {
 		font-weight: 700;
-		font-size: 26px;
-		line-height: 30px;
+		font-family: @font__pt-sans;
+		.phone({
+			font-size: 26px;
+			line-height: 30px;
+		});
+		.respond-min(@screen__tablet, {
+			font-size: 30px;
+			line-height: 28px;
+		});
 	}
 
+	&__3 {
+		font-weight: 700;
+		font-family: @font__pt-sans;
+		.phone({
+			font-size: 18px;
+			line-height: 22px;
+		});
+		.respond-min(@screen__tablet, {
+			font-size: 22px;
+			line-height: 24px;
+		});
+	}
+
+}
+
+.vertical-rhythm20 {
+	margin: 20px 0;
 }
 
 .text-main {
@@ -365,14 +389,25 @@
 	font: 15px/20px @font__pt-sans;
 }
 
-.outside-info-title {
+//Врезки
+.external-info-block-title {
 	font: 700 18px/22px @font__pt-sans;
 	text-transform: uppercase;
 	color: @color__brand;
 }
 
-.outside-info-text {
+.external-info-title {
+	font: 700 22px/24px @font__pt-sans;
+	color: @color__gray;
+}
+
+.external-info-text {
 	font: 15px/20px @font__pt-sans;
+}
+
+.external-info-borders {
+	border-top: 1px solid @color__6;
+	border-bottom: 1px solid @color__6;
 }
 
 .article-main-text {
