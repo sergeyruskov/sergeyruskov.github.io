@@ -3112,15 +3112,15 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 		if ((typeof opt === 'undefined' ? 'undefined' : _typeof(opt)) !== "object") opt = {};
 
 		opt = $.extend({
-			submit: '#subscribe-block__submit',
-			inputEmail: '#subscribe-block__input-email',
-			wrapperInputEmail: '#subscribe-block__wrapper-input-email',
-			normalStateWrapperInput: 'subscribe-block__wrapper-input-email--state-normal',
-			errorStateWrapperInput: 'subscribe-block__wrapper-input-email--state-error',
-			successStateWrapperInput: 'subscribe-block__wrapper-input-email--state-success',
-			normalStateInput: 'subscribe-block__input-email--state-normal',
-			errorStateInput: 'subscribe-block__input-email--state-error',
-			successStateInput: 'subscribe-block__input-email--state-success',
+			submit: '#index-subscribe__submit',
+			inputEmail: '#index-subscribe__input-email',
+			wrapperInputEmail: '#index-subscribe__wrapper-input-email',
+			normalStateWrapperInput: 'index-subscribe__wrapper-input-email--state-normal',
+			errorStateWrapperInput: 'index-subscribe__wrapper-input-email--state-error',
+			successStateWrapperInput: 'index-subscribe__wrapper-input-email--state-success',
+			normalStateInput: 'index-subscribe__input-email--state-normal',
+			errorStateInput: 'index-subscribe__input-email--state-error',
+			successStateInput: 'index-subscribe__input-email--state-success',
 			submitClassInactive: 'btn--additional-brand--inactive',
 			normalMsg: 'Введите ваш e-mail',
 			successMsgPhone: 'Спасибо',
@@ -3204,13 +3204,13 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 					logic: function logic() {
 						"use strict";
 
-						$inputEmail.attr('placeholder', opt.successMsgPhone).addClass('subscribe-block__input-email--state-success-placeholder');
+						$inputEmail.attr('placeholder', opt.successMsgPhone).addClass('index-subscribe__input-email--state-success-placeholder');
 					},
 
 					desiredDevice: 'phone'
 				}, {
 					logic: function logic() {
-						$inputEmail.attr('placeholder', opt.successMsgBigDevices).addClass('subscribe-block__input-email--state-success-placeholder');
+						$inputEmail.attr('placeholder', opt.successMsgBigDevices).addClass('index-subscribe__input-email--state-success-placeholder');
 					},
 
 					desiredDevice: 'desktop laptop tablet'
@@ -3220,7 +3220,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 					"use strict";
 
 					normalState();
-					$inputEmail.attr('placeholder', opt.normalMsg).removeClass('subscribe-block__input-email--state-success-placeholder');
+					$inputEmail.attr('placeholder', opt.normalMsg).removeClass('index-subscribe__input-email--state-success-placeholder');
 				}, 3000);
 
 				validateStateEmail = false;
@@ -3352,27 +3352,27 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 			"use strict";
 
 			$showMoreBtn.removeClass('show-more-btn--load');
-			$showMoreBlock.append('<div class="show-more-block__item content-wrapper" style="max-height: 0">\n\t\t\t<div>\n\t\n\t\t\t\t<div class="article-block col__1 h430--exclude-phone">\n\t\n\t\t<a href="#">\n\t\n\t\t\t<div class="article-block__wrapper-photo-and-header">\n\t\n\t\t\t\t<div class="article-block__video-icon">\n\t\n\t\t\t\t\t<img src="../../img/index/author-article-24.jpg" alt="" class="img-responsive">\n\t\n\t\t\t\t</div>\n\t\n\t\t\t\t<h3 class="article-block__title">Сохранить страсть в долгом браке</h3>\n\t\n\t\t\t</div>\n\t\n\t\t\t<p class="article-block__text">«И жили долго и счастливо»: постоянство, задаваемое этой фразой, радует большинство пар. Но в то же время многие жалуются, что желание исчезает из отношений.</p>\n\t\n\t\t</a>\n\t\n\t\n\t</div>\n\t\t\t</div>\n\t\n\t\t\t<div>\n\t\n\t\t\t\t<div class="article-block col__1 h430--exclude-phone">\n\t\n\t\t<a href="#">\n\t\n\t\t\t<div class="article-block__wrapper-photo-and-header">\n\t\n\t\t\t\t<div class="article-block__video-icon">\n\t\n\t\t\t\t\t<img src="../../img/index/author-article-24.jpg" alt="" class="img-responsive">\n\t\n\t\t\t\t</div>\n\t\n\t\t\t\t<h3 class="article-block__title">Сохранить страсть в долгом браке</h3>\n\t\n\t\t\t</div>\n\t\n\t\t\t<p class="article-block__text">«И жили долго и счастливо»: постоянство, задаваемое этой фразой, радует большинство пар. Но в то же время многие жалуются, что желание исчезает из отношений.</p>\n\t\n\t\t</a>\n\t\n\t\n\t</div>\n\t\t\t</div>\n\t\n\t\n\t\t\t<div>\n\t\n\t\t\t\t<div class="article-block col__1 h430--exclude-phone">\n\t\n\t\t<a href="#">\n\t\n\t\t\t<div class="article-block__wrapper-photo-and-header">\n\t\n\t\t\t\t<div class="article-block__video-icon">\n\t\n\t\t\t\t\t<img src="../../img/index/author-article-24.jpg" alt="" class="img-responsive">\n\t\n\t\t\t\t</div>\n\t\n\t\t\t\t<h3 class="article-block__title">Сохранить страсть в долгом браке</h3>\n\t\n\t\t\t</div>\n\t\n\t\t\t<p class="article-block__text">«И жили долго и счастливо»: постоянство, задаваемое этой фразой, радует большинство пар. Но в то же время многие жалуются, что желание исчезает из отношений.</p>\n\t\n\t\t</a>\n\t\n\t\n\t</div>\n\t\t\t</div>\n\t\n\t\t\t<div class="hide--laptop">\n\t\n\t\t\t\t<div class="article-block col__1 h430--exclude-phone">\n\t\n\t\t<a href="#">\n\t\n\t\t\t<div class="article-block__wrapper-photo-and-header">\n\t\n\t\t\t\t<div class="article-block__video-icon">\n\t\n\t\t\t\t\t<img src="../../img/index/author-article-24.jpg" alt="" class="img-responsive">\n\t\n\t\t\t\t</div>\n\t\n\t\t\t\t<h3 class="article-block__title">Сохранить страсть в долгом браке</h3>\n\t\n\t\t\t</div>\n\t\n\t\t\t<p class="article-block__text">«И жили долго и счастливо»: постоянство, задаваемое этой фразой, радует большинство пар. Но в то же время многие жалуются, что желание исчезает из отношений.</p>\n\t\n\t\t</a>\n\t\n\t\n\t</div>\n\t\t\t</div>\n\t\n\t\t</div>');
+			$showMoreBlock.append('<div class="show-more-block__item content-wrapper" style="max-height: 0">\n\t\t\t<div>\n\t\n\t\t\t\t<div class="article-block col__1 h430--exclude-phone">\n\t\n\t\t<a href="#">\n\t\n\t\t\t<div class="article-block__wrapper-photo-and-header">\n\t\n\t\t\t\t<div class="article-block__video-icon">\n\t\n\t\t\t\t\t<img src="../img/index/author-article-24.jpg" alt="" class="img-responsive">\n\t\n\t\t\t\t</div>\n\t\n\t\t\t\t<h3 class="article-block__title">Сохранить страсть в долгом браке</h3>\n\t\n\t\t\t</div>\n\t\n\t\t\t<p class="article-block__text">«И жили долго и счастливо»: постоянство, задаваемое этой фразой, радует большинство пар. Но в то же время многие жалуются, что желание исчезает из отношений.</p>\n\t\n\t\t</a>\n\t\n\t\n\t</div>\n\t\t\t</div>\n\t\n\t\t\t<div>\n\t\n\t\t\t\t<div class="article-block col__1 h430--exclude-phone">\n\t\n\t\t<a href="#">\n\t\n\t\t\t<div class="article-block__wrapper-photo-and-header">\n\t\n\t\t\t\t<div class="article-block__video-icon">\n\t\n\t\t\t\t\t<img src="../img/index/author-article-24.jpg" alt="" class="img-responsive">\n\t\n\t\t\t\t</div>\n\t\n\t\t\t\t<h3 class="article-block__title">Сохранить страсть в долгом браке</h3>\n\t\n\t\t\t</div>\n\t\n\t\t\t<p class="article-block__text">«И жили долго и счастливо»: постоянство, задаваемое этой фразой, радует большинство пар. Но в то же время многие жалуются, что желание исчезает из отношений.</p>\n\t\n\t\t</a>\n\t\n\t\n\t</div>\n\t\t\t</div>\n\t\n\t\n\t\t\t<div>\n\t\n\t\t\t\t<div class="article-block col__1 h430--exclude-phone">\n\t\n\t\t<a href="#">\n\t\n\t\t\t<div class="article-block__wrapper-photo-and-header">\n\t\n\t\t\t\t<div class="article-block__video-icon">\n\t\n\t\t\t\t\t<img src="../img/index/author-article-24.jpg" alt="" class="img-responsive">\n\t\n\t\t\t\t</div>\n\t\n\t\t\t\t<h3 class="article-block__title">Сохранить страсть в долгом браке</h3>\n\t\n\t\t\t</div>\n\t\n\t\t\t<p class="article-block__text">«И жили долго и счастливо»: постоянство, задаваемое этой фразой, радует большинство пар. Но в то же время многие жалуются, что желание исчезает из отношений.</p>\n\t\n\t\t</a>\n\t\n\t\n\t</div>\n\t\t\t</div>\n\t\n\t\t\t<div class="hide--laptop">\n\t\n\t\t\t\t<div class="article-block col__1 h430--exclude-phone">\n\t\n\t\t<a href="#">\n\t\n\t\t\t<div class="article-block__wrapper-photo-and-header">\n\t\n\t\t\t\t<div class="article-block__video-icon">\n\t\n\t\t\t\t\t<img src="../img/index/author-article-24.jpg" alt="" class="img-responsive">\n\t\n\t\t\t\t</div>\n\t\n\t\t\t\t<h3 class="article-block__title">Сохранить страсть в долгом браке</h3>\n\t\n\t\t\t</div>\n\t\n\t\t\t<p class="article-block__text">«И жили долго и счастливо»: постоянство, задаваемое этой фразой, радует большинство пар. Но в то же время многие жалуются, что желание исчезает из отношений.</p>\n\t\n\t\t</a>\n\t\n\t\n\t</div>\n\t\t\t</div>\n\t\n\t\t</div>');
 
 			//Почему то не отрабатывает transition без setTimeout
 			setTimeout(function () {
 				"use strict";
 
 				$showMoreBlock.find('.show-more-block__item:last-child').css('max-height', '3000px');
-			}, 10);
-		}, 3000);
+			}, 100);
+		}, 1000);
 	});
 
-	$('#subscribe-block').subscribe({
-		submit: '#subscribe-block__submit',
-		inputEmail: '#subscribe-block__input-email',
-		wrapperInputEmail: '#subscribe-block__wrapper-input-email',
-		normalStateWrapperInput: 'subscribe-block__wrapper-input-email--state-normal',
-		errorStateWrapperInput: 'subscribe-block__wrapper-input-email--state-error',
-		successStateWrapperInput: 'subscribe-block__wrapper-input-email--state-success',
-		normalStateInput: 'subscribe-block__input-email--state-normal',
-		errorStateInput: 'subscribe-block__input-email--state-error',
-		successStateInput: 'subscribe-block__input-email--state-success',
+	$('#index-subscribe').subscribe({
+		submit: '#index-subscribe__submit',
+		inputEmail: '#index-subscribe__input-email',
+		wrapperInputEmail: '#index-subscribe__wrapper-input-email',
+		normalStateWrapperInput: 'index-subscribe__wrapper-input-email--state-normal',
+		errorStateWrapperInput: 'index-subscribe__wrapper-input-email--state-error',
+		successStateWrapperInput: 'index-subscribe__wrapper-input-email--state-success',
+		normalStateInput: 'index-subscribe__input-email--state-normal',
+		errorStateInput: 'index-subscribe__input-email--state-error',
+		successStateInput: 'index-subscribe__input-email--state-success',
 		submitClassInactive: 'btn--additional-brand--inactive',
 		successMsgPhone: 'Спасибо',
 		successMsgBigDevices: 'Спасибо. Ваш email добавлен'
