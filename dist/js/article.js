@@ -274,7 +274,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 		successMsgBigDevices: "Спасибо. Ваш email добавлен"
 	});
 
-	var $banner = $("#article-content__3");
+	var $banner = $("#grid__3");
 
 	deviceLogic([{
 		logic: function logic() {

@@ -149,7 +149,7 @@
 		}, 1000);
 	});
 
-	var $banner = $('#test-result-banner');
+	var $banner = $('#grid__5');
 
 	deviceLogic([{
 		logic: function logic() {
