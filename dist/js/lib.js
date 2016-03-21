@@ -143,15 +143,15 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 		if ((typeof opt === "undefined" ? "undefined" : _typeof(opt)) !== "object") opt = {};
 
 		opt = $.extend({
-			submit: '#index-subscribe__submit',
-			inputEmail: '#index-subscribe__input-email',
-			wrapperInputEmail: '#index-subscribe__wrapper-input-email',
-			normalStateWrapperInput: "index-subscribe__wrapper-input-email--state-normal",
-			errorStateWrapperInput: "index-subscribe__wrapper-input-email--state-error",
-			successStateWrapperInput: "index-subscribe__wrapper-input-email--state-success",
-			normalStateInput: "index-subscribe__input-email--state-normal",
-			errorStateInput: "index-subscribe__input-email--state-error",
-			successStateInput: "index-subscribe__input-email--state-success",
+			submit: '#subscribe-block__submit',
+			inputEmail: '#subscribe-block__input-email',
+			wrapperInputEmail: '#subscribe-block__wrapper-input-email',
+			normalStateWrapperInput: "subscribe-block__wrapper-input-email--state-normal",
+			errorStateWrapperInput: "subscribe-block__wrapper-input-email--state-error",
+			successStateWrapperInput: "subscribe-block__wrapper-input-email--state-success",
+			normalStateInput: "subscribe-block__input-email--state-normal",
+			errorStateInput: "subscribe-block__input-email--state-error",
+			successStateInput: "subscribe-block__input-email--state-success",
 			submitClassInactive: "btn--additional-brand--inactive",
 			normalMsg: "Введите ваш e-mail",
 			successMsgPhone: "Спасибо",
@@ -235,13 +235,13 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 					logic: function logic() {
 						"use strict";
 
-						$inputEmail.attr("placeholder", opt.successMsgPhone).addClass("index-subscribe__input-email--state-success-placeholder");
+						$inputEmail.attr("placeholder", opt.successMsgPhone).addClass("subscribe-block__input-email--state-success-placeholder");
 					},
 
 					desiredDevice: "phone"
 				}, {
 					logic: function logic() {
-						$inputEmail.attr("placeholder", opt.successMsgBigDevices).addClass("index-subscribe__input-email--state-success-placeholder");
+						$inputEmail.attr("placeholder", opt.successMsgBigDevices).addClass("subscribe-block__input-email--state-success-placeholder");
 					},
 
 					desiredDevice: "desktop laptop tablet"
@@ -251,7 +251,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 					"use strict";
 
 					normalState();
-					$inputEmail.attr("placeholder", opt.normalMsg).removeClass("index-subscribe__input-email--state-success-placeholder");
+					$inputEmail.attr("placeholder", opt.normalMsg).removeClass("subscribe-block__input-email--state-success-placeholder");
 				}, 3000);
 
 				validateStateEmail = false;
