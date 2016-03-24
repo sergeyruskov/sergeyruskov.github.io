@@ -3104,5 +3104,7 @@
 			}
 		}
 	});
+
+	$('#subscribe-block').subscribe();
 })(jQuery);
 //# sourceMappingURL=index.js.map
