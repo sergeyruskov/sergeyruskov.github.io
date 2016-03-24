@@ -2,7 +2,7 @@
 
 (function ($) {
 
-	var $banner = $("#grid__5");
+	var $banner = $("#grid__side-banner-1");
 
 	deviceLogic([{
 		logic: function logic() {

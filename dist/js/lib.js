@@ -258,32 +258,5 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 			} else errorState();
 		});
 	};
-	$('#test-menu-search__search-button').click(function () {
-		var $parent = $(this).parent();
-
-		$parent.addClass('test-menu-search--open');
-
-		$("#test-menu-search__text").focus().focusout(function () {
-			//Таймер для того чтобы браузер успел переместить фокус с тектового инпута на submit
-			setTimeout(function () {
-				$parent.removeClass('test-menu-search--open');
-			}, 200);
-		});
-	});
-
-	$('#subscribe-block').subscribe({
-		submit: '#index-subscribe__submit',
-		inputEmail: '#index-subscribe__input-email',
-		wrapperInputEmail: '#index-subscribe__wrapper-input-email',
-		normalStateWrapperInput: "index-subscribe__wrapper-input-email--state-normal",
-		errorStateWrapperInput: "index-subscribe__wrapper-input-email--state-error",
-		successStateWrapperInput: "index-subscribe__wrapper-input-email--state-success",
-		normalStateInput: "index-subscribe__input-email--state-normal",
-		errorStateInput: "index-subscribe__input-email--state-error",
-		successStateInput: "index-subscribe__input-email--state-success",
-		submitClassInactive: "btn--additional-brand--inactive",
-		successMsgPhone: "Спасибо",
-		successMsgBigDevices: "Спасибо. Ваш email добавлен"
-	});
 })(jQuery);
 //# sourceMappingURL=lib.js.map
