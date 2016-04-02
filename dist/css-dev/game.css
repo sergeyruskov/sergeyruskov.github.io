@@ -1,0 +1,414 @@
+/*=========================*/
+/*СТИЛИ ОБЩЕГО НАЗНАЧЕНИЯ*/
+/*=========================*/
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.img-circle {
+  border-radius: 50%;
+}
+.br5 {
+  border-radius: 5px;
+}
+.mt20,
+.grid__1,
+.grid__4 {
+  margin-top: 20px;
+}
+.mt-150 {
+  margin-top: -150px;
+}
+.mt40,
+.grid__2,
+.grid__3,
+.game-main-content__wrapper-externals-info {
+  margin-top: 40px;
+}
+.show {
+  display: block;
+}
+.pull-left {
+  float: left;
+}
+.pull-right {
+  float: right;
+}
+.text-center {
+  text-align: center;
+}
+.text-uppercase {
+  text-transform: uppercase;
+}
+.overflow-hidden {
+  overflow: hidden;
+}
+.clear {
+  clear: both;
+}
+.content-wrapper,
+.grid__3 {
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 657px) {
+  .content-wrapper,
+  .grid__3 {
+    width: 300px;
+  }
+}
+@media (min-width: 658px) and (max-width: 977px) {
+  .content-wrapper,
+  .grid__3 {
+    width: 620px;
+  }
+}
+@media (min-width: 978px) and (max-width: 1296px) {
+  .content-wrapper,
+  .grid__3 {
+    width: 940px;
+  }
+}
+@media (min-width: 1297px) {
+  .content-wrapper,
+  .grid__3 {
+    width: 1260px;
+  }
+}
+.link {
+  transition: .3s;
+}
+.link--grey:hover {
+  color: #707070;
+}
+.link--grey:visited {
+  color: #707070;
+}
+.link--grey:link {
+  color: #707070;
+}
+.link--white:visited {
+  color: #fff;
+}
+.link--white:link {
+  color: #fff;
+}
+.link--viking:visited {
+  color: #59c4ca;
+}
+.link--viking:link {
+  color: #59c4ca;
+}
+.link--brand {
+  color: #ea4e2a;
+}
+.h430 {
+  height: 430px;
+}
+@media (max-width: 657px) {
+  .h430--phone {
+    height: 430px !important;
+  }
+}
+@media (min-width: 658px) and (max-width: 977px) {
+  .h430--tablet {
+    height: 430px !important;
+  }
+}
+@media (min-width: 978px) and (max-width: 1296px) {
+  .h430--laptop {
+    height: 430px !important;
+  }
+}
+@media (min-width: 1297px) {
+  .h430--desktop {
+    height: 430px !important;
+  }
+}
+@media (min-width: 658px) {
+  .h430--exclude-phone {
+    height: 430px;
+  }
+}
+.h390 {
+  height: 390px;
+}
+.hide {
+  display: none !important;
+}
+@media (max-width: 657px) {
+  .hide--phone {
+    display: none !important;
+  }
+}
+@media (min-width: 658px) and (max-width: 977px) {
+  .hide--tablet {
+    display: none !important;
+  }
+}
+@media (min-width: 978px) and (max-width: 1296px) {
+  .hide--laptop {
+    display: none !important;
+  }
+}
+@media (min-width: 1297px) {
+  .hide--desktop {
+    display: none !important;
+  }
+}
+.color__twitter {
+  background: #55acee;
+}
+.color__fb {
+  background: #3c599b;
+}
+.color__vk {
+  background: #5f83aa;
+}
+.color__ok {
+  background: #ee8419;
+}
+.color__youtube {
+  background: #dd2a30;
+}
+.color__instagram {
+  background: #125688;
+}
+.color__mail {
+  background: #168de2;
+}
+.col__1 {
+  width: 300px;
+}
+@media (min-width: 658px) {
+  .col__1--exclude-phone {
+    width: 300px;
+  }
+}
+@media (max-width: 657px) {
+  .col__1--phone {
+    width: 300px !important;
+  }
+}
+@media (min-width: 658px) and (max-width: 977px) {
+  .col__1--tablet {
+    width: 300px !important;
+  }
+}
+@media (min-width: 978px) and (max-width: 1296px) {
+  .col__1--laptop {
+    width: 300px !important;
+  }
+}
+@media (min-width: 1297px) {
+  .col__1--desktop {
+    width: 300px !important;
+  }
+}
+.col__2 {
+  width: 620px;
+}
+@media (min-width: 658px) {
+  .col__2--exclude-phone {
+    width: 620px;
+  }
+}
+@media (max-width: 657px) {
+  .col__2--phone {
+    width: 620px !important;
+  }
+}
+@media (min-width: 658px) and (max-width: 977px) {
+  .col__2--tablet {
+    width: 620px !important;
+  }
+}
+@media (min-width: 978px) and (max-width: 1296px) {
+  .col__2--laptop {
+    width: 620px !important;
+  }
+}
+@media (min-width: 1297px) {
+  .col__2--desktop {
+    width: 620px !important;
+  }
+}
+.col__3 {
+  width: 940px;
+}
+@media (min-width: 658px) {
+  .col__3--exclude-phone {
+    width: 940px;
+  }
+}
+@media (max-width: 657px) {
+  .col__3--phone {
+    width: 940px !important;
+  }
+}
+@media (min-width: 658px) and (max-width: 977px) {
+  .col__3--tablet {
+    width: 940px !important;
+  }
+}
+@media (min-width: 978px) and (max-width: 1296px) {
+  .col__3--laptop {
+    width: 940px !important;
+  }
+}
+@media (min-width: 1297px) {
+  .col__3--desktop {
+    width: 940px !important;
+  }
+}
+.col__4 {
+  width: 1260px;
+}
+@media (min-width: 658px) {
+  .col__4--exclude-phone {
+    width: 1260px;
+  }
+}
+@media (max-width: 657px) {
+  .col__4--phone {
+    width: 1260px !important;
+  }
+}
+@media (min-width: 658px) and (max-width: 977px) {
+  .col__4--tablet {
+    width: 1260px !important;
+  }
+}
+@media (min-width: 978px) and (max-width: 1296px) {
+  .col__4--laptop {
+    width: 1260px !important;
+  }
+}
+@media (min-width: 1297px) {
+  .col__4--desktop {
+    width: 1260px !important;
+  }
+}
+.h__1 {
+  font-weight: 700;
+}
+@media (max-width: 657px) {
+  .h__1 {
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+@media (min-width: 658px) {
+  .h__1 {
+    font-size: 45px;
+    line-height: 45px;
+  }
+}
+.h__2 {
+  font-weight: 700;
+  font-family: 'PT Sans', sans-serif;
+}
+@media (max-width: 657px) {
+  .h__2 {
+    font-size: 26px;
+    line-height: 30px;
+  }
+}
+@media (min-width: 658px) {
+  .h__2 {
+    font-size: 30px;
+    line-height: 28px;
+  }
+}
+.h__3 {
+  font-weight: 700;
+  font-family: 'PT Sans', sans-serif;
+}
+@media (max-width: 657px) {
+  .h__3 {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+@media (min-width: 658px) {
+  .h__3 {
+    font-size: 22px;
+    line-height: 24px;
+  }
+}
+.vertical-rhythm20 {
+  margin: 20px 0;
+}
+@media (max-width: 657px) {
+  .text-main {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+@media (min-width: 658px) {
+  .text-main {
+    font-size: 17px;
+    line-height: 25px;
+  }
+}
+.text-lead {
+  color: #707070;
+}
+@media (max-width: 657px) {
+  .text-lead {
+    font-size: 17px;
+    line-height: 20px;
+  }
+}
+@media (min-width: 658px) {
+  .text-lead {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+.text-inside-frame {
+  font: 15px/20px 'PT Sans', sans-serif;
+}
+.article-main-text {
+  font-size: 17px;
+  line-height: 25px;
+}
+.branded-legend {
+  font: 700 22px/24px 'PT Sans', sans-serif;
+}
+.grid {
+  position: relative;
+  padding-bottom: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: flex-start;
+}
+/*====================================*/
+/*СТИЛИ ОБЩЕГО НАЗНАЧЕНИЯ ЗАКОНЧИЛИСЬ*/
+/*===================================*/
+.grid__1 {
+  order: 1;
+}
+.grid__2 {
+  order: 2;
+}
+.grid__3 {
+  order: 3;
+}
+@media (min-width: 1297px) {
+  .grid__3 {
+    display: flex;
+    justify-content: center;
+  }
+}
+.grid__4 {
+  order: 4;
+}
+.grid__5 {
+  order: 5;
+}
+.game-main-content__wrapper-externals-info > .external-info:not(:first-of-type) {
+  border-top: 0;
+}

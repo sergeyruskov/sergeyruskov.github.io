@@ -1,0 +1,57 @@
+.branded-input {
+
+	&__radio {
+		display: none;
+
+		&:checked {
+
+			& + .branded-input__label {
+				color: @color__brand;
+
+				&::before {
+					content: "\26AB";
+					font-size: 15px;
+					text-align: center;
+					border-color: @color__brand;
+				}
+			}
+
+		}
+	}
+
+	&__label {
+
+		display: flex;
+		align-items: center;
+		padding-left: 45px;
+		min-height: 30px;
+		position: relative;
+
+		&::before {
+			content: "";
+			line-height: 18px;
+			font-size: 0;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 30px;
+			height: 30px;
+			border: 6px solid;
+			border-radius: 50%;
+			transition: .3s;
+		}
+
+		&--white-unmarked-radio {
+			&::before {
+				border-color: #fff;
+			}
+		}
+
+		&--spot-unmarked-radio {
+			&::before {
+				border-color: @color__spot;
+			}
+		}
+	}
+
+}

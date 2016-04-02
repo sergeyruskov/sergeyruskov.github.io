@@ -1,4 +1,5 @@
-jQuery ( ($) => {
-	//Поиск в меню
-	//=include ../lego/common/test-menu-search.js
-});
+(($) => {
+	"use strict";
+	showMore($(`#show-more-block`), $(`#show-more-btn`));
+
+})(jQuery);

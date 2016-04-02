@@ -1,4 +1,4 @@
-<div class="test-social-network">
+<div class="test-social-network <?= $params["modification"]; ?>">
 	<a href="#" class="link link--white br5 test-social-network__icon icon-facebook color__fb">
 					<span class="test-social-network__btn-text-separate test-social-network__btn-text-separate--white
 					hide--phone"></span>

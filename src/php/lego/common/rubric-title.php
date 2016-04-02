@@ -1,0 +1,1 @@
+<h3 class="rubric-title content-wrapper <?= $params["modification"]; ?>"><?= $params["text"]; ?></h3>

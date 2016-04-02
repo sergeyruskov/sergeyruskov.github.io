@@ -1,0 +1,1 @@
+<div class="article-source-note"><?= $params["content"]; ?></div>

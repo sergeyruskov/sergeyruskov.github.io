@@ -1,0 +1,29 @@
+.test-questions-form {
+
+	&__item:not(:first-of-type) {
+		margin-top: 25px;
+	}
+
+	&__submit-btn {
+		overflow: hidden;
+		margin-top: 30px;
+	}
+
+		&__submit-btn-return {
+			.phone({
+				margin-bottom: 20px !important;
+			});
+			.respond-min(@screen__tablet, {
+				float: left;
+			});
+		}
+
+		&__submit-btn-continue {
+			.phone({
+			});
+			.respond-min(@screen__tablet, {
+				float: right;
+			});
+		}
+
+}

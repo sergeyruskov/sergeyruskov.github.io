@@ -1,0 +1,51 @@
+.test-quiz__col-2 {
+	flex-direction: column;
+
+	.test-quiz__question {
+		width: 620px;
+	}
+}
+
+.test-quiz__col-3 {
+
+	.test-quiz__question {
+		width: 640px;
+	}
+}
+
+.test-quiz__col-4 {
+
+	.test-quiz__question {
+		width: 640px;
+	}
+}
+
+.test-quiz {
+	display: flex;
+	background: @color__spot;
+
+	&--test-section {
+		.tablet({.test-quiz__col-2});
+		.laptop({.test-quiz__col-3});
+		.desktop({.test-quiz__col-3});
+	}
+
+
+	&__legend {
+		letter-spacing: -.3px;
+		margin-bottom: 27px;
+	}
+
+	&__question {
+		padding: 35px 40px 0;
+	}
+
+	&__possible-answer {
+		margin-bottom: 20px;
+	}
+
+	&__submit {
+		margin-top: 10px;
+	}
+
+}

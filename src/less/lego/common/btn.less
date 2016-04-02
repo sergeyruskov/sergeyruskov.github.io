@@ -15,12 +15,20 @@
 	&--additional-brand {
 		width: 180px;
 		padding: 7px 0;
-		background: @color__additional-brand;
 		border-radius: 5px;
+		background: @color__additional-brand;
 		font: 700 12px @font__pt-sans;
+	}
+
+	&--inactive {
+		opacity: .5;
 
 		&:hover {
-			background: @color__brand;
+			opacity: 1;
 		}
+	}
+
+	&--always-inactive {
+		opacity: .5;
 	}
 }

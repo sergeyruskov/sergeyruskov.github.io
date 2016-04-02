@@ -1,0 +1,32 @@
+.grid {
+
+	&__1 {
+		&:extend(.mt20);
+		order: 1
+	}
+
+	&__2 {
+		&:extend(.mt40);
+		order: 2;
+	}
+
+	&__3 {
+		&:extend(.mt40, .content-wrapper);
+		order: 3;
+		.desktop({
+			display: flex;
+			justify-content: center;
+		});
+	}
+
+	&__4 {
+		&:extend(.mt20);
+		order: 4;
+	}
+
+	&__5 {
+		order: 5;
+	}
+
+
+}

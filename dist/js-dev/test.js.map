@@ -1,0 +1,1 @@
+{"version":3,"names":[],"mappings":"","sources":["test.js"],"sourcesContent":["(($) => {\n\t\"use strict\";\n\tshowMore($(`#show-more-block`), $(`#show-more-btn`));\n\n})(jQuery);"],"file":"test.js","sourceRoot":"/source/"}

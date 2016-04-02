@@ -1,0 +1,77 @@
+.socials-block {
+	background: @color__2;
+	padding-top: 19px;
+
+	&__title {
+		color: @color__brand;
+		text-align: center;
+		font-weight: 700;
+		font-size: 12px;
+		text-transform: uppercase;
+		font-family: @font__pt-sans;
+		letter-spacing: 1px;
+	}
+
+	&__wrapper-icons {
+		display: flex;
+		flex-flow: wrap;
+		margin: 19px 0 21px;
+	}
+
+		&__icon {
+			color: #fff;
+			width: 50px;
+			height: 50px;
+			text-align: center;
+
+			&--fb {
+				&::before {
+					font-size: 18px;
+					line-height: 50px;
+				}
+			}
+
+			&--twitter {
+				&::before {
+					font-size: 19px;
+					line-height: 48px;
+				}
+			}
+
+			&--vk {
+				&::before {
+					font-size: 16px;
+					line-height: 50px;;
+				}
+			}
+
+			&--ok {
+				&::before {
+					line-height: 50px;
+					font-size: 19px;
+				}
+			}
+
+			&--youtube {
+				&::before {
+					font-size: 21px;
+					line-height: 51px;
+				}
+			}
+
+			&--instagram {
+				&::before {
+					font-size: 17px;
+					line-height: 51px;
+				}
+			}
+		}
+
+	&__widget {
+		margin: auto;
+		background: #C48189;
+		width: 260px;
+		height: 290px;
+	}
+
+}

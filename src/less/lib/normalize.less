@@ -258,14 +258,10 @@ optgroup {
 }
 
 * {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
 
 :after, :before {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
 
@@ -301,4 +297,21 @@ input {
 
 label {
 	cursor: pointer;
+}
+
+a[href]:not([class*="link"]) {
+
+	transition: .3s;
+
+	&:hover {
+		color: @color__gray;
+	}
+
+	&:visited {
+		color: @color__main-text;
+	}
+
+	&:link {
+		color: @color__main-text;
+	}
 }

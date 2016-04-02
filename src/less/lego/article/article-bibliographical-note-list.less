@@ -1,0 +1,21 @@
+.article-bibliographical-note-list {
+	margin: 30px 0;
+	padding: 0 20px;
+
+	&__item {
+		position: relative;
+		counter-increment: i;
+		font: italic 14px/20px @font__pt-sans;
+		color: @color__gray;
+		padding-left: 8px;
+
+		&::before {
+			content: counter(i);
+			font: italic 8px @font__pt-sans;
+			color: @color__gray;
+			position: absolute;
+			top: 2px;
+			left: 0;
+		}
+	}
+}

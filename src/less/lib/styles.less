@@ -1,3 +1,7 @@
+//В блоках лего бывает нужно использовать mixin, но если выводить их явно, они будут дублироваться в css файле конкретной страницы и lib.css, поэтому для лего элементов используются mixin с круглыми скобками(без вывода в css файл), минусом такого подхода будет то, что такие mixin нельзя использовать в extend. Extend чаще нужен при формировании сетки, так как там много повторяющихся блоков, поэтому файл style(mixin без круглых скобок, с явным выводом mixin тела в css файл), подключаем к css файлам страниц.
+/*=========================*/
+/*СТИЛИ ОБЩЕГО НАЗНАЧЕНИЯ*/
+/*=========================*/
 .img-responsive {
 	max-width: 100%;
 	height: auto;
@@ -16,16 +20,16 @@
 	margin-top: 20px;
 }
 
-.mr20 {
-	margin-right: 20px;
+.mt-150 {
+	margin-top: -150px;
+}
+
+.mt40 {
+	margin-top: 40px;
 }
 
 .show {
 	display: block;
-}
-
-.hide {
-	display: none !important;
 }
 
 .pull-left {
@@ -54,13 +58,13 @@
 
 .content-wrapper {
 
-	.phone({width: 300px;});
+	.phone({ width: 300px; });
 
-	.tablet({width: 620px;});
+	.tablet({ width: 620px; });
 
-	.laptop({width: 940px;});
+	.laptop({ width: 940px; });
 
-	.desktop({width: 1260px;});
+	.desktop({ width: 1260px; });
 
 	margin-left: auto;
 	margin-right: auto;
@@ -68,20 +72,6 @@
 
 .link {
 	transition: .3s;
-
-	&--black {
-		&:hover {
-			color: @color__gray;
-		}
-
-		&:visited {
-			color: @color__main-text;
-		}
-
-		&:link {
-			color: @color__main-text;
-		}
-	}
 
 	&--grey {
 		&:hover {
@@ -118,119 +108,7 @@
 	}
 
 	&--brand {
-		transition: .3s;
 		color: @color__brand;
-	}
-
-}
-
-.high-block {
-	height: 430px;
-}
-
-//Сетка
-@col-width: 300px;
-@gol-gutter: 20px;
-
-.col {
-
-	&__1 {
-		width: @col-width;
-
-		&--exclude-phone {
-			.respond-min(@screen__tablet, { width: @col-width});
-		}
-
-		&--phone {
-			.phone({width: @col-width !important;})
-		}
-
-		&--tablet {
-			.tablet({width: @col-width !important;})
-		}
-
-		&--laptop {
-			.laptop({width: @col-width !important;})
-		}
-
-		&--desktop {
-			.desktop({width: @col-width !important;})
-		}
-	}
-
-	&__2 {
-		@width__col-2: @col-width * 2 + @gol-gutter;
-		width: @width__col-2;
-
-		&--exclude-phone {
-			.respond-min(@screen__tablet, { width: @width__col-2});
-		}
-
-		&--phone {
-			.phone({width: @width__col-2 !important;})
-		}
-
-		&--tablet {
-			.tablet({width: @width__col-2 !important;})
-		}
-
-		&--laptop {
-			.laptop({width: @width__col-2 !important;})
-		}
-
-		&--desktop {
-			.desktop({width: @width__col-2 !important;})
-		}
-	}
-
-	&__3 {
-		@width__col-3: @col-width * 3 + @gol-gutter * 2;
-		width: @width__col-3;
-
-		&--exclude-phone {
-			.respond-min(@screen__tablet, { width: @width__col-3});
-		}
-
-		&--phone {
-			.phone({width: @width__col-3 !important;})
-		}
-
-		&--tablet {
-			.tablet({width: @width__col-3 !important;})
-		}
-
-		&--laptop {
-			.laptop({width: @width__col-3 !important;})
-		}
-
-		&--desktop {
-			.desktop({width: @width__col-3 !important;})
-		}
-	}
-
-	&__4 {
-		@width__col-4: @col-width * 4 + @gol-gutter * 3;
-		width: @width__col-4;
-
-		&--exclude-phone {
-			.respond-min(@screen__tablet, { width: @width__col-4});
-		}
-
-		&--phone {
-			.phone({width: @width__col-4 !important;})
-		}
-
-		&--tablet {
-			.tablet({width: @width__col-4 !important;})
-		}
-
-		&--laptop {
-			.laptop({width: @width__col-4 !important;})
-		}
-
-		&--desktop {
-			.desktop({width: @width__col-4 !important;})
-		}
 	}
 
 }
@@ -239,52 +117,56 @@
 
 	height: 430px;
 
-
 	&--phone {
-		.phone({height: 430px !important;})
+		.phone({ height: 430px !important; })
 	}
 
 	&--tablet {
-		.tablet({height: 430px !important;})
+		.tablet({ height: 430px !important; })
 	}
 
 	&--laptop {
-		.laptop({height: 430px !important;})
+		.laptop({ height: 430px !important; })
 	}
 
 	&--desktop {
-		.desktop({height: 430px !important;})
+		.desktop({ height: 430px !important; })
 	}
 
 	&--exclude-phone {
-		.respond-min(@screen__tablet, {height: 430px;});
+		.respond-min(@screen__tablet, { height: 430px; });
 	}
 }
 
+.h390 {
+	height: 390px;
+}
+
 .hide {
+	display: none !important;
+}
 
-	&--phone {
-		@media (max-width: (@screen__tablet - 1)) {
-			display: none !important;
-		}
+.hide--phone {
+	@media (max-width: (@screen__tablet - 1)) {
+		display: none !important;
 	}
+}
 
-	&--tablet {
-		@media (min-width: @screen__tablet) and (max-width: (@screen__laptop - 1)) {
-			display: none !important;
-		}
+.hide--tablet {
+	@media (min-width: @screen__tablet) and (max-width: (@screen__laptop - 1)) {
+		display: none !important;
 	}
+}
 
-	&--laptop {
-		@media (min-width: @screen__laptop) and (max-width: (@screen__desktop - 1)) {
-			display: none !important;
-		}
+.hide--laptop {
+	@media (min-width: @screen__laptop) and (max-width: (@screen__desktop - 1)) {
+		display: none !important;
 	}
+}
 
-	&--desktop {
-		@media (min-width: @screen__desktop) {
-			display: none !important;
-		}
+.hide--desktop {
+	@media (min-width: @screen__desktop) {
+		display: none !important;
 	}
 }
 
@@ -318,46 +200,120 @@
 	}
 }
 
-.h {
+.col__1 {
+	width: @col__1;
+}
 
-	&__1 {
-		font-weight: 700;
-		.phone({
-			font-size: 30px;
-			line-height: 30px;
-		});
-		.respond-min(@screen__tablet, {
-			font-size: 45px;
-			line-height: 45px;
-		});
-	}
+.col__1--exclude-phone {
+	.respond-min(@screen__tablet, { width: @col__1 });
+}
 
-	&__2 {
-		font-weight: 700;
-		font-family: @font__pt-sans;
-		.phone({
-			font-size: 26px;
-			line-height: 30px;
-		});
-		.respond-min(@screen__tablet, {
-			font-size: 30px;
-			line-height: 28px;
-		});
-	}
+.col__1--phone {
+	.phone({ width: @col__1 !important; })
+}
 
-	&__3 {
-		font-weight: 700;
-		font-family: @font__pt-sans;
-		.phone({
-			font-size: 18px;
-			line-height: 22px;
-		});
-		.respond-min(@screen__tablet, {
-			font-size: 22px;
-			line-height: 24px;
-		});
-	}
+.col__1--tablet {
+	.tablet({ width: @col__1 !important; })
+}
 
+.col__1--laptop {
+	.laptop({ width: @col__1 !important; })
+}
+
+.col__1--desktop {
+	.desktop({ width: @col__1 !important; })
+}
+
+.col__2 {
+	width: @col__2;
+}
+
+.col__2--exclude-phone {
+	.respond-min(@screen__tablet, { width: @col__2 });
+}
+
+.col__2--phone {
+	.phone({ width: @col__2 !important; })
+}
+
+.col__2--tablet {
+	.tablet({ width: @col__2 !important; })
+}
+
+.col__2--laptop {
+	.laptop({ width: @col__2 !important; })
+}
+
+.col__2--desktop {
+	.desktop({ width: @col__2 !important; })
+}
+
+.col__3 {
+	width: @col__3;
+}
+
+.col__3--exclude-phone {
+	.respond-min(@screen__tablet, { width: @col__3 });
+}
+
+.col__3--phone {
+	.phone({ width: @col__3 !important; })
+}
+
+.col__3--tablet {
+	.tablet({ width: @col__3 !important; })
+}
+
+.col__3--laptop {
+	.laptop({ width: @col__3 !important; })
+}
+
+.col__3--desktop {
+	.desktop({ width: @col__3 !important; })
+}
+
+.col__4 {
+	width: @col__4;
+}
+
+.col__4--exclude-phone {
+	.respond-min(@screen__tablet, { width: @col__4 });
+}
+
+.col__4--phone {
+	.phone({ width: @col__4 !important; })
+}
+
+.col__4--tablet {
+	.tablet({ width: @col__4 !important; })
+}
+
+.col__4--laptop {
+	.laptop({ width: @col__4 !important; })
+}
+
+.col__4--desktop {
+	.desktop({ width: @col__4 !important; })
+}
+
+.h__1 {
+	font-weight: 700;
+	.phone({ font-size: 30px; line-height: 30px; });
+	.respond-min(@screen__tablet, { font-size: 45px; line-height: 45px; });
+}
+
+.h__2 {
+	font-weight: 700;
+	font-family: @font__pt-sans;
+	.phone({ font-size: 26px; line-height: 30px; });
+	.respond-min(@screen__tablet, { font-size: 30px; line-height: 28px; });
+}
+
+.h__3 {
+	font-weight: 700;
+	font-family: @font__pt-sans;
+	.phone({ font-size: 18px; line-height: 22px; });
+	.respond-min(@screen__tablet, { font-size: 22px; line-height: 24px; });
 }
 
 .vertical-rhythm20 {
@@ -365,52 +321,41 @@
 }
 
 .text-main {
-	font-size: 17px;
-	line-height: 25px;
-	.phone({
-		font-size: 16px;
-		line-height: 22px;
-	})
+	.phone({ font-size: 16px; line-height: 22px; });
+	.respond-min(@screen__tablet, { font-size: 17px; line-height: 25px; });
 }
 
 .text-lead {
 	color: @color__gray;
-	.phone({
-		font-size: 17px;
-		line-height: 20px;
-	});
-	.respond-min(@screen__tablet, {
-		font-size: 20px;
-		line-height: 24px;
-	})
+	.phone({ font-size: 17px; line-height: 20px; });
+	.respond-min(@screen__tablet, { font-size: 20px; line-height: 24px; })
 }
 
 .text-inside-frame {
 	font: 15px/20px @font__pt-sans;
 }
 
-//Врезки
-.external-info-block-title {
-	font: 700 18px/22px @font__pt-sans;
-	text-transform: uppercase;
-	color: @color__brand;
-}
-
-.external-info-title {
-	font: 700 22px/24px @font__pt-sans;
-	color: @color__gray;
-}
-
-.external-info-text {
-	font: 15px/20px @font__pt-sans;
-}
-
-.external-info-borders {
-	border-top: 1px solid @color__6;
-	border-bottom: 1px solid @color__6;
-}
-
 .article-main-text {
 	font-size: 17px;
 	line-height: 25px;
 }
+
+.branded-legend {
+	font: 700 22px/24px @font__pt-sans;
+}
+
+.grid {
+	//Для кнопки показать еще и брендирования
+	position: relative;
+	//Стандартный отступ от футера
+	padding-bottom: 40px;
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-content: flex-start;
+}
+
+/*====================================*/
+/*СТИЛИ ОБЩЕГО НАЗНАЧЕНИЯ ЗАКОНЧИЛИСЬ*/
+/*===================================*/

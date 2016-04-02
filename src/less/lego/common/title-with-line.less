@@ -2,9 +2,9 @@
 	overflow: hidden;
 	text-align: center;
 
-	&--index-low-announcements,
-	&--index-best-covers,
-	&--index-forum {
+	&--low-announcements-block,
+	&--best-covers,
+	&--forum-block {
 		padding-top: 6px;
 	}
 
@@ -22,9 +22,9 @@
 		display: flex;
 		justify-content: center;
 
-		&--index-low-announcements,
-		&--index-forum,
-		&--index-best-covers {
+		&--low-announcements-block,
+		&--forum-block,
+		&--best-covers {
 			border-top: 1px solid @color__brand;
 		}
 
@@ -33,9 +33,9 @@
 		}
 
 		&--yandex-direct {
-			border-top: 1px solid @color__10;
-			border-right: 1px solid @color__10;
-			border-left: 1px solid @color__10;
+			border-top: 1px solid @color__9;
+			border-right: 1px solid @color__9;
+			border-left: 1px solid @color__9;
 		}
 	}
 
@@ -45,17 +45,17 @@
 		text-transform: uppercase;
 		letter-spacing: 1px;
 
-		&--index-low-announcements,
-		&--index-best-covers,
-		&--index-forum,
+		&--low-announcements-block,
+		&--best-covers,
+		&--forum-block,
 		&--psy-short {
 			font: 700 18px @font__pt-sans;
 			color: @color__brand;
 		}
 
-		&--index-low-announcements,
-		&--index-best-covers,
-		&--index-forum {
+		&--low-announcements-block,
+		&--best-covers,
+		&--forum-block {
 			.phone({ padding: 0 8px;});
 			.respond-min(@screen__tablet, {
 				padding: 0 20px;

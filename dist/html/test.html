@@ -4,8 +4,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>test</title>
-	<link rel="stylesheet" href="../css/lib.css">
-	<link rel="stylesheet" href="../css/test.css">
+	<link rel="stylesheet" href="../css-dev/lib.css">
+	<link rel="stylesheet" href="../css-dev/test.css">
 	<link href='https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700,700italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 </head>
@@ -78,8 +78,7 @@
 	</div>
 
 </header>
-	<main>
-		<div class='hide--laptop hide--tablet hide--phone'><div class="branding">
+<main><div class='hide--laptop hide--tablet hide--phone'><div class="branding">
 	<div id="adriver_banner_2140100272" title="" style="width: 1000px; height: 250px;"><iframe id="_iframe_4298818" src="http://masterh4.adriver.ru/images/0004298/0004298818/0/1000x250.html?html_params=xpid%3DCDC_U07lJasmBH1eulw44_kUPmmx5oHvk%26target%3D_blank%26bid%3D4298818%26sid%3D184054%26width%3D100%2525%26height%3D100%2525%26rnd%3D4973957%26pz%3D5%26ad%3D561526%26bt%3D52%26bn%3D2%26ar_sliceid%3D1706734%26ntype%3D0%26nid%3D0%26url%3D//ad.adriver.ru/cgi-bin/click.cgi%253Fsid%253D184054%2526ad%253D561526%2526bid%253D4298818%2526bt%253D52%2526bn%253D2%2526pz%253D5%2526xpid%253DCDC_U07lJasmBH1eulw44_kUPmmx5oHvk%2526ref%253Dhttp%253A%25252f%25252fwww.marieclaire.ru%25252f%2526custom%253D6%25253D0%2526rleurl%253D%26CompPath%3Dhttp%253A//masterh4.adriver.ru/images/0004298/0004298818/0/%26ar_pass%3D" frameborder="0" vspace="0" hspace="0" width="100%" height="100%" marginwidth="0" marginheight="0" scrolling="no"></iframe></div>
 </div></div><div class="content-wrapper grid branding--content">
 
@@ -179,34 +178,38 @@ col__1  short-announcement--index ">
 
 	<div class="grid__4">
 
-		<div class="test-description col__3--desktop col__2--laptop test-description--test">
+		<div class="test-main-content col__3--desktop col__2--laptop col__2--tablet col__1--phone">
 
-	<div class="test-description__number-and-counter">
-		<span class="test-description__cover-number">Psychologies №114</span>Тест пройден 79891 раз
-	</div>
+			<div class="test-description col__3--desktop col__2--laptop test-description--test">
 
+
+
+			<div class="test-description__number-and-counter">
+			<span class="test-description__cover-number">Psychologies №114</span>Тест пройден 79891 раз
+		</div>
+	
 	<h1 class="h__1 test-description__title">Умеете ли вы делать свою жизнь прекраснее?</h1>
 
 			<img src="../img/test/test-description.jpg" alt="" class="test-description__img" width="181" height="181">
 	
-		<div class="test-description__text"><p>Слово «харизма» происходит от греческого charisma («божья благодать»). Харизматичными принято называть людей, которые обладают способностью привлекать взгляды и воздействовать на других, не прилагая к этому
+	
+	
+			<div class="test-description__text"><p>Слово «харизма» происходит от греческого charisma («божья благодать»). Харизматичными принято называть людей, которые обладают способностью привлекать взгляды и воздействовать на других, не прилагая к этому
 		особых усилий и зачастую не отдавая себе в этом отчета. Еще несколько лет назад харизматиками считали
 		людей незаурядных или знаменитых, однако сейчас это слово перешло в разряд обыденных. Мы регулярно
 		говорим «он/она обладает харизмой» о людях, которым удалось выделиться и которыми мы восхищаемся. «С
 		психоаналитической точки зрения, харизма – это качества, которые мы разработали внутри себя и которые
 		улавливаются другими людьми, – считает психоаналитик Жерар Боннэ (Gérard Bonnet). – В каждом из нас есть
 		то, что привлекает и очаровывает других. харизмой обладаете вы?</p></div>
-
+	
 			<div class="test-description__author">Автор: светлана кирьенина</div>
 	
 	
 	
 </div>
-	</div>
+			<div class="test-main-content__wrapper-test-questions-form">
 
-	<div class="grid__5 col__3--desktop col__2--laptop col__2--tablet col__1--phone">
-
-		<div class="test-questions-form">
+				<div class="test-questions-form">
 
 	<div class="test-questions-form__item">
 		<div class="test-question">
@@ -437,7 +440,7 @@ test-question-multiple-img-wrapper--test">
 </div>
 	</div>
 
-	<!--Если что-то надо скрыть доавляем класс hide-->
+	<!--Если что-то надо скрыть добавляем класс hide-->
 
 	<div class="test-questions-form__submit-btn">
 
@@ -447,17 +450,21 @@ test-question-multiple-img-wrapper--test">
 
 	<div class="test-questions-form__submit-btn">
 
-		<a href="#" class="pull-left btn btn--additional-brand btn--additional-brand-inactive link link--white">Вернуться</a>
+		<a href="#" class="test-questions-form__submit-btn-return btn btn--additional-brand btn--inactive link link--white">Вернуться</a>
 
-		<a href="#" class="pull-right btn btn--additional-brand link link--white">Продолжить</a>
+		<a href="#" class="test-questions-form__submit-btn-continue btn btn--additional-brand btn--always-inactive link link--white">Продолжить</a>
 
 	</div>
 
 </div>
+			</div>
+
+		</div>
+
 	</div>
 
-	<div class="grid__6 col__3--desktop">
-
+	<div class="grid__5">
+		
 		<div class="test-social-blocks test-social-blocks--test">
 
 	<div class="test-social col__2--desktop col__2--laptop col__2--tablet">
@@ -511,10 +518,10 @@ test-question-multiple-img-wrapper--test">
 </div>
 	</div>
 
-	<div class="grid__7">
+	<div class="grid__6">
 		<h3 class="rubric-title content-wrapper rubric-title--phone-center">Популярные тесты</h3>	</div>
 
-	<div class="grid__8">
+	<div class="grid__7">
 
 		<a href="#" class="test-block col__1 test-block--test-page link link--white">
 	
@@ -541,7 +548,7 @@ test-question-multiple-img-wrapper--test">
 	</div>
 </a>	</div>
 
-	<div class="grid__9 hide--phone">
+	<div class="grid__8 hide--phone">
 		<a href="#" class="test-block col__1 test-block--test-page link link--white">
 	
 	<div class="test-block__wrapper-img img-circle">
@@ -567,7 +574,7 @@ test-question-multiple-img-wrapper--test">
 	</div>
 </a>	</div>
 
-	<div class="grid__10 hide--tablet hide--phone">
+	<div class="grid__9 hide--tablet hide--phone">
 		<a href="#" class="test-block col__1 test-block--test-page link link--white">
 	
 	<div class="test-block__wrapper-img img-circle">
@@ -593,7 +600,7 @@ test-question-multiple-img-wrapper--test">
 	</div>
 </a>	</div>
 
-	<div class="grid__11 hide--laptop hide--tablet hide--phone">
+	<div class="grid__10 hide--laptop hide--tablet hide--phone">
 		<a href="#" class="test-block col__1 test-block--test-page link link--white">
 	
 	<div class="test-block__wrapper-img img-circle">
@@ -619,10 +626,10 @@ test-question-multiple-img-wrapper--test">
 	</div>
 </a>	</div>
 
-	<div class="grid__12">
+	<div class="grid__11">
 		<h3 class="rubric-title content-wrapper rubric-title--phone-center">Новое на сайте</h3>	</div>
 
-	<div class="grid__13">
+	<div class="grid__12">
 		<div class="article-block col__1">
 
 	<a href="#">
@@ -646,7 +653,7 @@ test-question-multiple-img-wrapper--test">
 	
 </div>	</div>
 
-	<div class="grid__14">
+	<div class="grid__13">
 		<div class="article-block col__1">
 
 	<a href="#">
@@ -670,7 +677,7 @@ test-question-multiple-img-wrapper--test">
 	
 </div>	</div>
 
-	<div class="grid__15">
+	<div class="grid__14">
 		<div class="article-block col__1">
 
 	<a href="#">
@@ -694,7 +701,7 @@ test-question-multiple-img-wrapper--test">
 	
 </div>	</div>
 
-	<div class="grid__16">
+	<div class="grid__15">
 		<div class="article-block col__1">
 
 	<a href="#">
@@ -718,7 +725,7 @@ test-question-multiple-img-wrapper--test">
 	
 </div>	</div>
 
-	<div class="grid__17 hide--tablet">
+	<div class="grid__16 hide--tablet">
 		<div class="article-block col__1">
 
 	<a href="#">
@@ -743,7 +750,7 @@ test-question-multiple-img-wrapper--test">
 	
 </div>	</div>
 
-	<div class="grid__18 hide--tablet hide--phone">
+	<div class="grid__17 hide--tablet hide--phone">
 		<div class="article-block col__1">
 
 	<a href="#">
@@ -767,7 +774,7 @@ test-question-multiple-img-wrapper--test">
 	
 </div>	</div>
 
-	<div class="grid__19 hide--laptop hide--tablet hide--phone">
+	<div class="grid__18 hide--laptop hide--tablet hide--phone">
 		<div class="article-block col__1">
 
 	<a href="#">
@@ -791,7 +798,7 @@ test-question-multiple-img-wrapper--test">
 	
 </div>	</div>
 
-	<div class="grid__20 hide--laptop hide--tablet hide--phone">
+	<div class="grid__19 hide--laptop hide--tablet hide--phone">
 		<div class="article-block col__1">
 
 	<a href="#">
@@ -818,18 +825,19 @@ test-question-multiple-img-wrapper--test">
 	<div class="grid__500">
 		<div class="show-more-block content-wrapper" id="show-more-block"></div>	</div>
 
-	<div class="grid__side-banner-1">
+	<div class="grid__501">
 		<a href="#" class="banner-300-600 col__1">
 	<img src="../img/index/banner.jpg" alt="" class="show" width="300" height="600">
 </a>	</div>
 
-	<div class="show-more-btn-wrapper">
+	<div class="grid__502">
 
-	<div class="show-more-btn" id="show-more-btn">
+		<div class="show-more-btn" id="show-more-btn">
 	Показать еще <div class="show-more-btn__triangle">▼</div>
 	<div class="show-more-btn__shadow"></div>
 </div>
-</div>
+	</div>
+
 </div><footer class="footer-top branding--content content-wrapper">
 
 	<div class="footer-top__title-with-line">
@@ -959,9 +967,7 @@ test-question-multiple-img-wrapper--test">
 	</div>
 
 </div>
-</footer>	</main>
-
-<footer>
+</footer></main><footer>
 
 	<div class="footer-menu">
 
@@ -1029,16 +1035,8 @@ test-question-multiple-img-wrapper--test">
 </div>
 </footer>
 
-<script>
-	if (document.location.hostname === "localhost") {
-		document.write("<script src='../../src/bower/jquery/dist/jquery.min.js'><\/script>");
-	} else {
-		document.write("<script src='https://code.jquery.com/jquery-2.1.4.min.js'><\/script>");
-	}
-</script>
-
-<script src="../js/lib.js"></script>
-<script src="../js/test.js"></script>
+<script src="../js-dev/lib.js"></script>
+<script src="../js-dev/test.js"></script>
 
 </body>
 </html>

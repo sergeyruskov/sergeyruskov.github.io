@@ -1,0 +1,53 @@
+.skype-consultation {
+	background: @color__1;
+	display: block;
+	position: relative;
+	text-align: center;
+	padding: 18px 20px 0;
+
+	&:hover .btn--additional-brand {
+		background: @color__brand;
+	}
+
+	&__title {
+		font: 700 12px/1 @font__pt-sans;
+		text-transform: uppercase;
+		color: @color__brand;
+		letter-spacing: 1px;
+	}
+
+	&__text {
+		height: 140px;
+		overflow: hidden;
+		color: @color__gray;
+		line-height: 20px;
+		letter-spacing: -.5px;
+		margin: 25px 0 14px;
+		font-family: @font__pt-sans;
+	}
+
+	&__wrapper-bottom {
+		position: absolute;
+		left: 20px;
+		bottom: 31px;
+	}
+
+		&__photo {
+			width: 90px;
+			height: 90px;
+			border-radius: 50%;
+		}
+
+		&__psy-name {
+			font-size: 15px;
+			font-weight: 700;
+			margin: 15px 0 6px;
+		}
+
+		&__psy-specialization {
+			font-size: 13px;
+			letter-spacing: -.1px;
+			margin-bottom: 19px;
+		}
+
+}

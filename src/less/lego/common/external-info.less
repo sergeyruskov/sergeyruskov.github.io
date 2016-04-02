@@ -1,0 +1,176 @@
+.external-info--col-1() {
+	width: @col__1;
+	padding: 20px 0 20px 20px;
+}
+
+.external-info--col-2() {
+	width: @col__2;
+	padding: 20px 0 20px 20px;
+}
+
+.external-info--col-3() {
+	width: @col__3;
+	padding: 20px;
+}
+
+.external-info {
+
+	border-top: 1px solid @color__5;
+	border-bottom: 1px solid @color__5;
+	overflow: hidden;
+
+	&--unorder-list {
+
+		ul {
+			margin-top: 8px;
+
+			> li {
+				position: relative;
+				padding-left: 20px;
+				font-size: 15px;
+				line-height: 20px;
+				letter-spacing: -.6px;
+
+				&:not(:last-child) {
+					margin-bottom: 11px;
+				}
+
+				&::before {
+					content: "\26AB";
+					color: @color__gray;
+					position: absolute;
+					top: 1px;
+					left: 0;
+					font-size: 10px;
+				}
+			}
+		}
+	}
+
+	&--list-with-links {
+		ul {
+			margin-top: 8px;
+
+			> li {
+				&:not(:last-child) {
+					margin-bottom: 11px;
+				}
+
+				> a {
+					font: 700 16px/20px @font__pt-sans;
+				}
+			}
+		}
+	}
+
+	&--order-list {
+
+		ol {
+			margin-top: 8px;
+
+			> li {
+				position: relative;
+				counter-increment: i;
+				padding-left: 20px;
+				font: 15px/20px @font__pt-sans;
+				&:not(:last-child) {
+					margin-bottom: 11px;
+				}
+
+				&::before {
+					content: counter(i) ".";
+					position: absolute;
+					left: 0;
+					top: 0;
+					font-weight: 700;
+					color: @color__gray;
+				}
+			}
+		}
+	}
+
+	&--size-mod-1 {
+
+		.phone({.external-info--col-1;});
+		.tablet({.external-info--col-1;});
+		.laptop({.external-info--col-2;});
+		.desktop({.external-info--col-3;});
+
+	}
+
+	&--size-mod-2 {
+
+		.phone({.external-info--col-1;});
+		.tablet({.external-info--col-2;});
+		.laptop({.external-info--col-2;});
+		.desktop({.external-info--col-3;});
+
+	}
+
+	&__block-title,
+	&__theme-title {
+		margin-bottom: 20px;
+	}
+
+
+	&__block-title {
+		font: 700 18px/22px @font__pt-sans;
+		text-transform: uppercase;
+		color: @color__brand;
+	}
+
+	&__theme-title {
+		font: 700 22px/24px @font__pt-sans;
+		color: @color__gray;
+	}
+
+	&__title {
+		font: 700 22px/24px @font__pt-sans;
+		color: @color__gray;
+	}
+
+	&__text {
+		margin-top: 12px;
+		font: 15px/20px @font__pt-sans;
+	}
+
+	&__arrow-left,
+	&__arrow-right,
+	&__arrow-left-2,
+	&__arrow-right-2 {
+		display: inline-block;
+		&::before {
+			content: "\e901";
+			position: relative;
+			top: 4px;
+			font-weight: 700 !important;
+			.icomoon-font-family;
+			display: inline-block;
+			cursor: pointer;
+			font-size: 21px;
+		}
+	}
+
+	&__arrow-left,
+	&__arrow-left-2 {
+		padding-right: 9px;
+	}
+
+	&__arrow-right,
+	&__arrow-right-2 {
+		padding-left: 9px;
+
+		&::before {
+			transform: rotate(180deg);
+		}
+	}
+
+	&__current-slide-number {
+		color: @color__main-text;
+	}
+
+	&__separator-numbers,
+	&__number-slides {
+		color: @color__gray;
+	}
+}

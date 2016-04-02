@@ -1,0 +1,1 @@
+<div class="show-more-block content-wrapper" id="<?= $params["id"]; ?>"></div>

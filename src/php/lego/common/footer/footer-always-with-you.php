@@ -34,9 +34,9 @@
 			<div class="footer-always-with-you__wrapper-btn-digital">
 
 				<a href="#">
-					<? req_with_param(PATH__PHP_COMMON . "/appstore-badge.php", ["modification" => "footer-always-with-you__appstore-btn" ]); ?>
+					<? req_with_param(PATH__COMMON . "/appstore-badge.php", ["modification" => "footer-always-with-you__appstore-btn" ]); ?>
 				</a>
-				<? req_with_param(PATH__PHP_COMMON . "/google-play-badge.php", ["width" => 107, "height" => 31 ]); ?>
+				<? req_with_param(PATH__COMMON . "/google-play-badge.php", ["width" => 107, "height" => 31 ]); ?>
 
 			</div>
 		</div>
@@ -44,7 +44,7 @@
 		<div class="footer-always-with-you__magazine hide--tablet hide--phone">
 			<h4 class="footer-always-with-you__title">Журнал <br> Psychologies</h4>
 			<div class="footer-always-with-you__text">Ваш любымый журнал в обычном <br> и travel-формате</div>
-			<? req_with_param(PATH__PHP_COMMON . "/btn.php", ["text" => "Подписаться", "class" => "btn--additional-brand"]); ?>
+			<? req_with_param(PATH__COMMON . "/btn.php", ["text" => "Подписаться", "class" => "btn--additional-brand"]); ?>
 
 		</div>
 
@@ -54,9 +54,9 @@
 			<div class="footer-always-with-you__wrapper-btn-digital">
 
 				<a href="#">
-					<? req_with_param(PATH__PHP_COMMON . "/appstore-badge.php", ["modification" => "footer-always-with-you__appstore-btn" ]); ?>
+					<? req_with_param(PATH__COMMON . "/appstore-badge.php", ["modification" => "footer-always-with-you__appstore-btn" ]); ?>
 				</a>
-				<? req_with_param(PATH__PHP_COMMON . "/google-play-badge.php", ["width" => 107, "height" => 31 ]); ?>
+				<? req_with_param(PATH__COMMON . "/google-play-badge.php", ["width" => 107, "height" => 31 ]); ?>
 
 			</div>
 		</div>

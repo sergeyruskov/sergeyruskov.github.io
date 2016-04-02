@@ -1,4 +1,1 @@
-"use strict";
-
-(function ($) {})(jQuery);
-//# sourceMappingURL=section.js.map
+"use strict";(function($){"use strict";showMore($("#show-more-block"),$("#show-more-btn"));})(jQuery);

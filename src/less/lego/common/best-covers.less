@@ -1,0 +1,21 @@
+.best-covers {
+	border-bottom: 1px solid @color__brand;
+	overflow: hidden;
+
+	&__wrapper-covers {
+		display: flex;
+		justify-content: space-between;
+		.phone({ margin-top: 3px;});
+		.respond-min(@screen__tablet, {margin-top: 13px;});
+	}
+
+	&__wrapper-btn {
+		display: flex;
+		justify-content: center;
+		.phone({ margin: 20px 0 21px;});
+		.tablet({ margin: 20px 0;});
+		.laptop({ margin: 21px 0;});
+		.desktop({ margin: 20px 0;});
+	}
+
+}

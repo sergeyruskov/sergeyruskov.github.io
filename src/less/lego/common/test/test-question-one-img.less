@@ -1,0 +1,47 @@
+.test-question-one-img__col-1 {
+	.col__1;
+
+	.test-question-one-img__img {
+		margin-bottom: 27px;
+	}
+
+}
+
+.test-question-one-img__col-2 {
+	.col__2;
+
+	.test-question-one-img__img {
+		float: left;
+		margin-right: 20px;
+	}
+
+}
+
+.test-question-one-img__col-3 {
+	.col__3;
+
+	.test-question-one-img__img {
+		float: left;
+		margin-right: 20px;
+	}
+
+}
+
+.test-question-one-img {
+	overflow: hidden;
+	margin-top: 25px;
+
+	&--test {
+		.phone({.test-question-one-img__col-1;});
+		.tablet({.test-question-one-img__col-2;});
+		.laptop({.test-question-one-img__col-2;});
+		.desktop({.test-question-one-img__col-3;});
+	}
+
+		&__answer {
+			&:not(:last-child) {
+				margin-bottom: 21px;
+			}
+		}
+
+}

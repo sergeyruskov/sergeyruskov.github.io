@@ -1,0 +1,1 @@
+"use strict";(function($){"use strict";window.externalInfoSlider("#external-info-1");})(jQuery);

@@ -1,7 +1,15 @@
+.announcements--col-1 {
+	flex-direction: column;
+
+	.announcements__item-wrapper:not(:first-child) {
+		margin-top: 20px;
+	}
+}
+
 .announcements {
 	display: flex;
 	justify-content: space-between;
 	&--index {
-		.phone({flex-direction: column; height: 220px;});
+		.phone({.announcements--col-1;});
 	}
 }

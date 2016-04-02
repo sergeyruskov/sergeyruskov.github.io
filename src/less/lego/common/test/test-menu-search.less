@@ -1,115 +1,49 @@
-@background-color: #2A2E37;
 @icon-color: #fff;
-@transition: all .5s ease;
 
 .test-menu-search {
-	width: 30px;
+	width: 126px;
 	height: 30px;
 	background-color: @color__additional-brand;
 	position: relative;
-	overflow: hidden;
-	transition: @transition;
-	border-radius: 50%;
+	border-radius: 15px;
 
-	&.test-menu-search--open {
-		width: 126px;
-		border-radius: 15px;
+	&::before {
+		content: "\e901";
+		.icomoon-font-family;
+		transform: rotate(180deg);
+		position: absolute;
+		color: #fff;
+		font-size: 21px;
+		font-weight: 700;
+		top: 4px;
+		right: 3px;
 	}
 
 	&__text {
-		width: 93px;
-		height: 30px;
+		width: 104px;
+		height: 100%;
 		box-shadow: none;
 		border: none;
 		background: transparent;
 		color: #fff;
-		padding-left: 11px;
-		font-size: 0;
+		padding: 0 0 4px 11px;
+		font-size: 12px;
 		display: block;
+
 		&:focus {
 			outline: none;
 		}
 
-		.test-menu-search--open & {
-			font-size: 12px;
-		}
-	}
-
-	&__search-button {
-		width: 30px;
-		height: 30px;
-		display: block;
-		position: absolute;
-		right: 0;
-		top: 0;
-		cursor: pointer;
-	}
-
-	&__search-icon {
-		width: 10px;
-		height: 10px;
-		border-radius: 12px;
-		border: 2px solid @icon-color;
-		display: block;
-		position: relative;
-		margin: 9px 0 0 9px;
-		transition: @transition;
-		&:before {
-			content: '';
-			width: 3px;
-			height: 15px;
-			position: absolute;
-			right: -7px;
-			top: 30px;
-			display: block;
-			background-color: @icon-color;
-			transform: rotate(-45deg);
-			transition: @transition;
-		}
-		&:after {
-			content: '';
-			width: 3px;
-			height: 4px;
-			position: absolute;
-			right: -2px;
-			top: 6px;
-			display: block;
-			background-color: @icon-color;
-			transform: rotate(-45deg);
-			transition: @transition;
-		}
-		.test-menu-search--open & {
-			margin: 0;
-			width: 30px;
-			height: 30px;
-			border-radius: 60px;
-			&:before {
-				transform: rotate(52deg);
-				right: 11px;
-				top: 10px;
-				height: 12px;
-			}
-			&:after {
-				transform: rotate(-230deg);
-				right: 11px;
-				top: 4px;
-				height: 12px;
-			}
-		}
 	}
 
 	&__submit-btn {
 		position: absolute;
-		right: -30px;
+		right: 0;
 		top: 0;
-		height: 30px;
-		width: 30px;
-		z-index: 999;
+		height: 100%;
+		width: 22px;
+		z-index: 1;
 		background: transparent;
-
-		.test-menu-search--open & {
-			right: 0;
-		}
 	}
 }
 

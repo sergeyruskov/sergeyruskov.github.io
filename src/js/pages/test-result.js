@@ -1,5 +1,28 @@
-jQuery ( ($) => {
-	//Поиск в меню
-	//=include ../lego/common/test-menu-search.js
-	//=include ../lego/test-result/test-result-banner.js
-});
+(($) => {
+
+	const $banner = $(`#grid__501`);
+
+	deviceLogic(
+			[
+				{
+					logic: () => {
+						$banner.insertAfter($(`#test-result__result`));
+					},
+
+					desiredDevice: `tablet phone`
+				},
+
+				{
+					logic: () => {
+						$banner.insertAfter($(`#test-result__test-description`));
+					},
+
+					desiredDevice: `laptop desktop`
+				}
+			]
+	);
+
+	showMore($(`#show-more-block`), $(`#show-more-btn`));
+
+
+})(jQuery);

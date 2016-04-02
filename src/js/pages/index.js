@@ -1,4 +1,7 @@
-jQuery( ($) => {
+(($) => {
 	//Появляющееся слева меню
-	//=include ../lego/common/owl-slider/slider-index.js
-});
+	//=include ../lego/owl-slider/slider-index.js
+
+	$('#subscribe-block').subscribe();
+	showMore($(`#show-more-block`), $(`#show-more-btn`));
+})(jQuery);

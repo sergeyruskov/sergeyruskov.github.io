@@ -8,9 +8,10 @@ if ($params["width"] === "short") {
 }
 ?>
 
-<a href="#" class="short-announcement link link--black <?=$width_wrapper?> <?=$params["class"]?>">
+<a href="#" class="short-announcement
+<?="$width_wrapper " , $params["class"], " " . $params["modification"]?> ">
 
-	<img src="<?= PATH__IMG; echo $params["img"];?>" alt="" class="pull-left short-announcement__img" width="87px" height="60px">
+	<img src="<?= PATH__IMG; echo $params["img"];?>" alt="" class="pull-left short-announcement__img" width="87" height="60">
 
 	<h3 class="short-announcement__title <?= $width_text; ?>"><?= $params["title"] ?></h3>
 
