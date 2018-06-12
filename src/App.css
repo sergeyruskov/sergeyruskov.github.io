@@ -1,0 +1,128 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+
+.form {
+  max-width: 400px;
+  margin: auto;
+}
+
+.preview {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.preview label {
+  display: block;
+  margin-bottom: .5rem;
+}
+
+
+
+.controls-add {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.controls-add__item {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  padding: .75rem 1.25rem;
+  margin-bottom: -1px;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, .125);
+}
+
+.controls-add__item--without-hover {
+  cursor: move;
+  position: relative;
+  display: block;
+  padding: .75rem 1.25rem;
+  margin-bottom: -1px;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, .125);
+}
+
+.controls-add__label {
+  text-align: left;
+  cursor: move;
+}
+
+.controls-add__label-input {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.controls-add__label-select {
+  margin-left: 15px;
+}
+
+.controls-add__label-input--error {
+  border: 3px solid #f00;
+  position: relative;
+}
+
+.controls-add__item:hover {
+  z-index: 2;
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #007bff;
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid #007bff;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  text-decoration: none;
+  margin-top: 30px;
+}

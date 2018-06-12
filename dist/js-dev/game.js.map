@@ -1,1 +1,0 @@
-{"version":3,"names":[],"mappings":"","sources":["game.js"],"sourcesContent":["(($) => {\n\t\"use strict\";\n\twindow.externalInfoSlider(`#external-info-1`);\n})(jQuery);"],"file":"game.js","sourceRoot":"/source/"}

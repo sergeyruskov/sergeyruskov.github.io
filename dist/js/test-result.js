@@ -1,1 +1,0 @@
-"use strict";(function($){var $banner=$("#grid__501");deviceLogic([{logic:function logic(){$banner.insertAfter($("#test-result__result"));},desiredDevice:"tablet phone"},{logic:function logic(){$banner.insertAfter($("#test-result__test-description"));},desiredDevice:"laptop desktop"}]);showMore($("#show-more-block"),$("#show-more-btn"));})(jQuery);

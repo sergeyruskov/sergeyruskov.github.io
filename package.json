@@ -1,28 +1,22 @@
 {
+  "name": "ged",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "autoprefixer": "latest",
-    "babel": "latest",
-    "babel-preset-es2015": "latest",
-    "bower": "latest",
-    "browser-sync": "latest",
-    "del": "latest",
-    "gulp": "latest",
-    "gulp-babel": "latest",
-    "gulp-concat": "latest",
-    "gulp-imagemin": "latest",
-    "gulp-include": "latest",
-    "gulp-less": "latest",
-    "gulp-php2html": "latest",
-    "gulp-plumber": "latest",
-    "gulp-postcss": "latest",
-    "gulp-rename": "latest",
-    "gulp-sourcemaps": "latest",
-    "gulp-uglify": "latest",
-    "gulp-watch": "latest",
-    "gulp-watch-less": "latest",
-    "imagemin-pngquant": "latest",
-    "ncp": "latest",
-    "postcss-pxtorem": "latest",
-    "run-sequence": "latest"
+    "react": "^16.4.0",
+    "react-dnd": "^4.0.4",
+    "react-dnd-html5-backend": "^4.0.4",
+    "react-dom": "^16.4.0",
+    "react-redux": "^5.0.7",
+    "react-scripts": "1.1.4",
+    "redux": "^4.0.0",
+    "react-router-dom": "^4.3.1",
+    "classnames": "^2.2.6"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
   }
 }

@@ -1,1 +1,0 @@
-{"version":3,"names":[],"mappings":"","sources":["test-section.js"],"sourcesContent":["(($) => {\n\n\tshowMore($(`#show-more-block`), $(`#show-more-btn`));\n\tshowMore($(`#show-more-block-2`), $(`#show-more-btn-2`));\n\n})(jQuery);"],"file":"test-section.js","sourceRoot":"/source/"}

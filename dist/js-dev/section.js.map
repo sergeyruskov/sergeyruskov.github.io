@@ -1,1 +1,0 @@
-{"version":3,"names":[],"mappings":"","sources":["section.js"],"sourcesContent":["(($) => {\n\t\"use strict\";\n\tshowMore($(`#show-more-block`), $(`#show-more-btn`));\n})(jQuery);"],"file":"section.js","sourceRoot":"/source/"}
