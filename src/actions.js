@@ -13,11 +13,6 @@ export const changeOrderCards = value => ({
 	payload: value
 });
 
-export const updatePreviewCard = value => ({
-	type: 'UPDATE_PREVIEW_CARD',
-	payload: value
-});
-
 export const sendForm = value => ({
 	type: 'SEND_FORM',
 	payload: value

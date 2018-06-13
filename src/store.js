@@ -5,7 +5,7 @@ import initialState from './initialState';
 export default function configureStore() {
 	let LS;
 	if (localStorage.ged) {
-		//todo raskomenti
+		//todo raskomenti для сохранения стейта
 		// LS = JSON.parse(localStorage.ged);
 	}
 	const store = createStore(

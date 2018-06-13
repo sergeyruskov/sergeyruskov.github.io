@@ -1,14 +1,14 @@
 import React, {PureComponent} from 'react';
 import {compose} from 'redux';
 import {connect} from "react-redux";
-import {addCard, updatePreviewCard} from "../../actions";
+import {addCard} from "../../actions";
 
 
 
 class ViewForm extends PureComponent {
 
 	addCard = ({e, key, id}) => {
-		this.props.updatePreviewCard({
+		this.props.addCard({
 			id,
 			[key]: e.target.value,
 		})
@@ -51,7 +51,6 @@ export default compose(
 	connect(({view}) => ({view}),
 		dispatch => ({
 			addCard: value => dispatch(addCard(value)),
-			updatePreviewCard: value => dispatch(updatePreviewCard(value)),
 		})
 	)
 )(ViewForm);

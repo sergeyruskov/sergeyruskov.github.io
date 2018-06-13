@@ -3,36 +3,19 @@ import {combineReducers} from 'redux';
 export default combineReducers({
 	preview: (state = {}, {payload, type}) => {
 		switch (type) {
-		case 'UPDATE_PREVIEW_CARD': {
-			let {id, title, required} = payload;
-			debugger
-			if (title === undefined) {
-				title = state[id].title;
-			}
-			if (required === undefined) {
-				required = state[id].required;
-			}
-			state[id] = {
-				...state[id],
-				title,
-				required,
-			};
-			return [...state];
-		}
 		case 'ADD_CARD': {
-			let title, required;
-			if (payload.title === undefined) {
-				title = state[payload.id].title;
-			} else {
-				title = payload.title;
+			let {title, required, id} = payload;
+			const card = state[id];
+			if (title === undefined) {
+				title = card.title;
 			}
-			if (payload.required === undefined) {
-				required = state[payload.id].required;
-			} else {
-				required = payload.required;
+
+			if (required === undefined) {
+				required = card.required;
 			}
-			state[payload.id] = {
-				...state[payload.id],
+
+			state[id] = {
+				...card,
 				title,
 				required,
 			};

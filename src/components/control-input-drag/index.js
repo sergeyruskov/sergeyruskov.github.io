@@ -7,7 +7,7 @@ import {
 import { compose } from 'redux';
 import {cardTarget,cardSource} from '../../tools';
 import {connect} from "react-redux";
-import {addCard, copyCard, updatePreviewCard} from "../../actions";
+import {addCard, copyCard} from "../../actions";
 import ViewCard from '../view-card'
 
 class CardInputDrag extends PureComponent {
@@ -36,7 +36,7 @@ class CardInputDrag extends PureComponent {
 			value = 'Ошибка'
 		}
 		}
-		this.props.updatePreviewCard({
+		this.props.addCard({
 			id,
 			[key]: value,
 		})
@@ -80,6 +80,5 @@ export default compose(
 	connect(({preview}) => ({preview}), dispatch => ({
 		addCard: value => dispatch(addCard(value)),
 		copyCard: value => dispatch(copyCard(value)),
-		updatePreviewCard: value => dispatch(updatePreviewCard(value)),
 	}))
 )(CardInputDrag);
