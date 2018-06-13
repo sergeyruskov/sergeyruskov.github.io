@@ -5,7 +5,8 @@ import initialState from './initialState';
 export default function configureStore() {
 	let LS;
 	if (localStorage.ged) {
-		LS = JSON.parse(localStorage.ged);
+		//todo raskomenti
+		// LS = JSON.parse(localStorage.ged);
 	}
 	const store = createStore(
 		rootReducer,
