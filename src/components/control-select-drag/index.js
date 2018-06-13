@@ -8,7 +8,7 @@ import {compose} from 'redux';
 import {cardTarget, cardSource} from '../../tools';
 import {connect} from "react-redux";
 import cn from "classnames";
-import {addCard, copyCard} from "../../actions";
+import {addCard} from "../../actions";
 
 class SelectCardDragView extends PureComponent {
 
@@ -136,7 +136,6 @@ class CardSelectDrag extends PureComponent {
 			preview,
 			id,
 			addCard,
-			copyCard
 		} = this.props;
 		const opacity = isDragging ? 0 : 1;
 
@@ -145,7 +144,7 @@ class CardSelectDrag extends PureComponent {
 			connectDropTarget &&
 			connectDragSource(
 				connectDropTarget(<div style={{opacity}}>
-					<SelectCardDragView preview={preview} id={id} addCard={addCard} copyCard={copyCard}/>
+					<SelectCardDragView preview={preview} id={id} addCard={addCard} />
 				</div>),
 			)
 		)
@@ -166,6 +165,5 @@ export default compose(
 	),
 	connect(({preview}) => ({preview}), dispatch => ({
 		addCard: value => dispatch(addCard(value)),
-		copyCard: value => dispatch(copyCard(value)),
 	}))
 )(CardSelectDrag);

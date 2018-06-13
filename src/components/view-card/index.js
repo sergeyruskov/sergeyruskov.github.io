@@ -1,5 +1,5 @@
 import React, {PureComponent} from 'react';
-import {addCard, copyCard} from "../../actions";
+import {addCard} from "../../actions";
 import {connect} from "react-redux";
 import {compose} from "redux";
 
@@ -57,6 +57,5 @@ class ViewCard extends PureComponent {
 export default compose(
 	connect(({cards}) => ({cards}), dispatch => ({
 		addCard: value => dispatch(addCard(value)),
-		copyCard: value => dispatch(copyCard(value)),
 	}))
 )(ViewCard);
