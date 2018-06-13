@@ -18,6 +18,7 @@ class CardInputDrag extends PureComponent {
 		id: PropTypes.number.isRequired,
 		index: PropTypes.number.isRequired,
 		moveCard: PropTypes.func.isRequired,
+		preview: PropTypes.array.isRequired,
 	};
 
 	addCard = ({e, key}) => {

@@ -9,6 +9,8 @@ class CardInput extends PureComponent {
 	static propTypes = {
 		card: PropTypes.object.isRequired,
 		id: PropTypes.number.isRequired,
+		addCard: PropTypes.func.isRequired,
+		copyCard: PropTypes.func.isRequired,
 	};
 
 	addCard = ({e, key}) => {
@@ -39,9 +41,9 @@ class CardInput extends PureComponent {
 	};
 
 	render() {
-
+		const {text} = this.props;
 		return <li className="controls-add__item" onClick={this.submit}>
-			Добавить input
+			{text}
 		</li>
 	}
 }

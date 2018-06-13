@@ -1,6 +1,5 @@
 import React, {PureComponent} from 'react';
 import CardInput from '../control-input';
-import CardSelect from '../control-select';
 
 export default class Container extends PureComponent {
 
@@ -8,40 +7,28 @@ export default class Container extends PureComponent {
 		title: '',
 		type: 'input',
 		required: false,
+		text: 'Добавить input',
 	},
 		{
 		title: '',
 		type: 'select',
 		required: false,
 		list: [],
+		text: 'Добавить select',
 	}];
 
 	render() {
 		return (
 			<ul className="controls-add">
 				{this.controls.map((card, i) => {
-					const {type} = card;
-					switch (type) {
-					case 'input': {
-						return <CardInput
-							type='input'
-							id={i}
-							card={card}
-							key={type}
-						/>
-					}
-					case 'select': {
-						return <CardSelect
-							type='select'
-							id={i}
-							card={card}
-							key={type}
-						/>
-					}
-					default: {
-						return <span>Error</span>
-					}
-					}
+					const {type, text} = card;
+					return <CardInput
+						type='input'
+						id={i}
+						card={card}
+						key={type}
+						text={text}
+					/>
 				})}
 			</ul>
 		)
