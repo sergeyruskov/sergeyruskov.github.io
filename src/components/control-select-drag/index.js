@@ -12,6 +12,13 @@ import {addCard, copyCard} from "../../actions";
 
 class SelectCardDragView extends PureComponent {
 
+	static propTypes = {
+		preview: PropTypes.array.isRequired,
+		id: PropTypes.number.isRequired,
+		addCard: PropTypes.func.isRequired,
+	};
+
+
 	constructor(props) {
 		super(props);
 		this.state = {
