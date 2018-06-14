@@ -2,19 +2,19 @@ import React, {PureComponent} from 'react';
 import PropTypes from 'prop-types';
 import { compose } from 'redux';
 import {connect} from "react-redux";
-import {copyCard} from "../../actions";
+import {addCard} from "../../actions";
 
 
 class CardInput extends PureComponent {
 	static propTypes = {
 		card: PropTypes.object.isRequired,
 		id: PropTypes.number.isRequired,
-		copyCard: PropTypes.func.isRequired,
+		addCard: PropTypes.func.isRequired,
 	};
 
 	submit = () => {
-		const {copyCard, card} = this.props;
-		copyCard(card);
+		const {addCard, card} = this.props;
+		addCard(card);
 	};
 
 	render() {
@@ -27,6 +27,6 @@ class CardInput extends PureComponent {
 
 export default compose(
 	connect(() => ({}), dispatch => ({
-		copyCard: value => dispatch(copyCard(value)),
+		addCard: value => dispatch(addCard(value)),
 	}))
 )(CardInput);

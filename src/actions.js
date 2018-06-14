@@ -3,7 +3,7 @@ export const updateCard = value => ({
 	payload: value
 });
 
-export const copyCard = value => ({
+export const addCard = value => ({
 	type: 'COPY_CARD',
 	payload: value
 });
