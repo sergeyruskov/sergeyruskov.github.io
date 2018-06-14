@@ -3,25 +3,27 @@ import {combineReducers} from 'redux';
 export default combineReducers({
 	preview: (state = {}, {payload, type}) => {
 		switch (type) {
-		case 'ADD_CARD': {
+		case 'UPDATE_CARD': {
 			let {title, required, id} = payload;
-			const card = state[id];
-			if (title === undefined) {
-				title = card.title;
+			let somethingChanged = false;
+			if (title !== undefined) {
+				state[id] = {
+					...state[id],
+					title,
+				};
+				somethingChanged = true;
 			}
 
-			if (required === undefined) {
-				required = card.required;
+			if (required !== undefined) {
+				state[id] = {
+					...state[id],
+					required,
+				};
+				somethingChanged = true;
 			}
-
-			state[id] = {
-				...card,
-				title,
-				required,
-			};
-			return [...state];
+			return somethingChanged ? [...state]: state;
 		}
-		case 'COPY_CARD':
+		case 'ADD_CARD':
 			return [...state, {...payload, key: Math.random()}];
 		case 'CHANGE_ORDER_CARDS':
 			const {dragIndex, hoverIndex} = payload;

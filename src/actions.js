@@ -1,10 +1,10 @@
 export const updateCard = value => ({
-	type: 'ADD_CARD',
+	type: 'UPDATE_CARD',
 	payload: value
 });
 
 export const addCard = value => ({
-	type: 'COPY_CARD',
+	type: 'ADD_CARD',
 	payload: value
 });
 
