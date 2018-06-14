@@ -7,14 +7,37 @@ import { compose } from 'redux';
 import {connect} from "react-redux";
 import {changeOrderCards} from "../../actions";
 import SubmitForm from '../submit-form/';
+import { Iterable } from 'immutable'
+
+// import toJS from 'to-js';
+// import {toJs} from 'immutable';
+
+
+
+const toJS = WrappedComponent => wrappedComponentProps => {
+	const KEY = 0;
+	const VALUE = 1
+  const propsJS = Object.entries(
+	  wrappedComponentProps
+  ).reduce((newProps, wrappedComponentProp) => {
+	  newProps[wrappedComponentProp[KEY]] = Iterable.isIterable(
+		  wrappedComponentProp[VALUE]
+	  )
+		  ? wrappedComponentProp[VALUE].toJS()
+		  : wrappedComponentProp[VALUE]
+	  return newProps
+  }, {});
+	return <WrappedComponent {...propsJS} />
+};
+
 
 class Container extends PureComponent {
 	render() {
 		const {preview} = this.props;
-
+		console.log(this.props);
 		return (
 			<div className="preview">
-				{preview.length ? <div style={{margin: 30, color: "#0f0"}}>Вы можете перетаскивать элементы формы</div> : ""}
+				{preview.size ? <div style={{margin: 30, color: "#0f0"}}>Вы можете перетаскивать элементы формы</div> : ""}
 				{preview.map((card, i) => {
 					const {type, title, key} = card;
 					switch (type) {
@@ -38,7 +61,7 @@ class Container extends PureComponent {
 					}
 					}
 				})}
-				{preview.length ? <SubmitForm /> : ""}
+				{preview.size ? <SubmitForm /> : ""}
 			</div>
 		)
 
@@ -53,9 +76,11 @@ class Container extends PureComponent {
 export default compose(
 	DragDropContext(HTML5Backend),
 	connect(
-		({preview}) => ({preview}),
+		(state) => ({
+			preview: state.get('preview')
+		}),
 		dispatch => ({
 			changeOrderCards: value => dispatch(changeOrderCards(value)),
 		}),
 	)
-)(Container);
+)(toJS(Container));
