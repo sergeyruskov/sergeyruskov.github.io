@@ -1,11 +1,11 @@
 import React, {PureComponent} from 'react';
-import {addCard} from "../../actions";
+import {updateCard} from "../../actions";
 import {connect} from "react-redux";
 import {compose} from "redux";
 
 class ViewCard extends PureComponent {
 
-	addCard = ({e, key}) => {
+	updateCard = ({e, key}) => {
 		const {id} = this.props;
 		let value;
 		switch(key) {
@@ -21,7 +21,7 @@ class ViewCard extends PureComponent {
 			value = 'Ошибка'
 		}
 		}
-		this.props.addCard({
+		this.props.updateCard({
 			id,
 			[key]: value,
 		})
@@ -40,14 +40,14 @@ class ViewCard extends PureComponent {
 		return <div className="controls-add__item--without-hover" style={{ opacity }}>
 			<label className="controls-add__label">
 				Имя поля: <br/>
-				<input placeholder="Введите имя поля" className="controls-add__label-input" value={title} required={required} type="text" onChange={(e) => this.addCard({e, key: 'title'})} />
+				<input placeholder="Введите имя поля" className="controls-add__label-input" value={title} required={required} type="text" onChange={(e) => this.updateCard({e, key: 'title'})} />
 			</label>
 			<label className="controls-add__label">
 				Обязательное поле:
 				<input
 					type="checkbox"
 					checked={required}
-					onChange={(e) => this.addCard({e, key: 'required'})}
+					onChange={(e) => this.updateCard({e, key: 'required'})}
 				/>
 			</label>
 		</div>
@@ -56,6 +56,6 @@ class ViewCard extends PureComponent {
 
 export default compose(
 	connect(({cards}) => ({cards}), dispatch => ({
-		addCard: value => dispatch(addCard(value)),
+		updateCard: value => dispatch(updateCard(value)),
 	}))
 )(ViewCard);

@@ -8,14 +8,14 @@ import {compose} from 'redux';
 import {cardTarget, cardSource} from '../../tools';
 import {connect} from "react-redux";
 import cn from "classnames";
-import {addCard} from "../../actions";
+import {updateCard} from "../../actions";
 
 class SelectCardDragView extends PureComponent {
 
 	static propTypes = {
 		preview: PropTypes.array.isRequired,
 		id: PropTypes.number.isRequired,
-		addCard: PropTypes.func.isRequired,
+		updateCard: PropTypes.func.isRequired,
 	};
 
 
@@ -34,7 +34,7 @@ class SelectCardDragView extends PureComponent {
 		}
 	};
 
-	addCard = ({e, key}) => {
+	updateCard = ({e, key}) => {
 		const {id} = this.props;
 		let value;
 		switch(key) {
@@ -50,7 +50,7 @@ class SelectCardDragView extends PureComponent {
 			value = 'Ошибка'
 		}
 		}
-		this.props.addCard({
+		this.props.updateCard({
 			id,
 			[key]: value,
 		})
@@ -67,7 +67,7 @@ class SelectCardDragView extends PureComponent {
 					this.setState({error: false});
 				}
 				card.list = [...card.list, this.state.option];
-				this.props.addCard({
+				this.props.updateCard({
 					id,
 					list: [...card.list],
 				});
@@ -88,7 +88,7 @@ class SelectCardDragView extends PureComponent {
 		return <div className="controls-add__item--without-hover">
 			<label className="controls-add__label">
 				Имя поля: <br/>
-				<input placeholder="Введите имя поля" className="controls-add__label-input" value={card.title} required={card.required} type="text" onChange={(e) => this.addCard({e, key: 'title'})} />
+				<input placeholder="Введите имя поля" className="controls-add__label-input" value={card.title} required={card.required} type="text" onChange={(e) => this.updateCard({e, key: 'title'})} />
 			</label>
 			<label className="controls-add__label">
 				Добавить уникальный вариант в список:
@@ -99,7 +99,7 @@ class SelectCardDragView extends PureComponent {
 				<input
 					type="checkbox"
 					checked={card.required}
-					onChange={(e) => this.addCard({e, key: 'required'})}
+					onChange={(e) => this.updateCard({e, key: 'required'})}
 				/>
 			</label>
 			<label className="controls-add__label">
@@ -135,7 +135,7 @@ class CardSelectDrag extends PureComponent {
 			connectDropTarget,
 			preview,
 			id,
-			addCard,
+			updateCard,
 		} = this.props;
 		const opacity = isDragging ? 0 : 1;
 
@@ -144,7 +144,7 @@ class CardSelectDrag extends PureComponent {
 			connectDropTarget &&
 			connectDragSource(
 				connectDropTarget(<div style={{opacity}}>
-					<SelectCardDragView preview={preview} id={id} addCard={addCard} />
+					<SelectCardDragView preview={preview} id={id} updateCard={updateCard} />
 				</div>),
 			)
 		)
@@ -164,6 +164,6 @@ export default compose(
 		}),
 	),
 	connect(({preview}) => ({preview}), dispatch => ({
-		addCard: value => dispatch(addCard(value)),
+		updateCard: value => dispatch(updateCard(value)),
 	}))
 )(CardSelectDrag);

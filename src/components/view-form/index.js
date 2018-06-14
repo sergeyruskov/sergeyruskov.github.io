@@ -1,14 +1,14 @@
 import React, {PureComponent} from 'react';
 import {compose} from 'redux';
 import {connect} from "react-redux";
-import {addCard} from "../../actions";
+import {updateCard} from "../../actions";
 
 
 
 class ViewForm extends PureComponent {
 
-	addCard = ({e, key, id}) => {
-		this.props.addCard({
+	updateCard = ({e, key, id}) => {
+		this.props.updateCard({
 			id,
 			[key]: e.target.value,
 		})
@@ -25,7 +25,7 @@ class ViewForm extends PureComponent {
 				return <div className="controls-add__item--without-hover" key={i}>
 					<label className="controls-add__label">
 						{card.title}: <br/>
-						<input placeholder="Введите имя поля" className="controls-add__label-input" value="" required={card.required} type="text" onChange={(e) => this.addCard({e, key: 'title', id: i})} />
+						<input placeholder="Введите имя поля" className="controls-add__label-input" value="" required={card.required} type="text" onChange={(e) => this.updateCard({e, key: 'title', id: i})} />
 					</label>
 				</div>
 			}
@@ -50,7 +50,7 @@ class ViewForm extends PureComponent {
 export default compose(
 	connect(({view}) => ({view}),
 		dispatch => ({
-			addCard: value => dispatch(addCard(value)),
+			updateCard: value => dispatch(updateCard(value)),
 		})
 	)
 )(ViewForm);

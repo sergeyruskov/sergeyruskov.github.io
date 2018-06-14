@@ -1,4 +1,4 @@
-export const addCard = value => ({
+export const updateCard = value => ({
 	type: 'ADD_CARD',
 	payload: value
 });
