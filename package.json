@@ -3,17 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "classnames": "^2.2.6",
+    "immutable": "^3.8.2",
+    "lodash.topairs": "^4.3.0",
     "react": "^16.4.0",
     "react-dnd": "^4.0.4",
-    "redux-immutable": "^4.0.0",
-    "immutable": "^3.8.2",
     "react-dnd-html5-backend": "^4.0.4",
     "react-dom": "^16.4.0",
     "react-redux": "^5.0.7",
+    "react-router-dom": "^4.3.1",
     "react-scripts": "1.1.4",
     "redux": "^4.0.0",
-    "react-router-dom": "^4.3.1",
-    "classnames": "^2.2.6"
+    "redux-immutable": "^4.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
