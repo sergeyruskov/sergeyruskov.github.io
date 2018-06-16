@@ -15,7 +15,7 @@ import './index.css'
  * Так же обертка соеденина с redux откуда пробрасывает полученные экшены и стейт
  * */
 
-function Form({updateOrderCards, updateCard, createView, preview, createCard}) {
+function FactoryForm({updateOrderCards, updateCard, createView, preview, createCard}) {
 	const previewProps = {updateOrderCards, updateCard, createView, preview};
 	const controlProps = {createCard};
 
@@ -36,7 +36,7 @@ export default compose(
 			createCard: value => dispatch(createCard(value)),
 		}),
 	)
-)(Form);
+)(FactoryForm);
 
 
 
