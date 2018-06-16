@@ -1,0 +1,70 @@
+.preview {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.preview__label {
+    display: block;
+    margin-bottom: .5rem;
+}
+
+.preview__tooltip-title {
+    margin: 30px;
+    color: #0f0;
+}
+
+.preview__submit {
+    margin: 30px auto 0;
+    width: 134px;
+    color: #fff;
+    background-color: #007bff;
+    display: block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid #007bff;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    text-decoration: none;
+}
+
+.preview__item--without-hover {
+    cursor: move;
+    position: relative;
+    display: block;
+    padding: .75rem 1.25rem;
+    margin-bottom: -1px;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, .125);
+}
+
+
+.preview__label {
+    text-align: left;
+    cursor: move;
+}
+
+
+.preview__label-input--error {
+    border: 3px solid #f00;
+    position: relative;
+}
+
+.preview__label-select {
+    margin-left: 15px;
+}
+
+.preview__label-input {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+}

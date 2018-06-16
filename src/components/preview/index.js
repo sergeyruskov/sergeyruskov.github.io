@@ -1,61 +1,58 @@
-import React, {PureComponent} from 'react';
-import {DragDropContext} from 'react-dnd';
-import HTML5Backend from 'react-dnd-html5-backend';
-import CardInputDrag from '../control-input-drag';
-import CardSelectDrag from '../control-select-drag';
-import { compose } from 'redux';
-import {connect} from "react-redux";
-import {changeOrderCards} from "../../actions";
-import SubmitForm from '../submit-form/';
+import React from 'react';
+import PreviewDrag from './preview-drag';
+import PreviewInput from './preview-input'
+import PreviewSelect from './preview-select'
+import {Link} from "react-router-dom";
+import './index.css'
 
-class Container extends PureComponent {
-	render() {
-		const {preview} = this.props;
+export default function Preview(props) {
 
-		return (
-			<div className="preview">
-				{preview.length ? <div style={{margin: 30, color: "#0f0"}}>Вы можете перетаскивать элементы формы</div> : ""}
-				{preview.map((card, i) => {
-					const {type, title, key} = card;
-					switch (type) {
-					case 'input': {
-						return <CardInputDrag
-							id={i}
-							index={i}
-							moveCard={this.moveCard}
-							key={key}
-							title={title}
-						/>
-					}
-					default: {
-						return <CardSelectDrag
-							id={i}
-							index={i}
-							moveCard={this.moveCard}
-							key={key}
-							title={title}
-						/>
-					}
-					}
-				})}
-				{preview.length ? <SubmitForm /> : ""}
-			</div>
-		)
+	function list({preview}) {
+		return preview.map((card, i) => {
+			const {type, key} = card;
 
+			const cardProps = {
+				id: i,
+				card,
+				updateCard,
+			};
+
+			const dragProps = {
+				key,
+				index: i,
+				moveCard: props.updateOrderCards,
+			};
+
+			switch (type) {
+			case 'input': {
+				return <PreviewDrag {...dragProps} render={
+					({isDragging}) => {
+						return <PreviewInput {...cardProps} opacity={isDragging ? 0 : 1}/>;
+					}
+				}/>;
+			}
+			case 'select': {
+				return <PreviewDrag {...dragProps} render={
+					({isDragging}) => {
+						return <PreviewSelect {...cardProps} opacity={isDragging ? 0 : 1}/>;
+					}
+				}/>;
+			}
+			default: {
+				return <div>Ошибка</div>;
+			}
+			}
+		})
 	}
 
-	moveCard = (dragIndex, hoverIndex) => {
-		this.props.changeOrderCards({dragIndex, hoverIndex})
-	}
+	const {preview, updateCard, createView} = props;
+
+	return <div className="preview">
+		{<div className="preview__tooltip-title">Вы можете перетаскивать элементы формы</div>}
+		{list({preview})}
+		{<Link className="preview__submit" to="/view" onClick={() => createView(preview)}>Отправить</Link>}
+	</div>;
 }
 
 
-export default compose(
-	DragDropContext(HTML5Backend),
-	connect(
-		({preview}) => ({preview}),
-		dispatch => ({
-			changeOrderCards: value => dispatch(changeOrderCards(value)),
-		}),
-	)
-)(Container);
+

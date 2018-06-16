@@ -1,36 +1,32 @@
-import React, {PureComponent} from 'react';
-import CardInput from '../control-input';
+import React from 'react';
+import controlsList from './controls-list'
+import './index.css'
 
-export default class Container extends PureComponent {
+/**
+ * Список контролов из которых пользователь может выбрать необходимый для добавления в превью
+ * */
 
-	controls = [{
-		title: '',
-		type: 'input',
-		required: false,
-		text: 'Добавить input',
-	},
-		{
-		title: '',
-		type: 'select',
-		required: false,
-		list: [],
-		text: 'Добавить select',
-	}];
+export default function Controls({createCard}) {
 
-	render() {
-		return (
-			<ul className="controls-add">
-				{this.controls.map((card, i) => {
-					const {type, text} = card;
-					return <CardInput
-						type='input'
-						id={i}
-						card={card}
-						key={type}
-						text={text}
-					/>
-				})}
-			</ul>
-		)
+	function ControlItem({text, createCard, card}) {
+		return <li className="controls-add__item" onClick={() => createCard(card)}>
+			{text}
+		</li>
+
 	}
+
+	return (
+		<ul className="controls-add">
+			{controlsList.map((card) => {
+					const {type, text} = card;
+					return <ControlItem
+						createCard={createCard}
+						card={card}
+						text={text}
+						key={type}
+					/>
+				}
+			)}
+		</ul>
+	)
 }

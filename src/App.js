@@ -1,19 +1,16 @@
-import React, {PureComponent} from 'react';
-import './App.css';
+import React from 'react';
 import Form from './components/form';
-import ViewForm from './components/view-form';
+import View from './components/view';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
-export default class App extends PureComponent {
-	render() {
-		return (
-			<Router>
-				<div className="App">
-					<Route exact path="/" component={Form} />
-					<Route path="/view" component={ViewForm} />
-				</div>
-			</Router>
-		);
-	}
+export default function App() {
+	return (
+		<Router>
+			<div className="App">
+				<Route exact path="/" component={Form} />
+				<Route path="/view" component={View} />
+			</div>
+		</Router>
+	);
 }
 

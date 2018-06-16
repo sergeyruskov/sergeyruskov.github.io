@@ -1,19 +1,19 @@
-export const updateCard = value => ({
+export const updateCard = payload => ({
 	type: 'UPDATE_CARD',
-	payload: value
+	payload,
 });
 
-export const addCard = value => ({
-	type: 'ADD_CARD',
-	payload: value
+export const createCard = payload => ({
+	type: 'CREATE_CARD',
+	payload,
 });
 
-export const changeOrderCards = value => ({
-	type: 'CHANGE_ORDER_CARDS',
-	payload: value
+export const updateOrderCards = payload => ({
+	type: 'UPDATE_ORDER_CARDS',
+	payload,
 });
 
-export const sendForm = value => ({
-	type: 'SEND_FORM',
-	payload: value
+export const createView = payload => ({
+	type: 'CREATE_VIEW',
+	payload,
 });
