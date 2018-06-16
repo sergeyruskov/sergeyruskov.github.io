@@ -5,7 +5,11 @@ import initialState from './initialState';
 export default function configureStore() {
 	let LS;
 	if (localStorage.ged) {
-		//todo raskomenti для сохранения стейта
+		/**
+		 * Для возможности сохранять данные в локалсторадже для последующего повторного показа
+		 * после перезагрузки страницы, необходимо расскоментировать.
+		 * Так как пока не реализована возможность удаления контролов, эта опция будет лишней.
+		 * */
 		// LS = JSON.parse(localStorage.ged);
 	}
 	const store = createStore(
