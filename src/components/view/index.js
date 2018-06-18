@@ -1,14 +1,20 @@
+//@flow
 import React from 'react';
 import {compose} from 'redux';
 import {connect} from "react-redux";
-import {updateCard} from "../../actions";
+import {updateCard} from "../../actions/index";
 import {Redirect} from "react-router-dom";
+import type { Action, Dispatch } from '../../types/index';
+import type { Card, Cards } from '../../types/cards';
 
 /**
  * Конечное представление настроенной формы
  * */
 
-function ViewForm({view}) {
+function ViewForm({view}: {
+	updateCard: Card => Action,
+	view: Cards,
+}) {
 	if (!view.length) return <Redirect to="/" />;
 	return <div className="form">{view.map(({type, title, required, list}, i) => {
 		switch (type) {
@@ -24,7 +30,7 @@ function ViewForm({view}) {
 			return <div className="preview__item--without-hover" key={i}>
 				{title}: <br/><br/>
 				<select required={required}>
-					{list.map(text => {
+					{list && list.map(text => {
 						return <option key={text}>{text}</option>
 					})}
 				</select>
@@ -40,7 +46,7 @@ function ViewForm({view}) {
 
 export default compose(
 	connect(({view}) => ({view}),
-		dispatch => ({
+		(dispatch: Dispatch) => ({
 			updateCard: value => dispatch(updateCard(value)),
 		})
 	)

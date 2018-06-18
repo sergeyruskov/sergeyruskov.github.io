@@ -1,11 +1,20 @@
+//@flow
 import React from 'react';
 import PreviewDrag from './preview-drag';
 import PreviewInput from './preview-input'
 import PreviewSelect from './preview-select'
 import {Link} from "react-router-dom";
 import './index.css'
+import type {Cards, UpdateCard} from "../../types/cards";
+import type {Action} from "../../types";
+import type {UpdateOrderCard} from "../../types/cards";
 
-export default function Preview(props) {
+export default function Preview(props: {
+	updateOrderCards: UpdateOrderCard => Action,
+	updateCard: UpdateCard => Action,
+	createView: Cards => Action,
+	preview: Cards,
+}) {
 
 	function list({preview}) {
 		return preview.map((card, i) => {

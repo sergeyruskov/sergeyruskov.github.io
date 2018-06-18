@@ -1,10 +1,17 @@
+//@flow
 import React from 'react';
+import type {Card, UpdateCard} from "../../types/cards";
+import type {Action} from "../../types/index";
 
 /**
  * Предпросмотр и настройка добавленного пользователем контрола Input
  **/
 
-export default function PreviewInput({updateCard, card, id}) {
+export default function PreviewInput({updateCard, card, id}: {
+	updateCard: UpdateCard => Action,
+	card: Card,
+	id: number
+}) {
 	const {title, required} = card;
 
 	return <div className="preview__item--without-hover">

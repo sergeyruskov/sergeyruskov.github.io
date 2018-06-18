@@ -1,3 +1,4 @@
+//@flow
 import React, {PureComponent} from 'react';
 import {
 	DragSource,
@@ -5,11 +6,13 @@ import {
 } from 'react-dnd';
 import { compose } from 'redux';
 import { findDOMNode } from 'react-dom'
+import type {IsDragging} from "../../types/cards";
 
 /**
  * Техническая прослойка между контейнером и компонентами предсталвения
  * для реализации растановки контролов по порядку задуманному пользователем
  * путем drag and drop
+ * Нельзя использовать чистую функцию вместо PureComponent, так как будут зад
  **/
 
 const cardTarget = {
@@ -25,6 +28,7 @@ const cardTarget = {
 		// Determine rectangle on screen
 		const hoverBoundingRect = (findDOMNode(
 			component,
+			// $FlowFixMe
 		)).getBoundingClientRect();
 
 		// Get vertical middle
@@ -63,7 +67,12 @@ const cardTarget = {
 
 
 
-class CardDrag extends PureComponent {
+class CardDrag extends PureComponent<{
+	isDragging: IsDragging,
+	connectDragSource: any,
+	connectDropTarget: any,
+	render: any,
+}> {
 
 	render() {
 		const {isDragging, connectDragSource, connectDropTarget, render} = this.props;
