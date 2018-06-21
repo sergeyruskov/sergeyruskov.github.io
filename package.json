@@ -4,10 +4,10 @@
   "private": true,
   "devDependencies": {
     "flow-bin": "^0.74.0",
-    "flow-typed": "^2.4.0",
-    "react-scripts": "^1.1.4"
+    "flow-typed": "^2.4.0"
   },
   "dependencies": {
+    "react-scripts": "^1.1.4",
     "classnames": "^2.2.6",
     "lodash.forown": "^4.4.0",
     "react": "^16.4.1",
